@@ -10,5 +10,16 @@
 /// places by adverbs. Linguistically, a noun is a member of a large, open part
 /// of speech whose members can occur as the main word in the subject of a
 /// clause, the object of a verb, or the object of a preposition.
+///
+/// # Examples
+///
+/// ```
+/// let x: Noun = "Alice".into(); // person
+/// let x: Noun = "beach".into(); // place
+/// let x: Noun = "clock".into(); // thing
+/// let x: Noun = "dream".into(); // idea
+/// let x: Noun = "eagle".into(); // animal
+/// let x: Noun = "fruit".into(); // plant
+/// ```
 
 pub type Noun = String;
