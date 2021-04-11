@@ -6,8 +6,8 @@
 //! 
 //! ```rust
 //! use typeables::*;
-//! let x: Verb = "read";
-//! let y: Noun = "book";
+//! let y: &Noun_str = "book";
+//! let x: &Verb_str = "read";
 //! ```
 //! 
 //! # Purpose
@@ -43,8 +43,10 @@ pub mod grammar {
     pub mod verb;
 }
 
-pub use self::grammar::noun::Noun;
-pub use self::grammar::verb::Verb;
+pub use self::grammar::noun::Noun_str;
+pub use self::grammar::noun::Noun_String;
+pub use self::grammar::verb::Verb_str;
+pub use self::grammar::verb::Verb_String;
 
 pub mod media_type {
     pub mod media_type_suffix;
@@ -53,8 +55,12 @@ pub mod media_type {
     pub mod media_type_tree;
 }
 
-pub use self::media_type::media_type_suffix::MediaTypeSuffix;
-pub use self::media_type::media_type_supertype::MediaTypeSupertype;
-pub use self::media_type::media_type_text::MediaTypeText;
-pub use self::media_type::media_type_tree::MediaTypeTree;
+pub use self::media_type::media_type_suffix::MediaTypeSuffix_str;
+pub use self::media_type::media_type_suffix::MediaTypeSuffix_String;
+pub use self::media_type::media_type_supertype::MediaTypeSupertype_str;
+pub use self::media_type::media_type_supertype::MediaTypeSupertype_String;
+pub use self::media_type::media_type_text::MediaTypeText_str;
+pub use self::media_type::media_type_text::MediaTypeText_String;
+pub use self::media_type::media_type_tree::MediaTypeTree_str;
+pub use self::media_type::media_type_tree::MediaTypeTree_String;
 

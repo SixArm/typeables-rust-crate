@@ -2,10 +2,10 @@
 fn test_namespacing() {
     use ::typeables::*;
 
-    let x: Noun = "x".into();
+    let x: &Noun_str = "x";
     assert_eq!(x, "x");
 
-    let x: Verb = "x".into();
+    let x: &Verb_str = "x";
     assert_eq!(x, "x");
     
 }

@@ -1,13 +1,25 @@
-/// Media type supertype
-///
-/// # Examples
-///
-/// ```
-/// let x: MediaTypeSupertype = "text".into();
-/// let x: MediaTypeSupertype = "image".into();
-/// let x: MediaTypeSupertype = "audio".into();
-/// let x: MediaTypeSupertype = "video".into();
-/// let x: MediaTypeSupertype = "application".into();
-/// ```
+//! Media type supertype
 
-pub type MediaTypeSupertype = String;
+/// Examples:
+/// ```
+/// # use ::typeables::*;
+/// let x: &MediaTypeSupertype_str = "text";
+/// let x: &MediaTypeSupertype_str = "image";
+/// let x: &MediaTypeSupertype_str = "audio";
+/// let x: &MediaTypeSupertype_str = "video";
+/// let x: &MediaTypeSupertype_str = "application";
+/// ```
+#[allow(non_camel_case_types)] 
+pub type MediaTypeSupertype_str = str;
+
+/// Examples:
+/// ```
+/// # use ::typeables::*;
+/// let x: MediaTypeSupertype_String = "text".into();
+/// let x: MediaTypeSupertype_String = "image".into();
+/// let x: MediaTypeSupertype_String = "audio".into();
+/// let x: MediaTypeSupertype_String = "video".into();
+/// let x: MediaTypeSupertype_String = "application".into();
+/// ```
+#[allow(non_camel_case_types)] 
+pub type MediaTypeSupertype_String = String;
