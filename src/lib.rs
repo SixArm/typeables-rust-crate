@@ -6,8 +6,8 @@
 //! 
 //! ```rust
 //! use typeables::*;
-//! let y: &Noun_str = "book";
-//! let x: &Verb_str = "read";
+//! let x: &Noun_str = "book";
+//! let y: &Verb_str = "read";
 //! ```
 //! 
 //! # Purpose
@@ -19,7 +19,7 @@
 //! 
 //! # Implementation
 //! 
-//! The type aliases are all for Rust primitives and standards such as `String`. 
+//! The type aliases are all for Rust primitives and standards such as `str` and `String`. 
 //! 
 //! The type aliases are zero-overhead because they are replaced at compile time. 
 
@@ -36,6 +36,7 @@ pub use self::grammar::verb::Verb_String;
 pub mod media_type {
     pub mod media_type_parameter;
     pub mod media_type_parameters;
+    pub mod media_type_subtype;
     pub mod media_type_suffix;
     pub mod media_type_supertype;
     pub mod media_type_text;
@@ -45,6 +46,8 @@ pub mod media_type {
 pub use self::media_type::media_type_parameter::MediaTypeParameter_str;
 pub use self::media_type::media_type_parameter::MediaTypeParameter_String;
 pub use self::media_type::media_type_parameters::MediaTypeParameters_Vec_String;
+pub use self::media_type::media_type_subtype::MediaTypeSubtype_str;
+pub use self::media_type::media_type_subtype::MediaTypeSubtype_String;
 pub use self::media_type::media_type_suffix::MediaTypeSuffix_str;
 pub use self::media_type::media_type_suffix::MediaTypeSuffix_String;
 pub use self::media_type::media_type_supertype::MediaTypeSupertype_str;

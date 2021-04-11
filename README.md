@@ -6,8 +6,8 @@ For example, suppose we want to distinguish between a noun string and a verb str
 
 ```rust
 use typeables::*;
-let x: Verb = "read";
-let y: Noun = "book";
+let x: &Noun_str = "book";
+let y: &Verb_str = "read";
 ```
 
 ## Purpose
@@ -19,10 +19,21 @@ The purpose of this library is not any kind type-based coding, such as data enca
 
 ## Implementation
 
-The type aliases are all for Rust primitives and standards such as `String`. 
+The type aliases are all for Rust primitives and standards such as `str` and `String`. 
 
 The type aliases are zero-overhead because they are replaced at compile time. 
 
 
+## Types
 
+Grammar:
+
+* [`Noun`]
+* [`Verb`]
+
+Media Type:
+
+* [`MediaTypeSupertype`]
+* [`MediaTypeText`]
+* [`MediaTypeTree`]
 
