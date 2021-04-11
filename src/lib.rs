@@ -22,21 +22,6 @@
 //! The type aliases are all for Rust primitives and standards such as `String`. 
 //! 
 //! The type aliases are zero-overhead because they are replaced at compile time. 
-//! 
-//! 
-//! # Types
-//! 
-//! Grammar:
-//! 
-//! * [`Noun`]
-//! * [`Verb`]
-//! 
-//! Media Type:
-//! 
-//! * [`MediaTypeSuffix`]
-//! * [`MediaTypeSupertype`]
-//! * [`MediaTypeText`]
-//! * [`MediaTypeTree`]
 
 pub mod grammar {
     pub mod noun;
@@ -49,12 +34,15 @@ pub use self::grammar::verb::Verb_str;
 pub use self::grammar::verb::Verb_String;
 
 pub mod media_type {
+    pub mod media_type_parameter;
     pub mod media_type_suffix;
     pub mod media_type_supertype;
     pub mod media_type_text;
     pub mod media_type_tree;
 }
 
+pub use self::media_type::media_type_parameter::MediaTypeParameter_str;
+pub use self::media_type::media_type_parameter::MediaTypeParameter_String;
 pub use self::media_type::media_type_suffix::MediaTypeSuffix_str;
 pub use self::media_type::media_type_suffix::MediaTypeSuffix_String;
 pub use self::media_type::media_type_supertype::MediaTypeSupertype_str;
