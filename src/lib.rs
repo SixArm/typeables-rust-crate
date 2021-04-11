@@ -35,6 +35,7 @@ pub use self::grammar::verb::Verb_String;
 
 pub mod media_type {
     pub mod media_type_parameter;
+    pub mod media_type_parameters;
     pub mod media_type_suffix;
     pub mod media_type_supertype;
     pub mod media_type_text;
@@ -43,6 +44,7 @@ pub mod media_type {
 
 pub use self::media_type::media_type_parameter::MediaTypeParameter_str;
 pub use self::media_type::media_type_parameter::MediaTypeParameter_String;
+pub use self::media_type::media_type_parameters::MediaTypeParameters_Vec_String;
 pub use self::media_type::media_type_suffix::MediaTypeSuffix_str;
 pub use self::media_type::media_type_suffix::MediaTypeSuffix_String;
 pub use self::media_type::media_type_supertype::MediaTypeSupertype_str;
