@@ -6,8 +6,8 @@ For example, suppose we want to distinguish between a noun string and a verb str
 
 ```rust
 use typeables::*;
-let x: &Noun_str = "book";
-let y: &Verb_str = "read";
+let x: &NounStr = "book";
+let y: &VerbStr = "read";
 ```
 
 ## Purpose

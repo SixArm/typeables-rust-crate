@@ -1,15 +1,20 @@
 //! # Typeables: Rust crate of type aliases 
 //! 
-//! Typeables is a Rust crate of type aliases, intended to help improve source code self-documenting semantic type names. This helps with literate programming, domain driven design, and developer knowledge.
+//! Typeables is a Rust crate of type aliases, intended to help improve source code clarity. This helps with literate programming, domain driven design, and developer knowledge.
 //! 
-//! For example, suppose we want to distinguish between a noun string and a verb string:
-//! 
+//!
+//! # Examples
+//!
+//! Geolocation example:
+//!
 //! ```rust
-//! use typeables::*;
-//! let x: &Noun_str = "book";
-//! let y: &Verb_str = "read";
+//! # use typeables::geolocation::*;
+//! let a: LatitudeDecimalDegreeF64 = 40.75;
+//! let b: LongitudeDecimalDegreeF64 = 73.97;
+//! let c: AltitudeMeanSeaLevelMeterF64 = 56.00;
+//! let d: AltitudeAboveGroundLevelMeterF64 = 2.00;
 //! ```
-//! 
+//!
 //! # Purpose
 //! 
 //! The purpose of this crate is syntax sugar for better readabiliy.
@@ -23,37 +28,6 @@
 //! 
 //! The type aliases are zero-overhead because they are replaced at compile time. 
 
-pub mod grammar {
-    pub mod noun;
-    pub mod verb;
-}
-
-pub use self::grammar::noun::Noun_str;
-pub use self::grammar::noun::Noun_String;
-pub use self::grammar::verb::Verb_str;
-pub use self::grammar::verb::Verb_String;
-
-pub mod media_type {
-    pub mod media_type_parameter;
-    pub mod media_type_parameters;
-    pub mod media_type_subtype;
-    pub mod media_type_suffix;
-    pub mod media_type_supertype;
-    pub mod media_type_text;
-    pub mod media_type_tree;
-}
-
-pub use self::media_type::media_type_parameter::MediaTypeParameter_str;
-pub use self::media_type::media_type_parameter::MediaTypeParameter_String;
-pub use self::media_type::media_type_parameters::MediaTypeParameters_Vec_String;
-pub use self::media_type::media_type_subtype::MediaTypeSubtype_str;
-pub use self::media_type::media_type_subtype::MediaTypeSubtype_String;
-pub use self::media_type::media_type_suffix::MediaTypeSuffix_str;
-pub use self::media_type::media_type_suffix::MediaTypeSuffix_String;
-pub use self::media_type::media_type_supertype::MediaTypeSupertype_str;
-pub use self::media_type::media_type_supertype::MediaTypeSupertype_String;
-pub use self::media_type::media_type_text::MediaTypeText_str;
-pub use self::media_type::media_type_text::MediaTypeText_String;
-pub use self::media_type::media_type_tree::MediaTypeTree_str;
-pub use self::media_type::media_type_tree::MediaTypeTree_String;
-
+pub mod geolocation;
+pub mod grammar;
+pub mod media_type;
