@@ -34,18 +34,3 @@ The purpose of this library is not any kind type-based coding, such as data enca
 The type aliases are all for Rust primitives and standards such as `str` and `String`.
 
 The type aliases are zero-overhead because they are replaced at compile time.
-
-
-## Types
-
-Grammar:
-
-* [`Noun`]
-* [`Verb`]
-
-Media Type:
-
-* [`MediaTypeSupertype`]
-* [`MediaTypeText`]
-* [`MediaTypeTree`]
-
