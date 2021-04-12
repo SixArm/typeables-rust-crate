@@ -31,6 +31,6 @@ The purpose of this library is not any kind type-based coding, such as data enca
 
 ## Implementation
 
-The type aliases are all for Rust primitives and standards such as `str` and `String`.
+The type aliases are all for Rust primitives and standards such as strings (using `str` and `String`) and numbers (using `i64`, `u64`, `f64`, etc.)
 
 The type aliases are zero-overhead because they are replaced at compile time.
