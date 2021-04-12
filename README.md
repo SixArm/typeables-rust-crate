@@ -1,13 +1,25 @@
-# Typeables: Rust crate of type aliases 
+# Typeables: Rust crate of type aliases
 
 Typeables is a Rust crate of type aliases, intended to help improve source code self-documenting semantic type names. This helps with literate programming, domain driven design, and developer knowledge.
 
-For example, suppose we want to distinguish between a noun string and a verb string:
+## Examples
+
+Geolocation example:
 
 ```rust
-use typeables::*;
-let x: &NounStr = "book";
-let y: &VerbStr = "read";
+let a: LatitudeDecimalDegreeF64 = 40.75;
+let b: LongitudeDecimalDegreeF64 = 73.97;
+let c: AltitudeMeanSeaLevelMeterF64 = 56.00;
+```
+
+Geolocation example of combining types:
+
+```rust
+type Point = (
+    LatitudeDecimalDegreeF64,
+    LongitudeDecimalDegreeF64,
+    AltitudeMeanSeaLevelMeterF64.
+);
 ```
 
 ## Purpose
@@ -19,9 +31,9 @@ The purpose of this library is not any kind type-based coding, such as data enca
 
 ## Implementation
 
-The type aliases are all for Rust primitives and standards such as `str` and `String`. 
+The type aliases are all for Rust primitives and standards such as `str` and `String`.
 
-The type aliases are zero-overhead because they are replaced at compile time. 
+The type aliases are zero-overhead because they are replaced at compile time.
 
 
 ## Types
