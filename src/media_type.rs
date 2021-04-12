@@ -1,4 +1,7 @@
 //! Media type
+//!
+//! Example: "text/plain" means that some media (e.g. a disk file) 
+//! is "text" (e.g. not an image) and plain (e.g. not HTML).
 
 /// Media type text as `str`.
 ///

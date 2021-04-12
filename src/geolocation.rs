@@ -6,7 +6,6 @@
 //! let latitude: LatitudeDecimalDegreeF64 = 40.75;
 //! let longitude: LongitudeDecimalDegreeF64 = 73.97;
 //! let altitude: AltitudeMeanSeaLevelMeterF64 = 54.00;
-//! let elevation: ElevationMeanSeaLevelMeterF64 = 54.00;
 //! ```
 
 pub type LatitudeDecimalDegreeI8 = i8;

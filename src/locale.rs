@@ -1,3 +1,7 @@
+//! Locale
+//!
+//! Example: "en-US" means English - United States.
+
 /// Locale code as `str`, such as for language code and country code.
 ///
 /// Examples:
