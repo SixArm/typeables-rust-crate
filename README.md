@@ -4,22 +4,20 @@ Typeables is a Rust crate of type aliases, intended to help improve source code 
 
 ## Examples
 
-Geolocation example:
+Geolocation example of New York City Grand Central Terminal:
 
 ```rust
-let a: LatitudeDecimalDegreeF64 = 40.75;
-let b: LongitudeDecimalDegreeF64 = 73.97;
-let c: AltitudeMeanSeaLevelMeterF64 = 56.00;
+let lat: LatitudeDecimalDegreeF64 = 40.75; // Western hemisphere
+let lng: LongitudeDecimalDegreeF64 = -73.97; // Northern hemisphere
+let alt: AltitudeMeanSeaLevelMeterF64 = 54.00; // 54 meter elevation
 ```
 
-Geolocation example of combining types:
+Date-time example of NASA launching Mars Perseverance Rover:
 
 ```rust
-type Point = (
-    LatitudeDecimalDegreeF64,
-    LongitudeDecimalDegreeF64,
-    AltitudeMeanSeaLevelMeterF64.
-);
+let date: &DateYYYYXMMXDDStr = "2020-07-30"; // July 30, 2020
+let time: &TimeHHXMMXSSStr = "07:50:00"; // 7:50 a.m.
+let zone: &ZoneHHXMMStr = "-05:00"; // Eastern Daylight Time (EDT)
 ```
 
 ## Purpose
@@ -31,6 +29,7 @@ The purpose of this library is not any kind type-based coding, such as data enca
 
 ## Implementation
 
-The type aliases are all for Rust primitives and standards such as strings (using `str` and `String`) and numbers (using `i64`, `u64`, `f64`, etc.)
+The type aliases are all for Rust primitives and standards such as strings
+(using `str` and `String`) and numbers (using `i64`, `u64`, `f64`, et al.).
 
 The type aliases are zero-overhead because they are replaced at compile time.

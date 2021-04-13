@@ -5,25 +5,24 @@
 //!
 //! # Examples
 //!
-//! Geolocation example:
+//! Geolocation example of New York City Grand Central Terminal:
 //!
 //! ```rust
 //! # use typeables::geolocation::*;
-//! let a: LatitudeDecimalDegreeF64 = 40.75;
-//! let b: LongitudeDecimalDegreeF64 = 73.97;
-//! let c: AltitudeMeanSeaLevelMeterF64 = 56.00;
+//! let lat: LatitudeDecimalDegreeF64 = 40.75; // Western hemisphere
+//! let lng: LongitudeDecimalDegreeF64 = -73.97; // Northern hemisphere
+//! let alt: AltitudeMeanSeaLevelMeterF64 = 54.00; // 54 meter elevation
 //! ```
 //!
-//! Geolocation example of combining types:
+//! Date-time example of NASA launching Mars Perseverance Rover:
 //!
 //! ```rust
-//! # use typeables::geolocation::*;
-//! type Point = (
-//!     LatitudeDecimalDegreeF64,
-//!     LongitudeDecimalDegreeF64,
-//!     AltitudeMeanSeaLevelMeterF64
-//! );
+//! # use typeables::datetime::*;
+//! let date: &DateYYYYXMMXDDStr = "2020-07-30"; // July 30, 2020
+//! let time: &TimeHHXMMXSSStr = "07:50:00"; // 7:50 a.m.
+//! let zone: &ZoneHHXMMStr = "-05:00"; // Eastern Daylight Time (EDT)
 //! ```
+//!
 //!
 //! # Purpose
 //!
@@ -39,6 +38,7 @@
 //!
 //! The type aliases are zero-overhead because they are replaced at compile time.
 
+pub mod datetime;
 pub mod geolocation;
 pub mod grammar;
 pub mod locale;
