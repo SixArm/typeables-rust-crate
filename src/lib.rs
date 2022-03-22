@@ -43,3 +43,4 @@ pub mod geolocation;
 pub mod grammar;
 pub mod locale;
 pub mod media_type;
+pub mod phone;
