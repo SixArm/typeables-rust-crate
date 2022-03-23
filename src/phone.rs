@@ -1,4 +1,4 @@
-//! Phone E.164 format
+//! # Phone E.164 format
 //!
 //! https://en.wikipedia.org/wiki/E.164
 //!
@@ -34,126 +34,251 @@
 //!   * China fake phone numbers start with 13, 15, 18.
 //!   * India fake phone numbers start with 7, 8, 9.
 
-/// Phone E.164 text as `str`.
+/// Phone E.164 text as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: &PhoneE164TextStr = "+1 212 555 0000"; // United States example
-/// let x: &PhoneE164TextStr = "+86 13 0000 0000"; // China example
-/// let x: &PhoneE164TextStr = "+91 900 0000 000"; // India example
+/// let x: &PhoneE164TextAsTypeStr = "+1 212 555 0000"; // United States example
+/// let x: &PhoneE164TextAsTypeStr = "+86 13 0000 0000"; // China example
+/// let x: &PhoneE164TextAsTypeStr = "+91 900 0000 000"; // India example
 /// ```
-pub type PhoneE164TextStr = str;
+pub type PhoneE164TextAsTypeStr = str;
 
-/// Phone E.164 text as `String`.
+/// Phone E.164 text as type `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: PhoneE164TextString = "+1 212 555 0000".into(); // United States example
-/// let x: PhoneE164TextString = "+86 13 0000 0000".into(); // China example
-/// let x: PhoneE164TextString = "+91 900 0000 000".into(); // India example
+/// let x: PhoneE164TextAsTypeString = String::from("+1 212 555 0000"); // United States example
+/// let x: PhoneE164TextAsTypeString = String::from("+86 13 0000 0000"); // China example
+/// let x: PhoneE164TextAsTypeString = String::from("+91 900 0000 000"); // India example
 /// ```
-pub type PhoneE164TextString = String;
+pub type PhoneE164TextAsTypeString = String;
 
-/// Phone E.164 country code as `str`.
+/// Phone E.164 text as struct `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: &PhoneE164CountryCodeStr = "1"; // United States
-/// let x: &PhoneE164CountryCodeStr = "86"; // China
-/// let x: &PhoneE164CountryCodeStr = "91"; // India
+/// let x = PhoneE164TextAsStructStr("+1 212 555 0000"); // United States example
+/// let x = PhoneE164TextAsStructStr("+86 13 0000 0000"); // China example
+/// let x = PhoneE164TextAsStructStr("+91 900 0000 000"); // India example
 /// ```
-pub type PhoneE164CountryCodeStr = str;
+pub struct PhoneE164TextAsStructStr(pub &'static str);
 
-/// Phone E.164 country code as `String`.
+/// Phone E.164 text as struct `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: PhoneE164CountryCodeString = "1".into(); // United States
-/// let x: PhoneE164CountryCodeString = "86".into(); // China
-/// let x: PhoneE164CountryCodeString = "91".into(); // India
+/// let x = PhoneE164TextAsStructString(String::from("+1 212 555 0000")); // United States example
+/// let x = PhoneE164TextAsStructString(String::from("+86 13 0000 0000")); // China example
+/// let x = PhoneE164TextAsStructString(String::from("+91 900 0000 000")); // India example
 /// ```
-pub type PhoneE164CountryCodeString = String;
+pub struct PhoneE164TextAsStructString(pub String);
 
-/// Phone E.164 national destination code as `str`.
+/// Phone E.164 country code as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: &PhoneE164NationalDestinationCodeStr = "212"; // United States + New York City
-/// let x: &PhoneE164NationalDestinationCodeStr = "10"; // China + Beijing
-/// let x: &PhoneE164NationalDestinationCodeStr = "11"; // India + Delhi
+/// let x: &PhoneE164CountryCodeAsTypeStr = "1"; // United States
+/// let x: &PhoneE164CountryCodeAsTypeStr = "86"; // China
+/// let x: &PhoneE164CountryCodeAsTypeStr = "91"; // India
 /// ```
-pub type PhoneE164NationalDestinationCodeStr = str;
+pub type PhoneE164CountryCodeAsTypeStr = str;
 
-/// Phone E.164 national destination code as `String`.
+/// Phone E.164 country code as type `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: PhoneE164NationalDestinationCodeString = "212".into(); // United States + New York City
-/// let x: PhoneE164NationalDestinationCodeString = "10".into(); // China + Beijing
-/// let x: PhoneE164NationalDestinationCodeString = "11".into(); // India + Delhi
+/// let x: PhoneE164CountryCodeAsTypeString = String::from("1"); // United States
+/// let x: PhoneE164CountryCodeAsTypeString = String::from("86"); // China
+/// let x: PhoneE164CountryCodeAsTypeString = String::from("91"); // India
 /// ```
-pub type PhoneE164NationalDestinationCodeString = String;
+pub type PhoneE164CountryCodeAsTypeString = String;
 
-/// Phonee E.164 subscriber number as `str`.
+/// Phone E.164 country code as struct `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: &PhoneE164SubscriberNumberStr = "555 0000"; // United States example
-/// let x: &PhoneE164SubscriberNumberStr = "0000 0000"; // China example
-/// let x: &PhoneE164SubscriberNumberStr = "0000 000"; // India example
+/// let x = PhoneE164CountryCodeAsStructStr("1"); // United States
+/// let x = PhoneE164CountryCodeAsStructStr("86"); // China
+/// let x = PhoneE164CountryCodeAsStructStr("91"); // India
 /// ```
-pub type PhoneE164SubscriberNumberStr = str;
+pub struct PhoneE164CountryCodeAsStructStr(pub &'static str);
 
-/// Phonee E.164 subscriber number as `String`.
+/// Phone E.164 country code as struct `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: PhoneE164SubscriberNumberString = "555 0000".into(); // United States example
-/// let x: PhoneE164SubscriberNumberString = "0000 0000".into(); // China example
-/// let x: PhoneE164SubscriberNumberString = "0000 000".into(); // India example
+/// let x = PhoneE164CountryCodeAsStructString(String::from("1")); // United States
+/// let x = PhoneE164CountryCodeAsStructString(String::from("86")); // China
+/// let x = PhoneE164CountryCodeAsStructString(String::from("91")); // India
 /// ```
-pub type PhoneE164SubscriberNumberString = String;
+pub struct PhoneE164CountryCodeAsStructString(pub String);
 
-/// Phone E.164 group identification code as `str`.
+/// Phone E.164 national destination code as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: &PhoneE164GroupIdentificationCodeStr = "TODO";
+/// let x: &PhoneE164NationalDestinationCodeAsTypeStr = "212"; // United States + New York City
+/// let x: &PhoneE164NationalDestinationCodeAsTypeStr = "10"; // China + Beijing
+/// let x: &PhoneE164NationalDestinationCodeAsTypeStr = "11"; // India + Delhi
 /// ```
-pub type PhoneE164GroupIdentificationCodeStr = str;
+pub type PhoneE164NationalDestinationCodeAsTypeStr = str;
 
-/// Phone E.164 group identification code as `String`.
+/// Phone E.164 national destination code as type `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: PhoneE164GroupIdentificationCodeString = "TODO".into();
+/// let x: PhoneE164NationalDestinationCodeAsTypeString = String::from("212"); // United States + New York City
+/// let x: PhoneE164NationalDestinationCodeAsTypeString = String::from("10"); // China + Beijing
+/// let x: PhoneE164NationalDestinationCodeAsTypeString = String::from("11"); // India + Delhi
 /// ```
-pub type PhoneE164GroupIdentificationCodeString = String;
+pub type PhoneE164NationalDestinationCodeAsTypeString = String;
 
-/// Phone E.164 trial identification code as `str`.
+/// Phone E.164 national destination code as struct `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: &PhoneE164TrialIdentificationCodeStr = "TODO";
+/// let x = PhoneE164NationalDestinationCodeAsStructStr("212"); // United States + New York City
+/// let x = PhoneE164NationalDestinationCodeAsStructStr("10"); // China + Beijing
+/// let x = PhoneE164NationalDestinationCodeAsStructStr("11"); // India + Delhi
 /// ```
-pub type PhoneE164TrialIdentificationCodeStr = str;
+pub struct PhoneE164NationalDestinationCodeAsStructStr(pub &'static str);
 
-/// Phone E.164 trial identification code as `String`.
+/// Phone E.164 national destination code as struct `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::phone::*;
-/// let x: PhoneE164TrialIdentificationCodeString = "TODO".into();
+/// let x = PhoneE164NationalDestinationCodeAsStructString(String::from("212")); // United States + New York City
+/// let x = PhoneE164NationalDestinationCodeAsStructString(String::from("10")); // China + Beijing
+/// let x = PhoneE164NationalDestinationCodeAsStructString(String::from("11")); // India + Delhi
 /// ```
-pub type PhoneE164TrialIdentificationCodeString = String;
+pub struct PhoneE164NationalDestinationCodeAsStructString(pub String);
+
+/// Phonee E.164 subscriber number as type `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x: &PhoneE164SubscriberNumberAsTypeStr = "555 0000"; // United States example
+/// let x: &PhoneE164SubscriberNumberAsTypeStr = "0000 0000"; // China example
+/// let x: &PhoneE164SubscriberNumberAsTypeStr = "0000 000"; // India example
+/// ```
+pub type PhoneE164SubscriberNumberAsTypeStr = str;
+
+/// Phonee E.164 subscriber number as type `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x: PhoneE164SubscriberNumberAsTypeString = String::from("555 0000"); // United States example
+/// let x: PhoneE164SubscriberNumberAsTypeString = String::from("0000 0000"); // China example
+/// let x: PhoneE164SubscriberNumberAsTypeString = String::from("0000 000"); // India example
+/// ```
+pub type PhoneE164SubscriberNumberAsTypeString = String;
+
+/// Phonee E.164 subscriber number as struct `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x = PhoneE164SubscriberNumberAsStructStr("555 0000"); // United States example
+/// let x = PhoneE164SubscriberNumberAsStructStr("0000 0000"); // China example
+/// let x = PhoneE164SubscriberNumberAsStructStr("0000 000"); // India example
+/// ```
+pub struct PhoneE164SubscriberNumberAsStructStr(pub &'static str);
+
+/// Phonee E.164 subscriber number as struct `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x = PhoneE164SubscriberNumberAsStructString(String::from("555 0000")); // United States example
+/// let x = PhoneE164SubscriberNumberAsStructString(String::from("0000 0000")); // China example
+/// let x = PhoneE164SubscriberNumberAsStructString(String::from("0000 000")); // India example
+/// ```
+pub struct PhoneE164SubscriberNumberAsStructString(pub String);
+
+
+/// Phone E.164 group identification code as type `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x: &PhoneE164GroupIdentificationCodeAsTypeStr = "TODO";
+/// ```
+pub type PhoneE164GroupIdentificationCodeAsTypeStr = str;
+
+/// Phone E.164 group identification code as type `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x: PhoneE164GroupIdentificationCodeAsTypeString = String::from("TODO");
+/// ```
+pub type PhoneE164GroupIdentificationCodeAsTypeString = String;
+
+/// Phone E.164 group identification code as struct `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x = PhoneE164GroupIdentificationCodeAsStructStr("TODO");
+/// ```
+pub struct PhoneE164GroupIdentificationCodeAsStructStr(pub &'static str);
+
+/// Phone E.164 group identification code as struct `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x = PhoneE164GroupIdentificationCodeAsStructString(String::from("TODO"));
+/// ```
+pub struct PhoneE164GroupIdentificationCodeAsStructString(pub String);
+
+/// Phone E.164 trial identification code as type `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x: &PhoneE164TrialIdentificationCodeAsTypeStr = "TODO";
+/// ```
+pub type PhoneE164TrialIdentificationCodeAsTypeStr = str;
+
+/// Phone E.164 trial identification code as type `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x: PhoneE164TrialIdentificationCodeAsTypeString = String::from("TODO");
+/// ```
+pub type PhoneE164TrialIdentificationCodeAsTypeString = String;
+
+/// Phone E.164 trial identification code as struct `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x = PhoneE164TrialIdentificationCodeAsStructStr("TODO");
+/// ```
+pub struct PhoneE164TrialIdentificationCodeAsStructStr(pub &'static str);
+
+/// Phone E.164 trial identification code as struct `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::phone::*;
+/// let x = PhoneE164TrialIdentificationCodeAsStructString(String::from("TODO"));
+/// ```
+pub struct PhoneE164TrialIdentificationCodeAsStructString(pub String);
