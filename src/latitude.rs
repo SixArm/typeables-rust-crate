@@ -31,7 +31,7 @@
 //! let latitude_dd: LatitudeAsDecimalDegreeAsTypeF64 = 40.652687;
 //! ```
 //!
-//! Example as Degree Minute Second (DSM) representation:
+//! Example as Degree Minute Second (DMS) representation:
 //! 
 //! ```rust
 //! # use ::typeables::latitude::*;
@@ -39,13 +39,13 @@
 //! let latitude_dm_minute: LatitudeAsDegreeMinuteWithMinuteAsTypeF32 = 39.16122;
 //! ```
 //! 
-//! Example as Degree Minute Second (DSM) representation:
+//! Example as Degree Minute Second (DMS) representation:
 //!
 //! ```rust
 //! # use ::typeables::latitude::*;
-//! let latitude_dsm_degree: LatitudeAsDegreeMinuteSecondWithDegreeAsTypeI16 = 40;
-//! let latitude_dsm_minute: LatitudeAsDegreeMinuteSecondWithMinuteAsTypeI8 = 39;
-//! let latitude_dsm_second: LatitudeAsDegreeMinuteSecondWithSecondAsTypeF32 = 9.6732;
+//! let latitude_dms_degree: LatitudeAsDegreeMinuteSecondWithDegreeAsTypeI16 = 40;
+//! let latitude_dms_minute: LatitudeAsDegreeMinuteSecondWithMinuteAsTypeI8 = 39;
+//! let latitude_dms_second: LatitudeAsDegreeMinuteSecondWithSecondAsTypeF32 = 9.6732;
 //! ```
 
 //// Latitude as Decimal Degree (DD)
