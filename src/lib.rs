@@ -35,14 +35,14 @@
 //!
 //! ```rust
 //! # use ::typeables::year::*;
-//! let x = YearAsStructI16(2022); // Year as struct tupple wrapper
+//! let x = YearAsStructI16(2022); // Year as struct tuple wrapper
 //! ```
 //!
 //! Example usage for function definitions:
 //!
 //! ```rust
 //! # use ::typeables::year::*;
-//! fn f(x: YearAsTypeI16) { // Year as typpe alias
+//! fn f(x: YearAsTypeI16) { // Year as type alias
 //!     println!("Year {}", x)
 //! }
 //! ```
@@ -96,7 +96,7 @@
 //! Example function definitions:
 //!
 //! ```rust
-//! fn f(x: i16) { // Without typeables.
+//! fn f(x: i16) { // Without typeables
 //!     println!("Year {}", x)
 //! }
 //! ```
@@ -121,7 +121,7 @@
 //! # fn f(x: i16) { // Without Typeables
 //! #     println!("Year {}", x)
 //! # }
-//! f(1); // Without typeables.
+//! f(1); // Without typeables
 //! ```
 //!
 //! ```rust
@@ -286,7 +286,7 @@
 //!
 //!   * Etc.
 //!
-//! You can use the same naming convention, and the code looks like this:
+//! The code looks like this:
 //!
 //! ```rust
 //! # use ::typeables::elevation::*;
@@ -360,7 +360,7 @@
 //! pub type FooAsTypeString = String;
 //! ```
 //!
-//! Naming convention for struct tuples for numbers:
+//! Naming convention for struct tuples:
 //!
 //! ```rust
 //! pub struct FooAsStructI8(pub i8);

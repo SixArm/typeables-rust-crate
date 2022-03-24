@@ -33,13 +33,13 @@ let x: YearAsTypeI16 = 2022; // Year as type alias
 ```
 
 ```rust
-let x = YearAsStructI16(2022); // Year as struct tupple wrapper
+let x = YearAsStructI16(2022); // Year as struct tuple wrapper
 ```
 
 Example usage for function definitions:
 
 ```rust
-fn f(x: YearAsTypeI16) { // Year as typpe alias
+fn f(x: YearAsTypeI16) { // Year as type alias
     println!("Year {}", x)
 }
 ```
@@ -82,7 +82,7 @@ let x = YearAsStructI16(2022); // Upgrade 2 adds struct tuple
 Example function definitions:
 
 ```rust
-fn f(x: i16) { // Without typeables.
+fn f(x: i16) { // Without typeables
     println!("Year {}", x)
 }
 ```
@@ -102,7 +102,7 @@ fn f(x: YearAsStructI16) {  // Upgrade 2 adds struct tuple
 Example function calls:
 
 ```rust
-f(1); // Without typeables.
+f(1); // Without typeables
 ```
 
 ```rust
@@ -240,7 +240,7 @@ Suppose your app also needs to keep track of:
 
   * Etc.
 
-You can use the same naming convention, and the code looks like this:
+The code looks like this:
 
 ```rust
 pub struct ElevationAsAboveGroundLevelAsMeterAsStructI16(pub i16);
@@ -287,6 +287,21 @@ Examples of implementation names:
   * Use "StructString" not "SS".
 
 
+### Prefer singular over plural
+
+Examples of representation names:
+
+  * Use "Decimal Degree" not "Decimal Degrees"
+
+  * Use "Degree Minute Second" not "Degrees Minutes Seconds"
+
+Examples of unit names:
+
+  * Use "Meter" not "Meters".
+
+  * Use "Second" not "Seconds"
+
+
 ### Naming conventions
 
 Naming convention for type aliass:
@@ -313,7 +328,7 @@ pub type FooAsTypeStr = str;
 pub type FooAsTypeString = String;
 ```
 
-Naming convention for struct tuples for numbers:
+Naming convention for struct tuples:
 
 ```rust
 pub struct FooAsStructI8(pub i8);
