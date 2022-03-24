@@ -28,58 +28,114 @@
 //! carried out; past, to indicate that an action has been done; future, to
 //! indicate that an action will be done.
 
-/// Noun as `str`.
+/// Noun as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::grammar::*;
-/// let x: &NounStr = "Alice"; // person
-/// let x: &NounStr = "beach"; // place
-/// let x: &NounStr = "clock"; // thing
-/// let x: &NounStr = "dream"; // idea
-/// let x: &NounStr = "eagle"; // animal
-/// let x: &NounStr = "fruit"; // plant
+/// let x: &NounAsTypeStr = "Alice"; // person
+/// let x: &NounAsTypeStr = "beach"; // place
+/// let x: &NounAsTypeStr = "clock"; // thing
+/// let x: &NounAsTypeStr = "dream"; // idea
+/// let x: &NounAsTypeStr = "eagle"; // animal
+/// let x: &NounAsTypeStr = "fruit"; // plant
 /// ```
-pub type NounStr = str;
+pub type NounAsTypeStr = str;
 
-/// Noun as `String`.
+/// Noun as type `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::grammar::*;
-/// let x: NounString = "Alice".into(); // person
-/// let x: NounString = "beach".into(); // place
-/// let x: NounString = "clock".into(); // thing
-/// let x: NounString = "dream".into(); // idea
-/// let x: NounString = "eagle".into(); // animal
-/// let x: NounString = "fruit".into(); // plant
+/// let x: NounAsTypeString = String::from("Alice"); // person
+/// let x: NounAsTypeString = String::from("beach"); // place
+/// let x: NounAsTypeString = String::from("clock"); // thing
+/// let x: NounAsTypeString = String::from("dream"); // idea
+/// let x: NounAsTypeString = String::from("eagle"); // animal
+/// let x: NounAsTypeString = String::from("fruit"); // plant
 /// ```
-pub type NounString = String;
+pub type NounAsTypeString = String;
 
-/// Verb as `str`.
+/// Noun as struct `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::grammar::*;
-/// let x: &VerbStr = "like"; // action transitive verb e.g. "I like you."
-/// let x: &VerbStr = "walk"; // action intransitive verb e.g. "I walk."
-/// let x: &VerbStr = "feel"; // auxiliary verb a.k.a. linking verb e.g. "I feel happy"
-/// let x: &VerbStr = "seem"; // auxiliary verb a.k.a. linking verb e.g. "You seem happy."
-/// let x: &VerbStr = "will"; // modal verb a.k.a. helping verb e.g. "I will walk."
-/// let x: &VerbStr = "must"; // modal verb a.k.a. helping verb e.g. "I must walk."
+/// let x = NounAsStructStr("Alice"); // person
+/// let x = NounAsStructStr("beach"); // place
+/// let x = NounAsStructStr("clock"); // thing
+/// let x = NounAsStructStr("dream"); // idea
+/// let x = NounAsStructStr("eagle"); // animal
+/// let x = NounAsStructStr("fruit"); // plant
 /// ```
-pub type VerbStr = str;
+pub struct NounAsStructStr(pub &'static str);
 
-/// Verb as `String`.
+/// Noun as struct `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::grammar::*;
-/// let x: VerbString = "like".into(); // action transitive verb e.g. "I like you."
-/// let x: VerbString = "walk".into(); // action intransitive verb e.g. "I walk."
-/// let x: VerbString = "feel".into(); // auxiliary verb a.k.a. linking verb e.g. "I feel happy"
-/// let x: VerbString = "seem".into(); // auxiliary verb a.k.a. linking verb e.g. "You seem happy."
-/// let x: VerbString = "will".into(); // modal verb a.k.a. helping verb e.g. "I will walk."
-/// let x: VerbString = "must".into(); // modal verb a.k.a. helping verb e.g. "I must walk."
+/// let x = NounAsStructString(String::from("Alice")); // person
+/// let x = NounAsStructString(String::from("beach")); // place
+/// let x = NounAsStructString(String::from("clock")); // thing
+/// let x = NounAsStructString(String::from("dream")); // idea
+/// let x = NounAsStructString(String::from("eagle")); // animal
+/// let x = NounAsStructString(String::from("fruit")); // plant
 /// ```
-pub type VerbString = String;
+pub struct NounAsStructString(pub String);
+
+/// Verb as type `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::grammar::*;
+/// let x: &VerbAsTypeStr = "like"; // action transitive verb e.g. "I like you."
+/// let x: &VerbAsTypeStr = "walk"; // action intransitive verb e.g. "I walk."
+/// let x: &VerbAsTypeStr = "feel"; // auxiliary verb a.k.a. linking verb e.g. "I feel happy"
+/// let x: &VerbAsTypeStr = "seem"; // auxiliary verb a.k.a. linking verb e.g. "You seem happy."
+/// let x: &VerbAsTypeStr = "will"; // modal verb a.k.a. helping verb e.g. "I will walk."
+/// let x: &VerbAsTypeStr = "must"; // modal verb a.k.a. helping verb e.g. "I must walk."
+/// ```
+pub type VerbAsTypeStr = str;
+
+/// Verb as type `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::grammar::*;
+/// let x: VerbAsTypeString = String::from("like"); // action transitive verb e.g. "I like you."
+/// let x: VerbAsTypeString = String::from("walk"); // action intransitive verb e.g. "I walk."
+/// let x: VerbAsTypeString = String::from("feel"); // auxiliary verb a.k.a. linking verb e.g. "I feel happy"
+/// let x: VerbAsTypeString = String::from("seem"); // auxiliary verb a.k.a. linking verb e.g. "You seem happy."
+/// let x: VerbAsTypeString = String::from("will"); // modal verb a.k.a. helping verb e.g. "I will walk."
+/// let x: VerbAsTypeString = String::from("must"); // modal verb a.k.a. helping verb e.g. "I must walk."
+/// ```
+pub type VerbAsTypeString = String;
+
+/// Verb as struct `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::grammar::*;
+/// let x = VerbAsStructStr("like"); // action transitive verb e.g. "I like you."
+/// let x = VerbAsStructStr("walk"); // action intransitive verb e.g. "I walk."
+/// let x = VerbAsStructStr("feel"); // auxiliary verb a.k.a. linking verb e.g. "I feel happy"
+/// let x = VerbAsStructStr("seem"); // auxiliary verb a.k.a. linking verb e.g. "You seem happy."
+/// let x = VerbAsStructStr("will"); // modal verb a.k.a. helping verb e.g. "I will walk."
+/// let x = VerbAsStructStr("must"); // modal verb a.k.a. helping verb e.g. "I must walk."
+/// ```
+pub struct VerbAsStructStr(pub &'static str);
+
+/// Verb as struct `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::grammar::*;
+/// let x = VerbAsStructString(String::from("like")); // action transitive verb e.g. "I like you."
+/// let x = VerbAsStructString(String::from("walk")); // action intransitive verb e.g. "I walk."
+/// let x = VerbAsStructString(String::from("feel")); // auxiliary verb a.k.a. linking verb e.g. "I feel happy"
+/// let x = VerbAsStructString(String::from("seem")); // auxiliary verb a.k.a. linking verb e.g. "You seem happy."
+/// let x = VerbAsStructString(String::from("will")); // modal verb a.k.a. helping verb e.g. "I will walk."
+/// let x = VerbAsStructString(String::from("must")); // modal verb a.k.a. helping verb e.g. "I must walk."
+/// ```
+pub struct VerbAsStructString(pub String);
