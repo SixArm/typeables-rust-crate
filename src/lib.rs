@@ -1,4 +1,4 @@
-//! # Typeables: Rust crate of type aliases
+//! # Typeables: Rust crate of type aliases and struct tuples
 //!
 //! Typeables is a Rust crate of semantic types, such as for representing unit
 //! names, content types, phone numbers, email addresses, and the like. Typeables is
@@ -13,13 +13,13 @@
 //! A type alias is a nickname such as:
 //!
 //! ```rust
-//! pub type Foo = i16; 
+//! pub type Foo = i16;
 //! let x: Foo = 1;
 //! println!("x is {}", x)
 //! ```
 //!
 //! A struct tuple is a wrapper such as:
-//! 
+//!
 //! ```rust
 //! pub struct Foo(pub i16);
 //! let x = Foo(1);
@@ -46,7 +46,7 @@
 //!     println!("Year {}", x)
 //! }
 //! ```
-//! 
+//!
 //! ```rust
 //! # use ::typeables::year::*;
 //! fn f(x: YearAsStructI16) { // Year as struct tuple
@@ -55,7 +55,7 @@
 //! ```
 //!
 //! Example usage for function calls:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::year::*;
 //! # fn f(x: YearAsTypeI16) { println!("Year {}", x) }
@@ -193,7 +193,7 @@
 //!
 //! ```rust
 //! fn f(year: i16, month: i16) {
-//!     println!("Year {} Month {}", year, month) 
+//!     println!("Year {} Month {}", year, month)
 //! }
 //! ```
 //!
@@ -202,7 +202,7 @@
 //! ```rust
 //! # use ::typeables::{year::*, month::*};
 //! # fn f(year: i16, month: i16) {
-//! #     println!("Year {} Month {}", year, month) 
+//! #     println!("Year {} Month {}", year, month)
 //! # }
 //! let year = 2022;
 //! let month = 12;
@@ -216,7 +216,7 @@
 //! ```rust
 //! # use ::typeables::{year::*, month::*};
 //! fn f(year: YearAsTypeI16, month: MonthAsTypeI16) {
-//!     println!("Year {} Month {}", year, month) 
+//!     println!("Year {} Month {}", year, month)
 //! }
 //! ```
 //!
@@ -225,7 +225,7 @@
 //! ```rust
 //! # use ::typeables::{year::*, month::*};
 //! fn f(year: YearAsStructI16, month: MonthAsStructI16) {
-//!     println!("Year {} Month {}", year.0, month.0) 
+//!     println!("Year {} Month {}", year.0, month.0)
 //! }
 //! ```
 //!
@@ -234,7 +234,7 @@
 //! ```rust
 //! # use ::typeables::{year::*, month::*};
 //! # fn f(year: YearAsStructI16, month: MonthAsStructI16) {
-//! #    println!("Year {} Month {}", year.0, month.0) 
+//! #    println!("Year {} Month {}", year.0, month.0)
 //! # }
 //! let year = YearAsStructI16(2022);
 //! let month = MonthAsStructI16(12);
@@ -251,7 +251,7 @@
 //! You want to keep track of:
 //!
 //!   * Aircraft altitudes.
-//!  
+//! 
 //!   * Representation as "Above Ground Level (AGL)" such as the height of the aircraft above the runway during takeoff or landing, or as "Mean Sea Level (MSL)" such as the worldwide height of the aircraft during cruising flight.
 //!
 //!   * Unit of measurement as "Meter" which is the international system, or as "Foot" which is the United States system.
@@ -261,11 +261,11 @@
 //! You can use this naming convention:
 //!
 //!   * Semantic name "Altitude"
-//!  
+//! 
 //!   * As representation name "Above Ground Level" or "Mean Sea Level"
-//!  
+//! 
 //!   * As unit name "Meter" or "Foot"
-//!  
+//! 
 //!   * As primitive name "I16".
 //!
 //! The code looks like this:
@@ -312,13 +312,13 @@
 //! Examples of semantic names:
 //!
 //!   * Use "Latitude" not "Lat".
-//!  
+//! 
 //!   * Use "Longitude" not "Lon", "Lng", "Long".
 //!
 //! Examples of representation names:
 //!
 //!   * Use "Decimal Degree" not "DD"
-//!  
+//! 
 //!   * Use "Degree Minute Second" not "DMS".
 //!
 //! Examples of unit names:
@@ -462,7 +462,6 @@
 //! * Yet we discovered in practice that macros seem to interfere with some of our tooling.
 //!
 //! * For example, macros do not seem to work with some editors that inspect the Typeables crate in order to do autocomplete and autosuggest.
-//!
 
 // Misc
 pub mod currency;

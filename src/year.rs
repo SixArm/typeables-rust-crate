@@ -1,14 +1,14 @@
 //! # Year
 //!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::year::*;
 //! let x: YearAsTypeI16 = 2022;
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::year::*;
 //! let x = YearAsStructI16(2022);

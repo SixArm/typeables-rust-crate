@@ -1,27 +1,27 @@
 //! Date-time
 //!
 //! This module provides:
-//! 
+//!
 //!   * Year As (format)
-//! 
+//!
 //!   * Month As (format)
-//! 
+//!
 //!   * Day As (format)
-//! 
+//!
 //!   * Hour As (format)
-//! 
+//!
 //!   * Minute As (format)
-//! 
+//!
 //!   * Second As (format)
-//! 
+//!
 //!   * Date As (format)
-//! 
+//!
 //!   * Time As (format)
-//! 
+//!
 //!   * DateTime As (format)
-//! 
+//!
 //!   * Time Offset As (format)
-//! 
+//!
 //!   * Time Zone As (format)
 
 /// Year format as "YYYY" as type `str`.
@@ -165,7 +165,7 @@ pub struct DayAsDDAsStructString(pub String);
 /// Examples:
 /// ```
 /// # use ::typeables::datetime::*;
-/// let x: &HourAsHHAsTypeStr = "00"; // start of day a.k.a. midnight 
+/// let x: &HourAsHHAsTypeStr = "00"; // start of day a.k.a. midnight
 /// let x: &HourAsHHAsTypeStr = "23"; // finish of day a.k.a. 11 p.m.
 /// ```
 pub type HourAsHHAsTypeStr = str;
@@ -175,7 +175,7 @@ pub type HourAsHHAsTypeStr = str;
 /// Examples:
 /// ```
 /// # use ::typeables::datetime::*;
-/// let x: HourAsHHAsTypeString = String::from("00"); // start a.k.a. midnight 
+/// let x: HourAsHHAsTypeString = String::from("00"); // start a.k.a. midnight
 /// let x: HourAsHHAsTypeString = String::from("23"); // finish a.k.a. 11 p.m.
 /// ```
 pub type HourAsHHAsTypeString = String;
@@ -185,7 +185,7 @@ pub type HourAsHHAsTypeString = String;
 /// Examples:
 /// ```
 /// # use ::typeables::datetime::*;
-/// let x = HourAsHHAsStructStr("00"); // start of day a.k.a. midnight 
+/// let x = HourAsHHAsStructStr("00"); // start of day a.k.a. midnight
 /// let x = HourAsHHAsStructStr("23"); // finish of day a.k.a. 11 p.m.
 /// ```
 pub struct HourAsHHAsStructStr(pub &'static str);
@@ -195,7 +195,7 @@ pub struct HourAsHHAsStructStr(pub &'static str);
 /// Examples:
 /// ```
 /// # use ::typeables::datetime::*;
-/// let x = HourAsHHAsStructString(String::from("00")); // start a.k.a. midnight 
+/// let x = HourAsHHAsStructString(String::from("00")); // start a.k.a. midnight
 /// let x = HourAsHHAsStructString(String::from("23")); // finish a.k.a. 11 p.m.
 /// ```
 pub struct HourAsHHAsStructString(pub String);

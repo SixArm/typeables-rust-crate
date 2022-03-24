@@ -1,39 +1,39 @@
 //! # Month
 //!
 //! This module provides:
-//! 
+//!
 //!   * Month
-//! 
+//!
 //!   * Month Name
-//! 
-//! 
+//!
+//!
 //! ## Month
-//! 
+//!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::month::*;
 //! let x: MonthAsTypeI8 = 12;
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::month::*;
 //! let x = MonthAsStructI8(12);
 //! ```
-//! 
+//!
 //! ## Month Name
-//! 
+//!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::month::*;
 //! let x: &MonthNameAsTypeStr = "May";
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::month::*;
 //! let x = MonthNameAsStructStr("May");

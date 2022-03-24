@@ -1,30 +1,383 @@
-# Typeables: Rust crate of type aliases
+# Typeables: Rust crate of type aliases and struct tuples
 
-Typeables is a Rust crate of type aliases, intended to help improve source code self-documenting semantic type names. This helps with literate programming, domain driven design, and developer knowledge.
+Typeables is a Rust crate of semantic types, such as for representing unit
+names, content types, phone numbers, email addresses, and the like. Typeables is
+intended to help developers with domain driven design, knowledge transfer,
+compile-time safety, run-time diagnostics, and API integrations.
 
-## Examples
 
-Geolocation example of New York City Grand Central Terminal:
+### What does Typeables do?
 
-```rust
-let lat: LatitudeDecimalDegreeF64 = 40.75; // Western hemisphere
-let lng: LongitudeDecimalDegreeF64 = -73.97; // Northern hemisphere
-let alt: AltitudeMeanSeaLevelMeterF64 = 54.00; // 54 meter elevation
-```
+Typeables provides two flavors of every concept: a type alias and a struct tuple.
 
-Date-time example of NASA launching Mars Perseverance Rover:
+A type alias is a nickname such as:
 
 ```rust
-let date: &DateYYYYXMMXDDStr = "2020-07-30"; // July 30, 2020
-let time: &TimeHHXMMXSSStr = "07:50:00"; // 7:50 a.m.
-let zone: &ZoneHHXMMStr = "-05:00"; // Eastern Daylight Time (EDT)
+pub type Foo = i16;
+let x: Foo = 1;
+println!("x is {}", x)
 ```
 
-## Purpose
+A struct tuple is a wrapper such as:
 
-The purpose of this crate is syntax sugar for better readabiliy.
+```rust
+pub struct Foo(pub i16);
+let x = Foo(1);
+println!("x is {}", x.0)
+```
 
-The purpose of this library is not any kind type-based coding, such as data encapsulation, or parameter validation, or object oriented programming. If you want these kinds of aspects, we recommend looking at the crate `uom` (unit of measure) and the Rust book examples of the `newtype` pattern.
+Example usage:
+
+```rust
+let x: YearAsTypeI16 = 2022; // Year as type alias
+```
+
+```rust
+let x = YearAsStructI16(2022); // Year as struct tupple wrapper
+```
+
+Example usage for function definitions:
+
+```rust
+fn f(x: YearAsTypeI16) { // Year as typpe alias
+    println!("Year {}", x)
+}
+```
+
+```rust
+fn f(x: YearAsStructI16) { // Year as struct tuple
+    println!("Year {}", x.0) // Use the struct tuple field
+}
+```
+
+Example usage for function calls:
+
+```rust
+f(2022 as YearAsTypeI16); // Year as type alias
+```
+
+```rust
+f(YearAsStructI16(2022)); // Year as struct tuple
+```
+
+
+### How do I upgrade code with Typeables?
+
+Typeables aims to provide an upgrade path from weaker-type code to stronger-type code.
+
+Example variables:
+
+```rust
+let x = 2022; // Without Typeables
+```
+
+```rust
+let x = 2022 as YearAsTypeI16; // Upgrade 1 adds type alias
+```
+
+```rust
+let x = YearAsStructI16(2022); // Upgrade 2 adds struct tuple
+```
+
+Example function definitions:
+
+```rust
+fn f(x: i16) { // Without typeables.
+    println!("Year {}", x)
+}
+```
+
+```rust
+fn f(x: YearAsTypeI16) { // Upgrade 1 adds type alias
+    println!("Year {}", x)
+}
+```
+
+```rust
+fn f(x: YearAsStructI16) {  // Upgrade 2 adds struct tuple
+    println!("Year {}", x.0)
+}
+```
+
+Example function calls:
+
+```rust
+f(1); // Without typeables.
+```
+
+```rust
+f(1 as YearAsTypeI16); // Upgrade 1 adds type alias
+```
+
+```rust
+f(YearAsStructI16(1)); // Upgrade 2 adds struct tuple
+```
+
+The upgrade path is purely because of refactoring:
+
+* The upgrade is supposed to make the code clearer and stronger.
+
+* The upgrade is not supposed to change any user-visible behavior.
+
+
+## Semantics
+
+
+### Semantic examples
+
+Calendar examples:
+
+```rust
+let year = YearAsStructI16(2022);
+let month = MonthAsStructI8(12);
+```
+
+Geolocation examples of New York City Grand Central Terminal:
+
+```rust
+let latitude = LatitudeAsDecimalDegreeAsStructF32(40.75);
+let longitude = LongitudeAsDecimalDegreeAsStructF32(-73.97);
+```
+
+Date-time format examples of the NASA launch of the Mars Perseverance Rover:
+
+```rust
+let date_stamp = DateAsYYYYXMMXDDAsStructString(String::from("2020-07-30")); // Year 2020 on July 30th
+let time_stamp = TimeAsHHXMMXSSAsStructString(String::from("07:50:00")); // 7:50 in the morning
+let offset_stamp = TimeOffsetAsHHXMMAsStructString(String::from("-05:00")); // 5 hours ahead of UTC
+```
+
+
+### Why use semantic names?
+
+When you use semantic names, such as clear descriptions and purposeful naming
+conventions, then you help developers understand your code, and help compilers
+provide reliability, and help tools provide inspectability.
+
+Suppose your code has this function:
+
+```rust
+fn f(year: i16, month: i16) {
+    println!("Year {} Month {}", year, month)
+}
+```
+
+A developer can use your code like this:
+
+```rust
+let year = 2022;
+let month = 12;
+
+f(year, month); // right
+// f(month, year); // wrong, yet will compile and be a bug
+```
+
+You can make your code clearer by adding a type alias:
+
+```rust
+fn f(year: YearAsTypeI16, month: MonthAsTypeI16) {
+    println!("Year {} Month {}", year, month)
+}
+```
+
+You can make your code stronger by using a struct tuple:
+
+```rust
+fn f(year: YearAsStructI16, month: MonthAsStructI16) {
+    println!("Year {} Month {}", year.0, month.0)
+}
+```
+
+A developer can use your code like this:
+
+```rust
+let year = YearAsStructI16(2022);
+let month = MonthAsStructI16(12);
+
+f(year, month); // right
+// f(month, year); // wrong and won't compile
+```
+
+
+### Why use semantic names, representation names, unit names, and implementation names?
+
+Suppose you're writing an application for aircraft.
+
+You want to keep track of:
+
+  * Aircraft altitudes.
+
+  * Representation as "Above Ground Level (AGL)" such as the height of the aircraft above the runway during takeoff or landing, or as "Mean Sea Level (MSL)" such as the worldwide height of the aircraft during cruising flight.
+
+  * Unit of measurement as "Meter" which is the international system, or as "Foot" which is the United States system.
+
+  * The implemention as a signed integer 16-bit, because altitude can be negative in some rare areas such as Death Valley California, and your application may need to integrate with legacy code that requires signed integer 16-bit numbers.
+
+You can use this naming convention:
+
+  * Semantic name "Altitude"
+
+  * As representation name "Above Ground Level" or "Mean Sea Level"
+
+  * As unit name "Meter" or "Foot"
+
+  * As primitive name "I16".
+
+The code looks like this:
+
+```rust
+pub struct AltitudeAsAboveGroundLevelAsMeterAsStructI16(pub i16);
+pub struct AltitudeAsAboveGroundLevelAsFootAsStructI16(pub i16);
+pub struct AltitudeAsMeanSeaLevelAsMeterAsStructI16(pub i16);
+pub struct AltitudeAsMeanSeaLevelAsFootAsStructI16(pub i16);
+```
+
+Suppose your app also needs to keep track of:
+
+  * Airport elevations.
+
+  * The representation as "Above Ground Level (AGL)" such as the height of an airport building above the airport runway, or as "Mean Sea Level (MSG)" such as the worldwide height of the airporse runway.
+
+  * Etc.
+
+You can use the same naming convention, and the code looks like this:
+
+```rust
+pub struct ElevationAsAboveGroundLevelAsMeterAsStructI16(pub i16);
+pub struct ElevationAsAboveGroundLevelAsFootAsStructI16(pub i16);
+pub struct ElevationAsMeanSeaLevelAsMeterAsStructI16(pub i16);
+pub struct ElevationAsMeanSeaLevelAsFootAsStructI16(pub i16);
+```
+
+The naming convention is crystal clear and fully descriptive:
+
+* Developers can understand your code better, and how to use it.
+
+* Compilers can provide stronger compile-time guarantees.
+
+* Debuggers can provide crisper run-time diagnostics.
+
+* Editors can provide better auto-complete and auto-suggest.
+
+
+### Use words rather than abbreviations
+
+Examples of semantic names:
+
+  * Use "Latitude" not "Lat".
+
+  * Use "Longitude" not "Lon", "Lng", "Long".
+
+Examples of representation names:
+
+  * Use "Decimal Degree" not "DD"
+
+  * Use "Degree Minute Second" not "DMS".
+
+Examples of unit names:
+
+  * Use "Meter" not "M".
+
+  * Use "Second" not "S".
+
+Examples of implementation names:
+
+  * Use "TypeString" not "TS"
+
+  * Use "StructString" not "SS".
+
+
+### Naming conventions
+
+Naming convention for type aliass:
+
+```rust
+pub type FooAsTypeI8 = i8;
+pub type FooAsTypeI16 = i16;
+pub type FooAsTypeI32 = i32;
+pub type FooAsTypeI64 = i64;
+pub type FooAsTypeI128 = i128;
+pub type FooAsTypeISize = isize;
+
+pub type FooAsTypeU8 = u8;
+pub type FooAsTypeU16 = u16;
+pub type FooAsTypeU32 = u32;
+pub type FooAsTypeU64 = u64;
+pub type FooAsTypeU128 = u128;
+pub type FooAsTypeUSize = usize;
+
+pub type FooAsTypeF32 = f32;
+pub type FooAsTypeF64 = f64;
+
+pub type FooAsTypeStr = str;
+pub type FooAsTypeString = String;
+```
+
+Naming convention for struct tuples for numbers:
+
+```rust
+pub struct FooAsStructI8(pub i8);
+pub struct FooAsStructI16(pub i16);
+pub struct FooAsStructI32(pub i32);
+pub struct FooAsStructI64(pub i64);
+pub struct FooAsStructI128(pub i128);
+pub struct FooAsStructISize(pub isize);
+
+pub struct FooAsStructU8(pub u8);
+pub struct FooAsStructU16(pub u16);
+pub struct FooAsStructU32(pub u32);
+pub struct FooAsStructU64(pub u64);
+pub struct FooAsStructU128(pub u128);
+pub struct FooAsStructUSize(pub usize);
+
+pub struct FooAsStructF32(pub f32);
+pub struct FooAsStructF64(pub f64);
+
+pub struct FooAsStructStr(&'static String);
+pub struct FooAsStructString(pub String);
+```
+
+
+## Comparisons
+
+We recommend looking at the Rust crate `uom` (unit of measure) and the Rust book
+examples of the `newtype` pattern.
+
+
+### Comparison with uom
+
+Broadly speaking:
+
+* uom favors high-level work, such as automatic normalizations and conversions.
+
+* Typeables favors low-level work, such as exact representations and primitives.
+
+Quantities v. units v. primitives:
+
+* uom deliberately favors working with conceptual quantities (length, mass, time, …) rather than measurement units (meter, gram, second, …) and implementation primitives (pub i8, u16, f32, …).
+
+* Typeables favors working with explicit measurement units and explicit implementation primitives. When you want the concept of "length" and unit "meter" and primitive "f32" then you write "LengthAsMeterAsTypeF32".
+
+Normalization v. exactness:
+
+* uom deliberately normalizes values to their base units, such as normalizing 1 nanometer to 0.000000001 meter, and deliberately trades away representation capabilities (due to inexact conversions) and precision capabilties (due to bit limits).
+
+* Typeables favors exactness, never normaliziation. When you want the concept of "length" and unit "nanometer" and primitive "u128" for 128-bit unsigned integer precision, then you write "LengthAsNanometerAsTypeI128".
+
+
+### Comparison with Rust "New Type Idiom" a.k.a. "New Type Pattern"
+
+Broadly speaking:
+
+* The Rust "New Type Idiom" a.k.a. "New Type Pattern" is exactly what Typeables is doing with struct tuples. We like this idiom very much.
+
+* Typeables additionally provides type aliass. In practice we find this is an important way to help professional developers with larger codebases, because the developers can phase in the type aliass as hints to developers and to tools, then later on can phase in the struct tuples.
+
+Roll your own versus using Typeables crate:
+
+* You can certainly roll your own new type pattern, and you can use your own type names, or even use the Typeables type names.
+
+* The Typeables crate is helpful because it provides a bunch of definitions, so you can use the crate, then get all the benefits of the types, plus your tools can use the crate information, such as for editor tool autocomplete and autosuggest.
 
 
 ## Implementation
@@ -32,4 +385,33 @@ The purpose of this library is not any kind type-based coding, such as data enca
 The type aliases are all for Rust primitives and standards such as strings
 (using `str` and `String`) and numbers (using `i64`, `u64`, `f64`, et al.).
 
-The type aliases are zero-overhead because they are replaced at compile time.
+
+### Overhead
+
+Typeables has zero or near-zero runtime overhead:
+
+* A type alias is zero runtime overhead because the type alias is replaced at compile time.
+
+* A struct tuple is near-zero runtime overhead because the struct tuple is a wrapper with a field.
+
+
+### Typing
+
+Typeables is deliberately verbose.
+
+* We use editors with autocomplete and autosuggest, so typing is easy and fast.
+
+* We like long names for low-level clarity.
+
+* Typeables defines many type aliass and struct tuples. Typically these are fast during development because they're simple. Typically these are even faster during production because the Rust compiler can optimized these and also eliminate any that are not needed.
+
+
+### Macros
+
+The Typeables source code does not use macros.
+
+* We like macros in general.
+
+* Yet we discovered in practice that macros seem to interfere with some of our tooling.
+
+* For example, macros do not seem to work with some editors that inspect the Typeables crate in order to do autocomplete and autosuggest.

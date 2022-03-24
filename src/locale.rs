@@ -1,7 +1,7 @@
 //! # Locale
 //!
 //! Examples:
-//! 
+//!
 //!   * "en-US" means English - United States.
 //!   * "zh-CN" means Chinese - China (Simplified variant)
 //!   * "hi-IN" means Hindi - India

@@ -1,78 +1,78 @@
 //! # Day
 //!
 //! This module provides:
-//! 
+//!
 //!   * Day Name
-//! 
+//!
 //!   * Day Of Week
-//! 
+//!
 //!   * Day Of Month
-//! 
+//!
 //!   * Day Of Year
-//! 
+//!
 //!
 //! ## Day Name
-//! 
+//!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: &DayNameAsTypeStr = "Friday";
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x = DayNameAsStructStr("Friday");
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Day Of Week
-//! 
+//!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: DayOfWeekAsTypeI8 = 0; // Monday
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x = DayOfWeekAsStructI8(0); // Monday
 //! ```
 //!
-//! 
+//!
 //! ## Day Of Month
-//! 
+//!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: DayOfMonthAsTypeI8 = 31;
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x = DayOfMonthAsStructI8(31);
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Day Of Year
 //!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: DayOfYearAsTypeI16 = 365;
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x = DayOfYearAsStructI16(365);

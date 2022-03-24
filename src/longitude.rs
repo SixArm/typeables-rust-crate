@@ -1,5 +1,5 @@
 //! # Longitude
-//! 
+//!
 //! See the latitude documentation.
 
 //// Longitude as Decimal Degree (DD)

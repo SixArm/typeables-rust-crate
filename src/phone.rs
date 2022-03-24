@@ -16,10 +16,10 @@
 //! of the signaling messages. When dialing, the number must typically be
 //! prefixed with the appropriate international call prefix (in place of the
 //! plus sign), which is a trunk code to reach an international circuit from
-//! within the country of call origination. 
+//! within the country of call origination.
 //!
 //! E.164 phone number format contains: [+][country code][area code][local phone number]
-//! 
+//!
 //!   * `+` is the plus sign which indicates use of a country code.
 //!   * country code a.k.a. international dialer e.g. `1` is United States.
 //!   * national destination code a.k.a. area code e.g. `212` is New York City.

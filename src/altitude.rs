@@ -1,55 +1,55 @@
 //! # Altitude
 //!
 //! This module provides:
-//! 
+//!
 //!   * Altitude As Above Ground Level (AGL)
-//! 
+//!
 //!   * Altitude As Mean Sea Level (MSL)
-//! 
+//!
 //! See below for:
-//! 
+//!
 //!   * Altitude v. Elevation.
-//! 
+//!
 //!   * Above Ground Level (AGL) v. Mean Sea Level (MSL)
 //!
 //! Examples here are about an aircraft and airport:
-//! 
+//!
 //!   * Aircraft takeoff altitude is up to 300 meters above ground level.
 //!
 //!   * Aircraft cruising altitude is up to 13000 meters mean sea level.
-//! 
+//!
 //!   * Airport tower elevation is 90 meters above ground level.
-//! 
+//!
 //!   * Airport runway elevation is 1635 meters mean sea level.
-//! 
-//! 
+//!
+//!
 //! ## Altitude As Above Ground Level (AGL)
-//! 
+//!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::altitude::*;
 //! let takeoff: AltitudeAsAboveGroundLevelAsMeterAsTypeI16 = 300;
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::altitude::*;
 //! let takeoff = AltitudeAsAboveGroundLevelAsMeterAsStructI16(300);
 //! ```
-//! 
+//!
 //! //! ## Altitude As Mean Sea Level (MSL)
-//! 
+//!
 //! Example type alias:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::altitude::*;
 //! let cruising: AltitudeAsMeanSeaLevelAsMeterAsTypeI16 = 13000; // Cruising
 //! ```
-//! 
+//!
 //! Example struct tuple:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::altitude::*;
 //! let cruising = AltitudeAsMeanSeaLevelAsMeterAsStructI16(8848);
@@ -57,31 +57,31 @@
 //!
 //!
 //! ## Altitude v. Elevation
-//! 
+//!
 //! Altitude and elevation are similar concepts: they both measure the height of
 //! something relative to a reference datum (such as the earth's surface).
-//! 
+//!
 //! * Altitude typically is for the distance between a moving object (such as an
 //!   aircraft) and a well-known reference datum (such as sea level or ground
 //!   level). For example, an aircraft takeoff process goes up to 300 meters
 //!   above ground level (AGL) i.e. above the airport runway, and a typical
 //!   aircraft cruising process goes up to 13000 meters mean sea level (MSL).
-//! 
+//!
 //! * Elevation typically is for the tallness of a stationary object (such as a
 //!   place) compared to a well-known reference point (such as sea level or
 //!   ground level). For example, the airport in Denver has a runway elevation
 //!   of 1635 meters mean sea level (MSL), and an airport control tower building
 //!   elevation of 90 meters above ground level (AGL).
-//! 
-//! 
+//!
+//!
 //! ## Above Ground Level (AGL) v. Mean Sea Level (MSL)
-//! 
+//!
 //! Altitude and elevation can use a variety of representations such as:
-//! 
+//!
 //! * Above Ground Level (AGL). This is measured from the local ground level.
 //!   For example, the Burj Khalifa skyscraper in Dubai is 828 meters tall i.e.
 //!   the top is 828 meters above ground level.
-//! 
+//!
 //! * Mean Sea Level (MSL). This is measured from a worldwide agreed-upon
 //!   standard chosen based on an plausible average of the world's ocean level.
 

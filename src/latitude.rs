@@ -1,5 +1,5 @@
 //! # Latitude
-//! 
+//!
 //! Examples with New York City Grand Central Terminal:
 //! ```
 //! # use ::typeables::latitude::*;
@@ -7,38 +7,38 @@
 //! let latitude: LatitudeAsDecimalDegreeAsTypeF64 = 40.652687;
 //! let longitude: LongitudeAsDecimalDegreeAsTypeF64 = 73.877188;
 //! ```
-//! 
+//!
 //! ## Representations of latitude and longitude
-//! 
+//!
 //! Geolocation of latitude and longitude can use a variety of representations
 //! such as:
-//! 
+//!
 //!  * Decimal Degree (DD). This is the most common representation.
-//! 
+//!
 //!  * Degree and Minute (DM). This has degree as an integer, and minute as an
 //!    integer (rarely) or decimal (typically). This representation is sometimes
 //!    used for historical data or for legal reasons.
-//! 
+//!
 //!  * Degree and Minute and Second (DMS). This has degree as an integer, minute
 //!    as an integer, and second is an integer (rarely) or decimal (typically).
 //!    This representation is sometimes used for historical data or for legal
 //!    reasons.
-//! 
+//!
 //! Example as Decimal Degree (DD) representation:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::latitude::*;
 //! let latitude_dd: LatitudeAsDecimalDegreeAsTypeF64 = 40.652687;
 //! ```
 //!
 //! Example as Degree Minute Second (DMS) representation:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::latitude::*;
 //! let latitude_dm_degree: LatitudeAsDegreeMinuteWithDegreeAsTypeI16 = 40;
 //! let latitude_dm_minute: LatitudeAsDegreeMinuteWithMinuteAsTypeF32 = 39.16122;
 //! ```
-//! 
+//!
 //! Example as Degree Minute Second (DMS) representation:
 //!
 //! ```rust
