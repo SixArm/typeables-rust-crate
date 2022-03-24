@@ -1,163 +1,296 @@
-//! Media type
+//! # Media type
 //!
 //! Example: "text/plain" means that some media (e.g. a disk file) 
 //! is "text" (e.g. not an image) and plain (e.g. not HTML).
 
-/// Media type text as `str`.
+/// Media type text as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: &MediaTypeTextStr = "text/plain";
-/// let x: &MediaTypeTextStr = "image/jpeg";
-/// let x: &MediaTypeTextStr = "audio/ogg";
-/// let x: &MediaTypeTextStr = "video/mpeg";
-/// let x: &MediaTypeTextStr = "application/json";
+/// let x: &MediaTypeTextAsTypeStr = "text/plain";
+/// let x: &MediaTypeTextAsTypeStr = "image/jpeg";
+/// let x: &MediaTypeTextAsTypeStr = "audio/ogg";
+/// let x: &MediaTypeTextAsTypeStr = "video/mpeg";
+/// let x: &MediaTypeTextAsTypeStr = "application/json";
 /// ```
-pub type MediaTypeTextStr = str;
+pub type MediaTypeTextAsTypeStr = str;
 
-/// Media type text as `String`.
+/// Media type text as type `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: MediaTypeTextString = "text/plain".into();
-/// let x: MediaTypeTextString = "image/jpeg".into();
-/// let x: MediaTypeTextString = "audio/ogg".into();
-/// let x: MediaTypeTextString = "video/mpeg".into();
-/// let x: MediaTypeTextString = "application/json".into();
+/// let x: MediaTypeTextAsTypeString = String::from("text/plain");
+/// let x: MediaTypeTextAsTypeString = String::from("image/jpeg");
+/// let x: MediaTypeTextAsTypeString = String::from("audio/ogg");
+/// let x: MediaTypeTextAsTypeString = String::from("video/mpeg");
+/// let x: MediaTypeTextAsTypeString = String::from("application/json");
 /// ```
-pub type MediaTypeTextString = String;
+pub type MediaTypeTextAsTypeString = String;
 
-
-/// Media type supertype as `str`.
+/// Media type text as struct `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: &MediaTypeSupertypeStr = "text";        // e.g. "text/plain"
-/// let x: &MediaTypeSupertypeStr = "image";       // e.g. "image/jpeg"
-/// let x: &MediaTypeSupertypeStr = "audio";       // e.g. "audio/ogg"
-/// let x: &MediaTypeSupertypeStr = "video";       // e.g. "video/mpeg"
-/// let x: &MediaTypeSupertypeStr = "application"; // e.g. "application/json"
+/// let x = MediaTypeTextAsStructStr("text/plain");
+/// let x = MediaTypeTextAsStructStr("image/jpeg");
+/// let x = MediaTypeTextAsStructStr("audio/ogg");
+/// let x = MediaTypeTextAsStructStr("video/mpeg");
+/// let x = MediaTypeTextAsStructStr("application/json");
 /// ```
-pub type MediaTypeSupertypeStr = str;
+pub struct MediaTypeTextAsStructStr(pub &'static str);
 
-/// Media type supertype as `String`.
+/// Media type text as struct `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: MediaTypeSupertypeString = "text".into();        // e.g. "text/plain"
-/// let x: MediaTypeSupertypeString = "image".into();       // e.g. "image/jpeg"
-/// let x: MediaTypeSupertypeString = "audio".into();       // e.g. "audio/ogg"
-/// let x: MediaTypeSupertypeString = "video".into();       // e.g. "video/mpeg"
-/// let x: MediaTypeSupertypeString = "application".into(); // e.g. "application/json"
+/// let x = MediaTypeTextAsStructString(String::from("text/plain"));
+/// let x = MediaTypeTextAsStructString(String::from("image/jpeg"));
+/// let x = MediaTypeTextAsStructString(String::from("audio/ogg"));
+/// let x = MediaTypeTextAsStructString(String::from("video/mpeg"));
+/// let x = MediaTypeTextAsStructString(String::from("application/json"));
 /// ```
-pub type MediaTypeSupertypeString = String;
+pub struct MediaTypeTextAsStructString(pub String);
 
-/// Media type subtype as `str`.
+/// Media type supertype as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: &MediaTypeSubtypeStr = "plain"; // e.g. "text/plain"
-/// let x: &MediaTypeSubtypeStr = "jpeg";  // e.g. "image/jpeg"
-/// let x: &MediaTypeSubtypeStr = "ogg";   // e.g. "audio/ogg"
-/// let x: &MediaTypeSubtypeStr = "mpeg";  // e.g. "video/mpeg"
-/// let x: &MediaTypeSubtypeStr = "json";  // e.g. "application/json"
+/// let x: &MediaTypeSupertypeAsTypeStr = "text";        // e.g. "text/plain"
+/// let x: &MediaTypeSupertypeAsTypeStr = "image";       // e.g. "image/jpeg"
+/// let x: &MediaTypeSupertypeAsTypeStr = "audio";       // e.g. "audio/ogg"
+/// let x: &MediaTypeSupertypeAsTypeStr = "video";       // e.g. "video/mpeg"
+/// let x: &MediaTypeSupertypeAsTypeStr = "application"; // e.g. "application/json"
 /// ```
-pub type MediaTypeSubtypeStr = str;
+pub type MediaTypeSupertypeAsTypeStr = str;
 
-/// Media type subtype as `String`.
+/// Media type supertype as type `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: MediaTypeSubtypeString = "plain".into(); // e.g. "text/plain"
-/// let x: MediaTypeSubtypeString = "jpeg".into();  // e.g. "image/jpeg"
-/// let x: MediaTypeSubtypeString = "ogg".into();   // e.g. "audio/ogg"
-/// let x: MediaTypeSubtypeString = "mpeg".into();  // e.g. "video/mpeg"
-/// let x: MediaTypeSubtypeString = "json".into();  // e.g. "application/json"
+/// let x: MediaTypeSupertypeAsTypeString = String::from("text");        // e.g. "text/plain"
+/// let x: MediaTypeSupertypeAsTypeString = String::from("image");       // e.g. "image/jpeg"
+/// let x: MediaTypeSupertypeAsTypeString = String::from("audio");       // e.g. "audio/ogg"
+/// let x: MediaTypeSupertypeAsTypeString = String::from("video");       // e.g. "video/mpeg"
+/// let x: MediaTypeSupertypeAsTypeString = String::from("application"); // e.g. "application/json"
 /// ```
-pub type MediaTypeSubtypeString = String;
+pub type MediaTypeSupertypeAsTypeString = String;
 
-/// Media type suffix as `str`.
+/// Media type supertype as struct `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: &MediaTypeSuffixStr = "+json";
-/// let x: &MediaTypeSuffixStr = "+zip";
+/// let x = MediaTypeSupertypeAsStructStr("text");        // e.g. "text/plain"
+/// let x = MediaTypeSupertypeAsStructStr("image");       // e.g. "image/jpeg"
+/// let x = MediaTypeSupertypeAsStructStr("audio");       // e.g. "audio/ogg"
+/// let x = MediaTypeSupertypeAsStructStr("video");       // e.g. "video/mpeg"
+/// let x = MediaTypeSupertypeAsStructStr("application"); // e.g. "application/json"
 /// ```
-pub type MediaTypeSuffixStr = str;
+pub struct MediaTypeSupertypeAsStructStr(pub &'static str);
 
-/// Media type suffix as `String`.
+/// Media type supertype as struct `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: MediaTypeSuffixString = "+json".into();
-/// let x: MediaTypeSuffixString = "+zip".into();
+/// let x = MediaTypeSupertypeAsStructString(String::from("text"));        // e.g. "text/plain"
+/// let x = MediaTypeSupertypeAsStructString(String::from("image"));       // e.g. "image/jpeg"
+/// let x = MediaTypeSupertypeAsStructString(String::from("audio"));       // e.g. "audio/ogg"
+/// let x = MediaTypeSupertypeAsStructString(String::from("video"));       // e.g. "video/mpeg"
+/// let x = MediaTypeSupertypeAsStructString(String::from("application")); // e.g. "application/json"
 /// ```
-pub type MediaTypeSuffixString = String;
+pub struct MediaTypeSupertypeAsStructString(pub String);
 
-/// Media type parameter as `str`.
+/// Media type subtype as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: &MediaTypeParameterStr = "charset=UTF-8";
-/// let x: &MediaTypeParameterStr = "charset=UTF-16";
-/// let x: &MediaTypeParameterStr = "charset=ASCII";
-/// let x: &MediaTypeParameterStr = "boundary=alpha";
-/// let x: &MediaTypeParameterStr = "boundary=bravo";
-/// let x: &MediaTypeParameterStr = "boundary=charlie";
+/// let x: &MediaTypeSubtypeAsTypeStr = "plain"; // e.g. "text/plain"
+/// let x: &MediaTypeSubtypeAsTypeStr = "jpeg";  // e.g. "image/jpeg"
+/// let x: &MediaTypeSubtypeAsTypeStr = "ogg";   // e.g. "audio/ogg"
+/// let x: &MediaTypeSubtypeAsTypeStr = "mpeg";  // e.g. "video/mpeg"
+/// let x: &MediaTypeSubtypeAsTypeStr = "json";  // e.g. "application/json"
 /// ```
-pub type MediaTypeParameterStr = str;
+pub type MediaTypeSubtypeAsTypeStr = str;
 
-/// Media type parameter as `String`.
+/// Media type subtype as type `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: MediaTypeParameterString = "charset=UTF-8".into();
-/// let x: MediaTypeParameterString = "charset=UTF-16".into();
-/// let x: MediaTypeParameterString = "charset=ASCII".into();
-/// let x: MediaTypeParameterString = "boundary=alpha".into();
-/// let x: MediaTypeParameterString = "boundary=bravo".into();
-/// let x: MediaTypeParameterString = "boundary=charlie".into();
+/// let x: MediaTypeSubtypeAsTypeString = String::from("plain"); // e.g. "text/plain"
+/// let x: MediaTypeSubtypeAsTypeString = String::from("jpeg");  // e.g. "image/jpeg"
+/// let x: MediaTypeSubtypeAsTypeString = String::from("ogg");   // e.g. "audio/ogg"
+/// let x: MediaTypeSubtypeAsTypeString = String::from("mpeg");  // e.g. "video/mpeg"
+/// let x: MediaTypeSubtypeAsTypeString = String::from("json");  // e.g. "application/json"
 /// ```
-pub type MediaTypeParameterString = String;
+pub type MediaTypeSubtypeAsTypeString = String;
 
-/// Media type parameters as `Vec<String>`.
+/// Media type subtype as struct `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: MediaTypeParametersVecString = vec![
-///     "charset=UTF-8".into(),
-///     "boundary=alpha".into(),
-/// ];
+/// let x = MediaTypeSubtypeAsStructStr("plain"); // e.g. "text/plain"
+/// let x = MediaTypeSubtypeAsStructStr("jpeg");  // e.g. "image/jpeg"
+/// let x = MediaTypeSubtypeAsStructStr("ogg");   // e.g. "audio/ogg"
+/// let x = MediaTypeSubtypeAsStructStr("mpeg");  // e.g. "video/mpeg"
+/// let x = MediaTypeSubtypeAsStructStr("json");  // e.g. "application/json"
 /// ```
-pub type MediaTypeParametersVecString = Vec<MediaTypeParameterString>;
+pub struct MediaTypeSubtypeAsStructStr(pub &'static str);
 
-/// Media type tree as `str`.
+/// Media type subtype as struct `String`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: &MediaTypeTreeStr = "x."; // unregistered
-/// let x: &MediaTypeTreeStr = "vnd."; // vendor
+/// let x = MediaTypeSubtypeAsStructString(String::from("plain")); // e.g. "text/plain"
+/// let x = MediaTypeSubtypeAsStructString(String::from("jpeg"));  // e.g. "image/jpeg"
+/// let x = MediaTypeSubtypeAsStructString(String::from("ogg"));   // e.g. "audio/ogg"
+/// let x = MediaTypeSubtypeAsStructString(String::from("mpeg"));  // e.g. "video/mpeg"
+/// let x = MediaTypeSubtypeAsStructString(String::from("json"));  // e.g. "application/json"
 /// ```
-pub type MediaTypeTreeStr = str;
+pub struct MediaTypeSubtypeAsStructString(pub String);
 
-/// Media type tree as `String`.
+/// Media type suffix as type `str`.
 ///
 /// Examples:
 /// ```
 /// # use ::typeables::media_type::*;
-/// let x: MediaTypeTreeString = "x.".into(); // unregistered
-/// let x: MediaTypeTreeString = "vnd.".into(); // vendor
+/// let x: &MediaTypeSuffixAsTypeStr = "+json";
+/// let x: &MediaTypeSuffixAsTypeStr = "+zip";
 /// ```
-pub type MediaTypeTreeString = String;
+pub type MediaTypeSuffixAsTypeStr = str;
+
+/// Media type suffix as type `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x: MediaTypeSuffixAsTypeString = String::from("+json");
+/// let x: MediaTypeSuffixAsTypeString = String::from("+zip");
+/// ```
+pub type MediaTypeSuffixAsTypeString = String;
+
+/// Media type suffix as struct `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x = MediaTypeSuffixAsStructStr("+json");
+/// let x = MediaTypeSuffixAsStructStr("+zip");
+/// ```
+pub struct MediaTypeSuffixAsStructStr(pub &'static str);
+
+/// Media type suffix as struct `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x = MediaTypeSuffixAsStructString(String::from("+json"));
+/// let x = MediaTypeSuffixAsStructString(String::from("+zip"));
+/// ```
+pub struct MediaTypeSuffixAsStructString(pub String);
+
+/// Media type parameter as type `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x: &MediaTypeParameterAsTypeStr = "charset=UTF-8";
+/// let x: &MediaTypeParameterAsTypeStr = "charset=UTF-16";
+/// let x: &MediaTypeParameterAsTypeStr = "charset=ASCII";
+/// let x: &MediaTypeParameterAsTypeStr = "boundary=alpha";
+/// let x: &MediaTypeParameterAsTypeStr = "boundary=bravo";
+/// let x: &MediaTypeParameterAsTypeStr = "boundary=charlie";
+/// ```
+pub type MediaTypeParameterAsTypeStr = str;
+
+/// Media type parameter as type `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x: MediaTypeParameterAsTypeString = String::from("charset=UTF-8");
+/// let x: MediaTypeParameterAsTypeString = String::from("charset=UTF-16");
+/// let x: MediaTypeParameterAsTypeString = String::from("charset=ASCII");
+/// let x: MediaTypeParameterAsTypeString = String::from("boundary=alpha");
+/// let x: MediaTypeParameterAsTypeString = String::from("boundary=bravo");
+/// let x: MediaTypeParameterAsTypeString = String::from("boundary=charlie");
+/// ```
+pub type MediaTypeParameterAsTypeString = String;
+
+/// Media type parameter as struct `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x = MediaTypeParameterAsStructStr("charset=UTF-8");
+/// let x = MediaTypeParameterAsStructStr("charset=UTF-16");
+/// let x = MediaTypeParameterAsStructStr("charset=ASCII");
+/// let x = MediaTypeParameterAsStructStr("boundary=alpha");
+/// let x = MediaTypeParameterAsStructStr("boundary=bravo");
+/// let x = MediaTypeParameterAsStructStr("boundary=charlie");
+/// ```
+pub struct MediaTypeParameterAsStructStr(pub &'static str);
+
+/// Media type parameter as struct `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x = MediaTypeParameterAsStructString(String::from("charset=UTF-8"));
+/// let x = MediaTypeParameterAsStructString(String::from("charset=UTF-16"));
+/// let x = MediaTypeParameterAsStructString(String::from("charset=ASCII"));
+/// let x = MediaTypeParameterAsStructString(String::from("boundary=alpha"));
+/// let x = MediaTypeParameterAsStructString(String::from("boundary=bravo"));
+/// let x = MediaTypeParameterAsStructString(String::from("boundary=charlie"));
+/// ```
+pub struct MediaTypeParameterAsStructString(pub String);
+
+/// Media type tree as type `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x: &MediaTypeTreeAsTypeStr = "x."; // unregistered
+/// let x: &MediaTypeTreeAsTypeStr = "vnd."; // vendor
+/// ```
+pub type MediaTypeTreeAsTypeStr = str;
+
+/// Media type tree as type `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x: MediaTypeTreeAsTypeString = String::from("x."); // unregistered
+/// let x: MediaTypeTreeAsTypeString = String::from("vnd."); // vendor
+/// ```
+pub type MediaTypeTreeAsTypeString = String;
+
+/// Media type tree as struct `str`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x = MediaTypeTreeAsStructStr("x."); // unregistered
+/// let x = MediaTypeTreeAsStructStr("vnd."); // vendor
+/// ```
+pub struct MediaTypeTreeAsStructStr(pub &'static str);
+
+/// Media type tree as struct `String`.
+///
+/// Examples:
+/// ```
+/// # use ::typeables::media_type::*;
+/// let x = MediaTypeTreeAsStructString(String::from("x.")); // unregistered
+/// let x = MediaTypeTreeAsStructString(String::from("vnd.")); // vendor
+/// ```
+pub struct MediaTypeTreeAsStructString(pub String);
