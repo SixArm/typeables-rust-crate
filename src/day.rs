@@ -13,14 +13,14 @@
 //!
 //! ## Day Name
 //! 
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: &DayNameAsTypeStr = "Friday";
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;
@@ -30,14 +30,14 @@
 //! 
 //! ## Day Of Week
 //! 
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: DayOfWeekAsTypeI8 = 0; // Monday
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;
@@ -47,14 +47,14 @@
 //! 
 //! ## Day Of Month
 //! 
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: DayOfMonthAsTypeI8 = 31;
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;
@@ -64,14 +64,14 @@
 //! 
 //! ## Day Of Year
 //!
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;
 //! let x: DayOfYearAsTypeI16 = 365;
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::day::*;

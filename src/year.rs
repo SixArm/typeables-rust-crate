@@ -1,13 +1,13 @@
 //! # Year
 //!
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::year::*;
 //! let x: YearAsTypeI16 = 2022;
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::year::*;

@@ -9,14 +9,14 @@
 //! 
 //! ## Month
 //! 
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::month::*;
 //! let x: MonthAsTypeI8 = 12;
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::month::*;
@@ -25,14 +25,14 @@
 //! 
 //! ## Month Name
 //! 
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::month::*;
 //! let x: &MonthNameAsTypeStr = "May";
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::month::*;

@@ -50,21 +50,6 @@
 
 //// Latitude as Decimal Degree (DD)
 
-pub struct LatitudeAsDecimalDegreeAsStructI8(i8);
-pub struct LatitudeAsDecimalDegreeAsStructI16(i16);
-pub struct LatitudeAsDecimalDegreeAsStructI32(i32);
-pub struct LatitudeAsDecimalDegreeAsStructI64(i64);
-pub struct LatitudeAsDecimalDegreeAsStructI128(i128);
-pub struct LatitudeAsDecimalDegreeAsStructISize(isize);
-pub struct LatitudeAsDecimalDegreeAsStructU8(u8);
-pub struct LatitudeAsDecimalDegreeAsStructU16(u16);
-pub struct LatitudeAsDecimalDegreeAsStructU32(u32);
-pub struct LatitudeAsDecimalDegreeAsStructU64(u64);
-pub struct LatitudeAsDecimalDegreeAsStructU128(u128);
-pub struct LatitudeAsDecimalDegreeAsStructUSize(usize);
-pub struct LatitudeAsDecimalDegreeAsStructF32(f32);
-pub struct LatitudeAsDecimalDegreeAsStructF64(f64);
-
 pub type LatitudeAsDecimalDegreeAsTypeI8 = i8;
 pub type LatitudeAsDecimalDegreeAsTypeI16 = i16;
 pub type LatitudeAsDecimalDegreeAsTypeI32 = i32;
@@ -79,6 +64,22 @@ pub type LatitudeAsDecimalDegreeAsTypeU128 = u128;
 pub type LatitudeAsDecimalDegreeAsTypeUSize = usize;
 pub type LatitudeAsDecimalDegreeAsTypeF32 = f32;
 pub type LatitudeAsDecimalDegreeAsTypeF64 = f64;
+
+pub struct LatitudeAsDecimalDegreeAsStructI8(pub i8);
+pub struct LatitudeAsDecimalDegreeAsStructI16(pub i16);
+pub struct LatitudeAsDecimalDegreeAsStructI32(pub i32);
+pub struct LatitudeAsDecimalDegreeAsStructI64(pub i64);
+pub struct LatitudeAsDecimalDegreeAsStructI128(pub i128);
+pub struct LatitudeAsDecimalDegreeAsStructISize(pub isize);
+pub struct LatitudeAsDecimalDegreeAsStructU8(pub u8);
+pub struct LatitudeAsDecimalDegreeAsStructU16(pub u16);
+pub struct LatitudeAsDecimalDegreeAsStructU32(pub u32);
+pub struct LatitudeAsDecimalDegreeAsStructU64(pub u64);
+pub struct LatitudeAsDecimalDegreeAsStructU128(pub u128);
+pub struct LatitudeAsDecimalDegreeAsStructUSize(pub usize);
+pub struct LatitudeAsDecimalDegreeAsStructF32(pub f32);
+pub struct LatitudeAsDecimalDegreeAsStructF64(pub f64);
+
 
 //// Latitude as Degree Minute (DM) with Degree
 

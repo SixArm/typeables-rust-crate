@@ -19,6 +19,21 @@ pub type LongitudeAsDecimalDegreeAsTypeUSize = usize;
 pub type LongitudeAsDecimalDegreeAsTypeF32 = f32;
 pub type LongitudeAsDecimalDegreeAsTypeF64 = f64;
 
+pub struct LongitudeAsDecimalDegreeAsStructI8(pub i8);
+pub struct LongitudeAsDecimalDegreeAsStructI16(pub i16);
+pub struct LongitudeAsDecimalDegreeAsStructI32(pub i32);
+pub struct LongitudeAsDecimalDegreeAsStructI64(pub i64);
+pub struct LongitudeAsDecimalDegreeAsStructI128(pub i128);
+pub struct LongitudeAsDecimalDegreeAsStructISize(pub isize);
+pub struct LongitudeAsDecimalDegreeAsStructU8(pub u8);
+pub struct LongitudeAsDecimalDegreeAsStructU16(pub u16);
+pub struct LongitudeAsDecimalDegreeAsStructU32(pub u32);
+pub struct LongitudeAsDecimalDegreeAsStructU64(pub u64);
+pub struct LongitudeAsDecimalDegreeAsStructU128(pub u128);
+pub struct LongitudeAsDecimalDegreeAsStructUSize(pub usize);
+pub struct LongitudeAsDecimalDegreeAsStructF32(pub f32);
+pub struct LongitudeAsDecimalDegreeAsStructF64(pub f64);
+
 //// Longitude as Degree Minute (DM) with Degree
 
 pub type LongitudeAsDegreeMinuteWithDegreeAsTypeI8 = i8;

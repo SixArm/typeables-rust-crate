@@ -25,14 +25,14 @@
 //! 
 //! ## Altitude As Above Ground Level (AGL)
 //! 
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::altitude::*;
 //! let takeoff: AltitudeAsAboveGroundLevelAsMeterAsTypeI16 = 300;
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::altitude::*;
@@ -41,14 +41,14 @@
 //! 
 //! //! ## Altitude As Mean Sea Level (MSL)
 //! 
-//! Example type alias nickname:
+//! Example type alias:
 //! 
 //! ```rust
 //! # use ::typeables::altitude::*;
 //! let cruising: AltitudeAsMeanSeaLevelAsMeterAsTypeI16 = 13000; // Cruising
 //! ```
 //! 
-//! Example struct tuple wrapper:
+//! Example struct tuple:
 //! 
 //! ```rust
 //! # use ::typeables::altitude::*;
