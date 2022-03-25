@@ -25,35 +25,21 @@
 //!
 //! ## Elevation As Above Ground Level (AGL)
 //!
-//! Example type alias:
+//! Example:
 //!
 //! ```rust
 //! # use ::typeables::elevation::*;
-//! let tower: ElevationAsAboveGroundLevelAsMeterAsTypeI16 = 90;
-//! ```
-//!
-//! Example struct tuple:
-//!
-//! ```rust
-//! # use ::typeables::elevation::*;
-//! let tower = ElevationAsAboveGroundLevelAsMeterAsStructI16(300);
+//! let tower = ElevationAsAboveGroundLevelAsMeterAsStructF64(300);
 //! ```
 //!
 //!
 //! ## Elevation As Mean Sea Level (MSL)
 //!
-//! Example type alias:
+//! Example:
 //!
 //! ```rust
 //! # use ::typeables::elevation::*;
-//! let runway: ElevationAsMeanSeaLevelAsMeterAsTypeI16 = 1635;
-//! ```
-//!
-//! Example struct tuple:
-//!
-//! ```rust
-//! # use ::typeables::elevation::*;
-//! let runway = ElevationAsMeanSeaLevelAsMeterAsStructI16(8848);
+//! let runway = ElevationAsMeanSeaLevelAsMeterAsStructF64(8848);
 //! ```
 //!
 //!
@@ -63,17 +49,17 @@
 //! something relative to a reference datum (such as the earth's surface).
 //!
 //! * Altitude typically is for the distance between a moving object (such as an
-//!   aircraft) and a well-known reference datum (such as sea level or ground
-//!   level). For example, an aircraft takeoff process goes up to 300 meters
-//!   above ground level (AGL) i.e. above the airport runway, and a typical
-//!   aircraft cruising process goes up to 13000 meters mean sea level (MSL).
+//!   aircraft) and a well-known reference datum (such as ground level or sea
+//!   level). For example, an aircraft takeoff process goes up to an alititude
+//!   of 300 meters above ground level (AGL) i.e. above the airport runway, and
+//!   a typical aircraft cruising process goes up to an alititude of 13000
+//!   meters mean sea level (MSL).
 //!
 //! * Elevation typically is for the tallness of a stationary object (such as a
-//!   place) compared to a well-known reference point (such as sea level or
-//!   ground level). For example, the airport in Denver has a runway elevation
-//!   of 1635 meters mean sea level (MSL), and an airport control tower building
-//!   elevation of 90 meters above ground level (AGL).
-//!
+//!   place) compared to a well-known reference point (such as ground level or
+//!   seal level).  For example, an airport control tower building has an
+//!   elevation of 80 meters above ground level (AGL), and an airport runway in
+//!   Denver Colorado has an elevation of 1635 meters mean sea level (MSL).
 //!
 //! ## Above Ground Level (AGL) v. Mean Sea Level (MSL)
 //!
@@ -87,21 +73,6 @@
 //!   standard chosen based on an plausible average of the world's ocean level.
 
 //// Elevation as Above Ground Level (AGL) as Meter
-
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeI8 = i8;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeI16 = i16;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeI32 = i32;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeI64 = i64;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeI128 = i128;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeISize = isize;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeU8 = u8;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeU16 = u16;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeU32 = u32;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeU64 = u64;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeU128 = u128;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeUSize = usize;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeF32 = f32;
-pub type ElevationAsAboveGroundLevelAsMeterAsTypeF64 = f64;
 
 pub struct ElevationAsAboveGroundLevelAsMeterAsStructI8(pub i8);
 pub struct ElevationAsAboveGroundLevelAsMeterAsStructI16(pub i16);
@@ -118,22 +89,22 @@ pub struct ElevationAsAboveGroundLevelAsMeterAsStructUSize(pub usize);
 pub struct ElevationAsAboveGroundLevelAsMeterAsStructF32(pub f32);
 pub struct ElevationAsAboveGroundLevelAsMeterAsStructF64(pub f64);
 
-//// Elevation as Mean Sea Level (MSL) as Meter
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeI8 = i8;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeI16 = i16;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeI32 = i32;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeI64 = i64;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeI128 = i128;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeISize = isize;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeU8 = u8;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeU16 = u16;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeU32 = u32;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeU64 = u64;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeU128 = u128;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeUSize = usize;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeF32 = f32;
+pub type ElevationAsAboveGroundLevelAsMeterAsTypeF64 = f64;
 
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeI8 = i8;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeI16 = i16;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeI32 = i32;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeI64 = i64;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeI128 = i128;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeISize = isize;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeU8 = u8;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeU16 = u16;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeU32 = u32;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeU64 = u64;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeU128 = u128;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeUSize = usize;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeF32 = f32;
-pub type ElevationAsMeanSeaLevelAsMeterAsTypeF64 = f64;
+//// Elevation as Mean Sea Level (MSL) as Meter
 
 pub struct ElevationAsMeanSeaLevelAsMeterAsStructI8(pub i8);
 pub struct ElevationAsMeanSeaLevelAsMeterAsStructI16(pub i16);
@@ -149,3 +120,18 @@ pub struct ElevationAsMeanSeaLevelAsMeterAsStructU128(pub u128);
 pub struct ElevationAsMeanSeaLevelAsMeterAsStructUSize(pub usize);
 pub struct ElevationAsMeanSeaLevelAsMeterAsStructF32(pub f32);
 pub struct ElevationAsMeanSeaLevelAsMeterAsStructF64(pub f64);
+
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeI8 = i8;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeI16 = i16;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeI32 = i32;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeI64 = i64;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeI128 = i128;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeISize = isize;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeU8 = u8;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeU16 = u16;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeU32 = u32;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeU64 = u64;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeU128 = u128;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeUSize = usize;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeF32 = f32;
+pub type ElevationAsMeanSeaLevelAsMeterAsTypeF64 = f64;
