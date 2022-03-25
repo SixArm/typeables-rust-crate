@@ -511,6 +511,8 @@ pub mod joule;
 pub mod kelvin;
 pub mod litre;
 pub mod metre;
+pub mod mole;
+pub mod ohm;
 pub mod second;
 
 // Misc
