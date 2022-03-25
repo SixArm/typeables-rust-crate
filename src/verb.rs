@@ -28,7 +28,6 @@
 //// Verb
 
 pub struct GrammarVerbAsStructStr(pub &'static str);
-
 pub struct GrammarVerbAsStructString(pub String);
 
 pub type GrammarVerbAsTypeStr = str;

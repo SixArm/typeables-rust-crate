@@ -502,6 +502,9 @@
 //! * For example, macros do not seem to work with some editors that inspect the
 //!   Typeables crate in order to do autocomplete and autosuggest.
 
+// SI Unit System
+pub mod ampere;
+
 // Misc
 pub mod currency;
 pub mod locale;
