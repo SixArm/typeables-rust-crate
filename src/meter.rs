@@ -9,11 +9,13 @@
 //! 
 //! https://wikipedia.org/wiki/Meter
 //! 
-//! The metre (Commonwealth spelling) or meter (American spelling; see spelling
-//! differences) (from the French unit mètre, from the Greek noun μέτρον,
-//! "measure") is the base unit of length in the International System of Units
-//! (SI). The SI unit symbol is m. 
-
+//! The meter is a unit of length.
+//! 
+//! It is the base unit of length in the International System of Units (SI). 
+//! 
+//! The SI unit symbol is m. 
+//! 
+//! The spelling is meter (American English) or metre (British English).
 
 //// Meter
 
