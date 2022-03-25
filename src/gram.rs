@@ -9,8 +9,10 @@
 //! 
 //! https://wikipedia.org/wiki/Gram
 //! 
-//! The gram is a unit of mass in the metric system.
+//! The gram is a unit of mass.
 //! 
+//! It is a derived unit in the International System of Units (SI).
+//
 //! The SI unit symbol is g.
 
 //// Gram
