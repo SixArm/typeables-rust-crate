@@ -549,6 +549,7 @@ pub mod candela;
 pub mod gram;
 pub mod joule;
 pub mod kelvin;
+pub mod kilogram;
 pub mod litre;
 pub mod metre;
 pub mod mole;
