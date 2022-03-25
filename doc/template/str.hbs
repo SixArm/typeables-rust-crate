@@ -1,0 +1,15 @@
+//! {{name}}
+//!
+//! Examples:
+//!
+//! ```rust
+//! # use ::typeables::{{submodule}}::*;
+//! let x = {{code}}AsStructStr("{{example}}");
+//! let x = {{code}}AsStructString(String::from("{{example}}"));
+//! ```
+
+pub struct {{code}}AsStructStr(pub &'static str);
+pub struct {{code}}AsStructString(pub String);
+
+pub type {{code}}AsTypeStr = str;
+pub type {{code}}AsTypeString = String;
