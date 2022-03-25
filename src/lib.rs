@@ -505,10 +505,13 @@
 
 // SI Unit System
 pub mod ampere;
+pub mod candela;
 pub mod gram;
+pub mod joule;
 pub mod kelvin;
 pub mod litre;
 pub mod metre;
+pub mod second;
 
 // Misc
 pub mod currency;
