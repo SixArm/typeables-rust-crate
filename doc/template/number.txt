@@ -7,6 +7,8 @@
 //! let x = {{code}}AsStructF64({{example}});
 //! ```
 
+//// {{name}}
+
 pub struct {{code}}StructI8(pub i8);
 pub struct {{code}}StructI16(pub i16);
 pub struct {{code}}StructI32(pub i32);

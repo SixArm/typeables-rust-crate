@@ -1,123 +1,143 @@
 # Typeables: Rust crate of type aliases and struct tuples
 
-Typeables is a Rust crate of semantic types, such as for representing unit
-names, content types, phone numbers, email addresses, and the like. Typeables is
-intended to help developers with domain driven design, knowledge transfer,
-compile-time safety, run-time diagnostics, and API integrations.
+Typeables is a Rust crate of semantic types, such as unit types (e.g. meter for
+length, gram for mass), content types (e.g. email address, phone number), locale
+types (e.g. "en" for English, "zh" for Chinese), etc.
+
+
+## Introduction
+
+Typeables is based on the Rust pattern of "New Type". This uses a Rust struct
+tuple as a wrapper of another type (or types), in order to provide
+encapsulation.
+
+Example:
+
+```rust
+pub struct MeterAsF64(pub f64); // This is a "New Type" struct tuple.
+
+let length = MeterAsF64(1.2); // 1.2 meters as floating-point 64-bit.
+```
+
+Typeables helps you write clearer code and stronger code, because you can be
+more-precise about your variable types and your function inputs and outputs.
+
+Example to calculate rectangular area:
+
+```rust
+pub struct MeterAsF64(pub f64); // Meter which is for distance.
+pub struct Meter2AsF64(pub f64); // Meter^2 which is for area.
+
+fn area(length: MeterAsF64, width: MeterAsF64) -> Meter2AsF64 {
+   Meter2AsF64(length.0 * width.0)
+}
+```
+
+Typeables helps you create better domain driven design, stronger
+compile-time checking, and crisper run-time diagnostics.
+
+
+### What is a struct tuple?
+
+A struct tuple is akin to a wrapper for another type such as:
+
+```rust
+pub struct Year(pub i16);
+```
+
+A struct tuple can make your code safer because it provides encapsulation:
+
+```rust
+# pub struct Year(pub i16);
+let x = Year(2022);
+```
+
+### What is a type alias?
+
+A type alias is akin to a nickname for another type such as:
+
+```rust
+pub type Year = i16;
+```
+
+A type alias can make your code clearer because it expresses your intent:
+
+```rust
+# pub type Year = i16;
+let x: Year = 2022;
+```
 
 
 ### What does Typeables do?
 
-Typeables provides two flavors of every concept: a type alias and a struct tuple.
+Typeables provides many concept types, each implemented as a struct tuple
+and a type alias, and 
 
-A type alias is a nickname such as:
+Example variable:
 
 ```rust
-pub type Foo = i16;
-let x: Foo = 1;
-println!("x is {}", x)
+use ::typeables::year::*;
+
+let x = YearAsStructI16(2022); // Year as struct tuple
 ```
 
-A struct tuple is a wrapper such as:
+Example function:
 
 ```rust
-pub struct Foo(pub i16);
-let x = Foo(1);
-println!("x is {}", x.0)
-```
+use ::typeables::year::*;
 
-Example usage:
-
-```rust
-let x: YearAsTypeI16 = 2022; // Year as type alias
-```
-
-```rust
-let x = YearAsStructI16(2022); // Year as struct tuple wrapper
-```
-
-Example usage for function definitions:
-
-```rust
-fn f(x: YearAsTypeI16) { // Year as type alias
-    println!("Year {}", x)
-}
-```
-
-```rust
 fn f(x: YearAsStructI16) { // Year as struct tuple
-    println!("Year {}", x.0) // Use the struct tuple field
+    println!("Year {}", x.0) // Use the zero field
 }
 ```
 
-Example usage for function calls:
+
+### How do I refactor code to use Typeables?
+
+Typeables helps you refactor from weaker-type code to stronger-type code.
+
+Suppose you start with typical code:
 
 ```rust
-f(2022 as YearAsTypeI16); // Year as type alias
-```
+fn f(x: i16) {
+    println!("{}", x)
+}
 
-```rust
-f(YearAsStructI16(2022)); // Year as struct tuple
-```
-
-
-### How do I upgrade code with Typeables?
-
-Typeables aims to provide an upgrade path from weaker-type code to stronger-type code.
-
-Example variables:
-
-```rust
-let x = 2022; // Without Typeables
-```
-
-```rust
-let x = 2022 as YearAsTypeI16; // Upgrade 1 adds type alias
-```
-
-```rust
-let x = YearAsStructI16(2022); // Upgrade 2 adds struct tuple
-```
-
-Example function definitions:
-
-```rust
-fn f(x: i16) { // Without typeables
-    println!("Year {}", x)
+fn main() {
+    let x = 2022;
+    f(x)
 }
 ```
 
+Step 1. Refactor to a Typeables type alias. This is annotation.
+
 ```rust
-fn f(x: YearAsTypeI16) { // Upgrade 1 adds type alias
-    println!("Year {}", x)
+use ::typeables::year::*;
+
+fn f(x: YearAsTypeI16) {
+    println!("{}", x)
+}
+
+fn main() {
+    let x = 1 as YearAsTypeI16;
+    f(x)
 }
 ```
 
+Step 2. Refactor to a Typealias struct tuple. This is encapsulation.
+
 ```rust
-fn f(x: YearAsStructI16) {  // Upgrade 2 adds struct tuple
-    println!("Year {}", x.0)
+use ::typeables::year::*;
+
+fn f(x: YearAsStructI16) {
+    println!("{}", x.0)
+}
+
+fn main() {
+    let x = YearAsStructI16(2022);
+    f(x)
 }
 ```
-
-Example function calls:
-
-```rust
-f(1); // Without typeables
-```
-
-```rust
-f(1 as YearAsTypeI16); // Upgrade 1 adds type alias
-```
-
-```rust
-f(YearAsStructI16(1)); // Upgrade 2 adds struct tuple
-```
-
-The upgrade path is purely because of refactoring:
-
-* The upgrade is supposed to make the code clearer and stronger.
-
-* The upgrade is not supposed to change any user-visible behavior.
 
 
 ## Semantics
@@ -128,6 +148,8 @@ The upgrade path is purely because of refactoring:
 Calendar examples:
 
 ```rust
+# use ::typeables::year::*;
+# use ::typeables::month::*;
 let year = YearAsStructI16(2022);
 let month = MonthAsStructI8(12);
 ```
@@ -135,6 +157,7 @@ let month = MonthAsStructI8(12);
 Geolocation examples of New York City Grand Central Terminal:
 
 ```rust
+# use ::typeables::{latitude::*, longitude::*};
 let latitude = LatitudeAsDecimalDegreeAsStructF32(40.75);
 let longitude = LongitudeAsDecimalDegreeAsStructF32(-73.97);
 ```
@@ -142,17 +165,18 @@ let longitude = LongitudeAsDecimalDegreeAsStructF32(-73.97);
 Date-time format examples of the NASA launch of the Mars Perseverance Rover:
 
 ```rust
+# use ::typeables::datetime::*;
 let date_stamp = DateAsYYYYXMMXDDAsStructString(String::from("2020-07-30")); // Year 2020 on July 30th
 let time_stamp = TimeAsHHXMMXSSAsStructString(String::from("07:50:00")); // 7:50 in the morning
-let offset_stamp = TimeOffsetAsHHXMMAsStructString(String::from("-05:00")); // 5 hours ahead of UTC
+let offset_stamp = TimeOffsetAsXHHXMMAsStructString(String::from("-05:00")); // 5 hours ahead of UTC
 ```
 
 
 ### Why use semantic names?
 
-When you use semantic names, such as clear descriptions and purposeful naming
-conventions, then you help developers understand your code, and help compilers
-provide reliability, and help tools provide inspectability.
+When you use semantic names, such as clear descriptions and purposeful
+naming conventions, then you help developers understand your code, and help
+compilers provide reliability, and help tools provide inspectability.
 
 Suppose your code has this function:
 
@@ -165,6 +189,10 @@ fn f(year: i16, month: i16) {
 A developer can use your code like this:
 
 ```rust
+# use ::typeables::{year::*, month::*};
+# fn f(year: i16, month: i16) {
+#     println!("Year {} Month {}", year, month)
+# }
 let year = 2022;
 let month = 12;
 
@@ -175,6 +203,7 @@ f(year, month); // right
 You can make your code clearer by adding a type alias:
 
 ```rust
+# use ::typeables::{year::*, month::*};
 fn f(year: YearAsTypeI16, month: MonthAsTypeI16) {
     println!("Year {} Month {}", year, month)
 }
@@ -183,6 +212,7 @@ fn f(year: YearAsTypeI16, month: MonthAsTypeI16) {
 You can make your code stronger by using a struct tuple:
 
 ```rust
+# use ::typeables::{year::*, month::*};
 fn f(year: YearAsStructI16, month: MonthAsStructI16) {
     println!("Year {} Month {}", year.0, month.0)
 }
@@ -191,6 +221,10 @@ fn f(year: YearAsStructI16, month: MonthAsStructI16) {
 A developer can use your code like this:
 
 ```rust
+# use ::typeables::{year::*, month::*};
+# fn f(year: YearAsStructI16, month: MonthAsStructI16) {
+#    println!("Year {} Month {}", year.0, month.0)
+# }
 let year = YearAsStructI16(2022);
 let month = MonthAsStructI16(12);
 
@@ -207,11 +241,18 @@ You want to keep track of:
 
   * Aircraft altitudes.
 
-  * Representation as "Above Ground Level (AGL)" such as the height of the aircraft above the runway during takeoff or landing, or as "Mean Sea Level (MSL)" such as the worldwide height of the aircraft during cruising flight.
+  * Representation as "Above Ground Level (AGL)" such as the height of the
+    aircraft above the runway during takeoff or landing, or as "Mean Sea
+    Level (MSL)" such as the worldwide height of the aircraft during
+    cruising flight.
 
-  * Unit of measurement as "Meter" which is the international system, or as "Foot" which is the United States system.
+  * Unit of measurement as "Meter" which is the international system, or as
+    "Foot" which is the United States system.
 
-  * The implemention as a signed integer 16-bit, because altitude can be negative in some rare areas such as Death Valley California, and your application may need to integrate with legacy code that requires signed integer 16-bit numbers.
+  * The implemention as a signed integer 16-bit, because altitude can be
+    negative in some rare areas such as Death Valley California, and your
+    application may need to integrate with legacy code that requires signed
+    integer 16-bit numbers.
 
 You can use this naming convention:
 
@@ -226,6 +267,7 @@ You can use this naming convention:
 The code looks like this:
 
 ```rust
+# use ::typeables::altitude::*;
 pub struct AltitudeAsAboveGroundLevelAsMeterAsStructI16(pub i16);
 pub struct AltitudeAsAboveGroundLevelAsFootAsStructI16(pub i16);
 pub struct AltitudeAsMeanSeaLevelAsMeterAsStructI16(pub i16);
@@ -236,13 +278,16 @@ Suppose your app also needs to keep track of:
 
   * Airport elevations.
 
-  * The representation as "Above Ground Level (AGL)" such as the height of an airport building above the airport runway, or as "Mean Sea Level (MSG)" such as the worldwide height of the airporse runway.
+  * The representation as "Above Ground Level (AGL)" such as the height of
+    an airport building above the airport runway, or as "Mean Sea Level
+    (MSG)" such as the worldwide height of the airporse runway.
 
   * Etc.
 
 The code looks like this:
 
 ```rust
+# use ::typeables::elevation::*;
 pub struct ElevationAsAboveGroundLevelAsMeterAsStructI16(pub i16);
 pub struct ElevationAsAboveGroundLevelAsFootAsStructI16(pub i16);
 pub struct ElevationAsMeanSeaLevelAsMeterAsStructI16(pub i16);
@@ -304,30 +349,6 @@ Examples of unit names:
 
 ### Naming conventions
 
-Naming convention for type aliass:
-
-```rust
-pub type FooAsTypeI8 = i8;
-pub type FooAsTypeI16 = i16;
-pub type FooAsTypeI32 = i32;
-pub type FooAsTypeI64 = i64;
-pub type FooAsTypeI128 = i128;
-pub type FooAsTypeISize = isize;
-
-pub type FooAsTypeU8 = u8;
-pub type FooAsTypeU16 = u16;
-pub type FooAsTypeU32 = u32;
-pub type FooAsTypeU64 = u64;
-pub type FooAsTypeU128 = u128;
-pub type FooAsTypeUSize = usize;
-
-pub type FooAsTypeF32 = f32;
-pub type FooAsTypeF64 = f64;
-
-pub type FooAsTypeStr = str;
-pub type FooAsTypeString = String;
-```
-
 Naming convention for struct tuples:
 
 ```rust
@@ -352,6 +373,30 @@ pub struct FooAsStructStr(&'static String);
 pub struct FooAsStructString(pub String);
 ```
 
+Naming convention for type aliass:
+
+```rust
+pub type FooAsTypeI8 = i8;
+pub type FooAsTypeI16 = i16;
+pub type FooAsTypeI32 = i32;
+pub type FooAsTypeI64 = i64;
+pub type FooAsTypeI128 = i128;
+pub type FooAsTypeISize = isize;
+
+pub type FooAsTypeU8 = u8;
+pub type FooAsTypeU16 = u16;
+pub type FooAsTypeU32 = u32;
+pub type FooAsTypeU64 = u64;
+pub type FooAsTypeU128 = u128;
+pub type FooAsTypeUSize = usize;
+
+pub type FooAsTypeF32 = f32;
+pub type FooAsTypeF64 = f64;
+
+pub type FooAsTypeStr = str;
+pub type FooAsTypeString = String;
+```
+
 
 ## Comparisons
 
@@ -369,30 +414,47 @@ Broadly speaking:
 
 Quantities v. units v. primitives:
 
-* uom deliberately favors working with conceptual quantities (length, mass, time, …) rather than measurement units (meter, gram, second, …) and implementation primitives (pub i8, u16, f32, …).
+* uom deliberately favors working with conceptual quantities (length, mass,
+  time, …) rather than measurement units (meter, gram, second, …) and
+  implementation primitives (pub i8, u16, f32, …).
 
-* Typeables favors working with explicit measurement units and explicit implementation primitives. When you want the concept of "length" and unit "meter" and primitive "f32" then you write "LengthAsMeterAsTypeF32".
+* Typeables favors working with explicit measurement units and explicit
+  implementation primitives. When you want the concept of "length" and unit
+  "meter" and primitive "f32" then you write "LengthAsMeterAsTypeF32".
 
 Normalization v. exactness:
 
-* uom deliberately normalizes values to their base units, such as normalizing 1 nanometer to 0.000000001 meter, and deliberately trades away representation capabilities (due to inexact conversions) and precision capabilties (due to bit limits).
+* uom deliberately normalizes values to their base units, such as normalizing 1
+  nanometer to 0.000000001 meter, and deliberately trades away representation
+  capabilities (due to inexact conversions) and precision capabilties (due to
+  bit limits).
 
-* Typeables favors exactness, never normaliziation. When you want the concept of "length" and unit "nanometer" and primitive "u128" for 128-bit unsigned integer precision, then you write "LengthAsNanometerAsTypeI128".
+* Typeables favors exactness, never normaliziation. When you want the concept of
+  "length" and unit "nanometer" and primitive "u128" for 128-bit unsigned
+  integer precision, then you write "LengthAsNanometerAsTypeI128".
 
 
 ### Comparison with Rust "New Type Idiom" a.k.a. "New Type Pattern"
 
 Broadly speaking:
 
-* The Rust "New Type Idiom" a.k.a. "New Type Pattern" is exactly what Typeables is doing with struct tuples. We like this idiom very much.
+* The Rust "New Type Idiom" a.k.a. "New Type Pattern" is exactly what Typeables
+  is doing with struct tuples. We like this idiom very much.
 
-* Typeables additionally provides type aliass. In practice we find this is an important way to help professional developers with larger codebases, because the developers can phase in the type aliass as hints to developers and to tools, then later on can phase in the struct tuples.
+* Typeables additionally provides type aliass. In practice we find this is an
+  important way to help professional developers with larger codebases, because
+  the developers can phase in the type aliass as hints to developers and to
+  tools, then later on can phase in the struct tuples.
 
 Roll your own versus using Typeables crate:
 
-* You can certainly roll your own new type pattern, and you can use your own type names, or even use the Typeables type names.
+* You can certainly roll your own new type pattern, and you can use your own
+  type names, or even use the Typeables type names.
 
-* The Typeables crate is helpful because it provides a bunch of definitions, so you can use the crate, then get all the benefits of the types, plus your tools can use the crate information, such as for editor tool autocomplete and autosuggest.
+* The Typeables crate is helpful because it provides a bunch of definitions, so
+  you can use the crate, then get all the benefits of the types, plus your tools
+  can use the crate information, such as for editor tool autocomplete and
+  autosuggest.
 
 
 ## Implementation
@@ -418,7 +480,10 @@ Typeables is deliberately verbose.
 
 * We like long names for low-level clarity.
 
-* Typeables defines many type aliass and struct tuples. Typically these are fast during development because they're simple. Typically these are even faster during production because the Rust compiler can optimized these and also eliminate any that are not needed.
+* Typeables defines many type aliass and struct tuples. Typically these are fast
+  during development because they're simple. Typically these are even faster
+  during production because the Rust compiler can optimized these and also
+  eliminate any that are not needed.
 
 
 ### Macros
@@ -429,4 +494,5 @@ The Typeables source code does not use macros.
 
 * Yet we discovered in practice that macros seem to interfere with some of our tooling.
 
-* For example, macros do not seem to work with some editors that inspect the Typeables crate in order to do autocomplete and autosuggest.
+* For example, macros do not seem to work with some editors that inspect the
+  Typeables crate in order to do autocomplete and autosuggest.

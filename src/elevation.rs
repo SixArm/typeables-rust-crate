@@ -29,7 +29,7 @@
 //!
 //! ```rust
 //! # use ::typeables::elevation::*;
-//! let tower = ElevationAsAboveGroundLevelAsMeterAsStructF64(300);
+//! let tower = ElevationAsAboveGroundLevelAsMeterAsStructI32(300);
 //! ```
 //!
 //!
@@ -39,7 +39,7 @@
 //!
 //! ```rust
 //! # use ::typeables::elevation::*;
-//! let runway = ElevationAsMeanSeaLevelAsMeterAsStructF64(8848);
+//! let runway = ElevationAsMeanSeaLevelAsMeterAsStructI32(8848);
 //! ```
 //!
 //!

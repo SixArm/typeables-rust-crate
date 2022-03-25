@@ -29,7 +29,7 @@
 //!
 //! ```rust
 //! # use ::typeables::altitude::*;
-//! let takeoff = AltitudeAsAboveGroundLevelAsMeterAsStructF64(300);
+//! let takeoff = AltitudeAsAboveGroundLevelAsMeterAsStructI32(300);
 //! ```
 //!
 //!
@@ -39,7 +39,7 @@
 //!
 //! ```rust
 //! # use ::typeables::altitude::*;
-//! let cruising = AltitudeAsMeanSeaLevelAsMeterAsStructF64(13000);
+//! let cruising = AltitudeAsMeanSeaLevelAsMeterAsStructI32(13000);
 //! ```
 //!
 //!

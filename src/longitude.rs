@@ -1,23 +1,54 @@
 //! # Longitude
 //!
-//! See the latitude documentation.
+//! Examples with New York City Grand Central Terminal:
+//! ```
+//! # use ::typeables::latitude::*;
+//! # use ::typeables::longitude::*;
+//! let latitude: LongitudeAsDecimalDegreeAsTypeF64 = 40.652687;
+//! let longitude: LongitudeAsDecimalDegreeAsTypeF64 = -73.877188;
+//! ```
+//!
+//! ## Representations of longitude and longitude
+//!
+//! Geolocation of longitude and longitude can use a variety of representations
+//! such as:
+//!
+//!  * Decimal Degree (DD). This is the most common representation.
+//!
+//!  * Degree and Minute (DM). This has degree as an integer, and minute as an
+//!    integer (rarely) or decimal (typically). This representation is sometimes
+//!    used for historical data or for legal reasons.
+//!
+//!  * Degree and Minute and Second (DMS). This has degree as an integer, minute
+//!    as an integer, and second is an integer (rarely) or decimal (typically).
+//!    This representation is sometimes used for historical data or for legal
+//!    reasons.
+//!
+//! Example as Decimal Degree (DD) representation:
+//!
+//! ```rust
+//! # use ::typeables::longitude::*;
+//! let longitude_dd: LongitudeAsDecimalDegreeAsTypeF64 = 40.652687;
+//! ```
+//!
+//! Example as Degree Minute Second (DMS) representation:
+//!
+//! ```rust
+//! # use ::typeables::longitude::*;
+//! let longitude_dm_degree: LongitudeAsDegreeMinuteWithDegreeAsTypeI16 = 40;
+//! let longitude_dm_minute: LongitudeAsDegreeMinuteWithMinuteAsTypeF32 = 39.16122;
+//! ```
+//!
+//! Example as Degree Minute Second (DMS) representation:
+//!
+//! ```rust
+//! # use ::typeables::longitude::*;
+//! let longitude_dms_degree: LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI16 = 40;
+//! let longitude_dms_minute: LongitudeAsDegreeMinuteSecondWithMinuteAsTypeI8 = 39;
+//! let longitude_dms_second: LongitudeAsDegreeMinuteSecondWithSecondAsTypeF32 = 9.6732;
+//! ```
 
 //// Longitude as Decimal Degree (DD)
-
-pub type LongitudeAsDecimalDegreeAsTypeI8 = i8;
-pub type LongitudeAsDecimalDegreeAsTypeI16 = i16;
-pub type LongitudeAsDecimalDegreeAsTypeI32 = i32;
-pub type LongitudeAsDecimalDegreeAsTypeI64 = i64;
-pub type LongitudeAsDecimalDegreeAsTypeI128 = i128;
-pub type LongitudeAsDecimalDegreeAsTypeISize = isize;
-pub type LongitudeAsDecimalDegreeAsTypeU8 = u8;
-pub type LongitudeAsDecimalDegreeAsTypeU16 = u16;
-pub type LongitudeAsDecimalDegreeAsTypeU32 = u32;
-pub type LongitudeAsDecimalDegreeAsTypeU64 = u64;
-pub type LongitudeAsDecimalDegreeAsTypeU128 = u128;
-pub type LongitudeAsDecimalDegreeAsTypeUSize = usize;
-pub type LongitudeAsDecimalDegreeAsTypeF32 = f32;
-pub type LongitudeAsDecimalDegreeAsTypeF64 = f64;
 
 pub struct LongitudeAsDecimalDegreeAsStructI8(pub i8);
 pub struct LongitudeAsDecimalDegreeAsStructI16(pub i16);
@@ -33,6 +64,21 @@ pub struct LongitudeAsDecimalDegreeAsStructU128(pub u128);
 pub struct LongitudeAsDecimalDegreeAsStructUSize(pub usize);
 pub struct LongitudeAsDecimalDegreeAsStructF32(pub f32);
 pub struct LongitudeAsDecimalDegreeAsStructF64(pub f64);
+
+pub type LongitudeAsDecimalDegreeAsTypeI8 = i8;
+pub type LongitudeAsDecimalDegreeAsTypeI16 = i16;
+pub type LongitudeAsDecimalDegreeAsTypeI32 = i32;
+pub type LongitudeAsDecimalDegreeAsTypeI64 = i64;
+pub type LongitudeAsDecimalDegreeAsTypeI128 = i128;
+pub type LongitudeAsDecimalDegreeAsTypeISize = isize;
+pub type LongitudeAsDecimalDegreeAsTypeU8 = u8;
+pub type LongitudeAsDecimalDegreeAsTypeU16 = u16;
+pub type LongitudeAsDecimalDegreeAsTypeU32 = u32;
+pub type LongitudeAsDecimalDegreeAsTypeU64 = u64;
+pub type LongitudeAsDecimalDegreeAsTypeU128 = u128;
+pub type LongitudeAsDecimalDegreeAsTypeUSize = usize;
+pub type LongitudeAsDecimalDegreeAsTypeF32 = f32;
+pub type LongitudeAsDecimalDegreeAsTypeF64 = f64;
 
 //// Longitude as Degree Minute (DM) with Degree
 
@@ -100,21 +146,6 @@ pub type LongitudeAsDegreeMinuteWithMinuteAsTypeF64 = f64;
 
 //// Longitude as Degree Minute Second (DMS) with Degree
 
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI8 = i8;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI16 = i16;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI32 = i32;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI64 = i64;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI128 = i128;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeISize = isize;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU8 = u8;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU16 = u16;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU32 = u32;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU64 = u64;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU128 = u128;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeUSize = usize;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeF32 = f32;
-pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeF64 = f64;
-
 pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI8(pub i8);
 pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI16(pub i16);
 pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI32(pub i32);
@@ -129,6 +160,21 @@ pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructU128(pub u128);
 pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructUSize(pub usize);
 pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructF32(pub f32);
 pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructF64(pub f64);
+
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI8 = i8;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI16 = i16;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI32 = i32;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI64 = i64;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI128 = i128;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeISize = isize;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU8 = u8;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU16 = u16;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU32 = u32;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU64 = u64;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeU128 = u128;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeUSize = usize;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeF32 = f32;
+pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeF64 = f64;
 
 //// Longitude as Degree Minute Second (DMS) with Minute
 
