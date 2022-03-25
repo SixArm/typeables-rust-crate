@@ -504,6 +504,7 @@
 
 // SI Unit System
 pub mod ampere;
+pub mod meter;
 
 // Misc
 pub mod currency;
