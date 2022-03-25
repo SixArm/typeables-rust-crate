@@ -1,11 +1,51 @@
 //! # Typeables: Rust crate of type aliases and struct tuples
 //!
-//! Typeables is a Rust crate of semantic types, such as unit types (e.g. meter
+//! Typeables is a Rust crate of semantic types, such as unit types (e.g. metre
 //! for length, second for time), content types (e.g. email address, phone
 //! number), media types (e.g. JPEG image, MPEG movie), locale types (e.g. "en"
 //! for English, "zh" for Chinese), etc.
 //!
+//! Units:
+//! 
+//! * meter for length
+//! * second for time
+//! * mole for amount of substance
+//! * ampere for electric current
+//! * kelvin for temperature
+//! * candela for luminous intensity
+//! * kilogram for mass
 //!
+//! Calendaring:
+//! 
+//! * year
+//! * month
+//! * day
+//! * hour
+//! * minute
+//! * second
+//! * date
+//! * time
+//! * time offset
+//! * time zone
+//! 
+//! Geolocation:
+//! 
+//! * latitude
+//! * longitue
+//! * altitude
+//! * elevation
+//! 
+//! Content:
+//! 
+//! * locale
+//! * media type
+//! 
+//! Grammar:
+//! 
+//! * noun
+//! * verb
+//!
+//! 
 //! ## Introduction
 //!
 //! Typeables is based on the Rust pattern of "New Type". This uses a Rust
@@ -514,6 +554,7 @@ pub mod metre;
 pub mod mole;
 pub mod ohm;
 pub mod second;
+pub mod watt;
 
 // Misc
 pub mod currency;
