@@ -1,8 +1,9 @@
 //! # Typeables: Rust crate of type aliases and struct tuples
 //!
 //! Typeables is a Rust crate of semantic types, such as unit types (e.g. meter
-//! for length, gram for mass), content types (e.g. email address, phone
-//! number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
+//! for length, second for time), content types (e.g. email address, phone
+//! number), media types (e.g. JPEG image, MPEG movie), locale types (e.g. "en"
+//! for English, "zh" for Chinese), etc.
 //!
 //!
 //! ## Introduction
@@ -14,9 +15,9 @@
 //! Example:
 //!
 //! ```rust
-//! pub struct MeterAsF64(pub f64); // This is a "New Type" struct tuple.
+//! pub struct MetreAsF64(pub f64); // This is a "New Type" struct tuple.
 //!
-//! let length = MeterAsF64(1.2); // 1.2 meters as floating-point 64-bit.
+//! let length = MetreAsF64(1.2); // 1.2 meters as floating-point 64-bit.
 //! ```
 //!
 //! Typeables helps you write clearer code and stronger code, because you can be
@@ -25,11 +26,11 @@
 //! Example to calculate rectangular area:
 //!
 //! ```rust
-//! pub struct MeterAsF64(pub f64); // Meter which is for distance.
-//! pub struct Meter2AsF64(pub f64); // Meter^2 which is for area.
+//! pub struct MetreAsF64(pub f64); // Metre which is for distance.
+//! pub struct Metre2AsF64(pub f64); // Metre^2 which is for area.
 //!
-//! fn area(length: MeterAsF64, width: MeterAsF64) -> Meter2AsF64 {
-//!    Meter2AsF64(length.0 * width.0)
+//! fn area(length: MetreAsF64, width: MetreAsF64) -> Metre2AsF64 {
+//!    Metre2AsF64(length.0 * width.0)
 //! }
 //! ```
 //!
@@ -246,7 +247,7 @@
 //!     Level (MSL)" such as the worldwide height of the aircraft during
 //!     cruising flight.
 //!
-//!   * Unit of measurement as "Meter" which is the international system, or as
+//!   * Unit of measurement as "Metre" which is the international system, or as
 //!     "Foot" which is the United States system.
 //!
 //!   * The implemention as a signed integer 16-bit, because altitude can be
@@ -260,7 +261,7 @@
 //!
 //!   * As representation name "Above Ground Level" or "Mean Sea Level"
 //!
-//!   * As unit name "Meter" or "Foot"
+//!   * As unit name "Metre" or "Foot"
 //!
 //!   * As primitive name "I16".
 //!
@@ -268,9 +269,9 @@
 //!
 //! ```rust
 //! # use ::typeables::altitude::*;
-//! pub struct AltitudeAsAboveGroundLevelAsMeterAsStructI16(pub i16);
+//! pub struct AltitudeAsAboveGroundLevelAsMetreAsStructI16(pub i16);
 //! pub struct AltitudeAsAboveGroundLevelAsFootAsStructI16(pub i16);
-//! pub struct AltitudeAsMeanSeaLevelAsMeterAsStructI16(pub i16);
+//! pub struct AltitudeAsMeanSeaLevelAsMetreAsStructI16(pub i16);
 //! pub struct AltitudeAsMeanSeaLevelAsFootAsStructI16(pub i16);
 //! ```
 //!
@@ -288,9 +289,9 @@
 //!
 //! ```rust
 //! # use ::typeables::elevation::*;
-//! pub struct ElevationAsAboveGroundLevelAsMeterAsStructI16(pub i16);
+//! pub struct ElevationAsAboveGroundLevelAsMetreAsStructI16(pub i16);
 //! pub struct ElevationAsAboveGroundLevelAsFootAsStructI16(pub i16);
-//! pub struct ElevationAsMeanSeaLevelAsMeterAsStructI16(pub i16);
+//! pub struct ElevationAsMeanSeaLevelAsMetreAsStructI16(pub i16);
 //! pub struct ElevationAsMeanSeaLevelAsFootAsStructI16(pub i16);
 //! ```
 //!
@@ -321,7 +322,7 @@
 //!
 //! Examples of unit names:
 //!
-//!   * Use "Meter" not "M".
+//!   * Use "Metre" not "M".
 //!
 //!   * Use "Second" not "S".
 //!
@@ -342,7 +343,7 @@
 //!
 //! Examples of unit names:
 //!
-//!   * Use "Meter" not "Meters".
+//!   * Use "Metre" not "Metres".
 //!
 //!   * Use "Second" not "Seconds"
 //!
@@ -421,7 +422,7 @@
 //!
 //! * Typeables favors working with explicit measurement units and explicit
 //!   implementation primitives. When you want the concept of "length" and unit
-//!   "meter" and primitive "f32" then you write "LengthAsMeterAsTypeF32".
+//!   "meter" and primitive "f32" then you write "LengthAsMetreAsTypeF32".
 //!
 //! Normalization v. exactness:
 //!
@@ -504,6 +505,8 @@
 
 // SI Unit System
 pub mod ampere;
+pub mod gram;
+pub mod kelvin;
 pub mod litre;
 pub mod metre;
 
