@@ -504,8 +504,8 @@
 
 // SI Unit System
 pub mod ampere;
-pub mod liter;
-pub mod meter;
+pub mod litre;
+pub mod metre;
 
 // Misc
 pub mod currency;
