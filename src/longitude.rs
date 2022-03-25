@@ -36,6 +36,21 @@ pub struct LongitudeAsDecimalDegreeAsStructF64(pub f64);
 
 //// Longitude as Degree Minute (DM) with Degree
 
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructI8(pub i8);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructI16(pub i16);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructI32(pub i32);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructI64(pub i64);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructI128(pub i128);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructISize(pub isize);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructU8(pub u8);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructU16(pub u16);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructU32(pub u32);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructU64(pub u64);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructU128(pub u128);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructUSize(pub usize);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructF32(pub f32);
+pub struct LongitudeAsDegreeMinuteWithDegreeAsStructF64(pub f64);
+
 pub type LongitudeAsDegreeMinuteWithDegreeAsTypeI8 = i8;
 pub type LongitudeAsDegreeMinuteWithDegreeAsTypeI16 = i16;
 pub type LongitudeAsDegreeMinuteWithDegreeAsTypeI32 = i32;
@@ -52,6 +67,21 @@ pub type LongitudeAsDegreeMinuteWithDegreeAsTypeF32 = f32;
 pub type LongitudeAsDegreeMinuteWithDegreeAsTypeF64 = f64;
 
 //// Longitude as Degree Minute (DM) with Minute
+
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructI8(pub i8);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructI16(pub i16);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructI32(pub i32);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructI64(pub i64);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructI128(pub i128);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructISize(pub isize);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructU8(pub u8);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructU16(pub u16);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructU32(pub u32);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructU64(pub u64);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructU128(pub u128);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructUSize(pub usize);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructF32(pub f32);
+pub struct LongitudeAsDegreeMinuteWithMinuteAsStructF64(pub f64);
 
 pub type LongitudeAsDegreeMinuteWithMinuteAsTypeI8 = i8;
 pub type LongitudeAsDegreeMinuteWithMinuteAsTypeI16 = i16;
@@ -85,7 +115,37 @@ pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeUSize = usize;
 pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeF32 = f32;
 pub type LongitudeAsDegreeMinuteSecondWithDegreeAsTypeF64 = f64;
 
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI8(pub i8);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI16(pub i16);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI32(pub i32);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI64(pub i64);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructI128(pub i128);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructISize(pub isize);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructU8(pub u8);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructU16(pub u16);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructU32(pub u32);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructU64(pub u64);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructU128(pub u128);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructUSize(pub usize);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructF32(pub f32);
+pub struct LongitudeAsDegreeMinuteSecondWithDegreeAsStructF64(pub f64);
+
 //// Longitude as Degree Minute Second (DMS) with Minute
+
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructI8(pub i8);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructI16(pub i16);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructI32(pub i32);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructI64(pub i64);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructI128(pub i128);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructISize(pub isize);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructU8(pub u8);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructU16(pub u16);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructU32(pub u32);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructU64(pub u64);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructU128(pub u128);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructUSize(pub usize);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructF32(pub f32);
+pub struct LongitudeAsDegreeMinuteSecondWithMinuteAsStructF64(pub f64);
 
 pub type LongitudeAsDegreeMinuteSecondWithMinuteAsTypeI8 = i8;
 pub type LongitudeAsDegreeMinuteSecondWithMinuteAsTypeI16 = i16;
@@ -103,6 +163,21 @@ pub type LongitudeAsDegreeMinuteSecondWithMinuteAsTypeF32 = f32;
 pub type LongitudeAsDegreeMinuteSecondWithMinuteAsTypeF64 = f64;
 
 //// Longitude as Degree Minute Second (DMS) with Second
+
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructI8(pub i8);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructI16(pub i16);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructI32(pub i32);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructI64(pub i64);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructI128(pub i128);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructISize(pub isize);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructU8(pub u8);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructU16(pub u16);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructU32(pub u32);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructU64(pub u64);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructU128(pub u128);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructUSize(pub usize);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructF32(pub f32);
+pub struct LongitudeAsDegreeMinuteSecondWithSecondAsStructF64(pub f64);
 
 pub type LongitudeAsDegreeMinuteSecondWithSecondAsTypeI8 = i8;
 pub type LongitudeAsDegreeMinuteSecondWithSecondAsTypeI16 = i16;
