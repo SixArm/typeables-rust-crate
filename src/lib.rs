@@ -560,6 +560,7 @@ pub mod mole;
 pub mod ohm;
 pub mod radian;
 pub mod second;
+pub mod steradian;
 pub mod tesla;
 pub mod watt;
 
