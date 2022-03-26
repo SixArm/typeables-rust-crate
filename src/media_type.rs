@@ -1,9 +1,11 @@
 //! # Media type
 //!
-//! Example: The media type "text/plain" means that media (e.g. a software file)
-//! is the supertype "text" (e.g. not an image) and subtype "plain" (e.g. not HTML).
+//! Example: The media type code "text/plain" means that content (e.g. a
+//! software file) is the media type supertype "text" (e.g. not an image, not a
+//! movie, etc.) and media type subtype "plain" (e.g. not hypertext, not
+//! markdown, etc.).
 //!
-//! Examples of common media types:
+//! Examples of common media type codes:
 //!
 //!   * text/plain is a typical note file
 //!
@@ -16,17 +18,17 @@
 //!   * application/json is a typical data file
 //!
 //!
-//! ## Media Type Text
+//! ## Media Type Code
 //!
 //! Examples:
 //!
 //! ```rust
 //! # use ::typeables::media_type::*;
-//! let x = MediaTypeTextAsStructStr("text/plain");
-//! let x = MediaTypeTextAsStructStr("image/jpeg");
-//! let x = MediaTypeTextAsStructStr("audio/ogg");
-//! let x = MediaTypeTextAsStructStr("video/mpeg");
-//! let x = MediaTypeTextAsStructStr("application/json");
+//! let x = MediaTypeCodeAsStructStr("text/plain");
+//! let x = MediaTypeCodeAsStructStr("image/jpeg");
+//! let x = MediaTypeCodeAsStructStr("audio/ogg");
+//! let x = MediaTypeCodeAsStructStr("video/mpeg");
+//! let x = MediaTypeCodeAsStructStr("application/json");
 //! ```
 //!
 //!
@@ -94,13 +96,13 @@
 //! let x = MediaTypeTreeAsStructStr("vnd."); // vnd means vendor
 //! ```
 
-//// Media Type Text
+//// Media Type Code
 
-pub struct MediaTypeTextAsStructStr(pub &'static str);
-pub struct MediaTypeTextAsStructString(pub String);
+pub struct MediaTypeCodeAsStructStr(pub &'static str);
+pub struct MediaTypeCodeAsStructString(pub String);
 
-pub type MediaTypeTextAsTypeStr = str;
-pub type MediaTypeTextAsTypeString = String;
+pub type MediaTypeCodeAsTypeStr = str;
+pub type MediaTypeCodeAsTypeString = String;
 
 //// Media Type Supertype
 

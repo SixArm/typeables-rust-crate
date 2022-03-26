@@ -65,7 +65,7 @@ QuotationStartDelimiter,
 QuotationStopDelimiter.
 
 Media Type:
-MediaTypeText,
+MediaTypeCode,
 MediaTypeSupertype,
 MediaTypeSubtype,
 MediaTypeSuffix,

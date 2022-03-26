@@ -65,7 +65,7 @@
 //! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr), 
 //! 
 //! Media Type: 
-//! [MediaTypeText](MediaTypeTextAsStructStr),
+//! [MediaTypeCode](MediaTypeCodeAsStructStr),
 //! [MediaTypeSupertype](MediaTypeSupertypeAsStructStr),
 //! [MediaTypeSubtype](MediaTypeSubtypeAsStructStr),
 //! [MediaTypeSuffix](MediaTypeSuffixAsStructStr),
