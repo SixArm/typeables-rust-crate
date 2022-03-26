@@ -20,8 +20,8 @@
 //! (and minutes), and a "second hand" to mark the passage of time in seconds.
 //! Digital clocks and watches often have a two-digit seconds counter. 
 //! 
-//! The second is also part of several other units of measurement like meters
-//! per second for speed, meters per second per second for acceleration, and
+//! The second is also part of several other units of measurement like metres
+//! per second for speed, metres per second per second for acceleration, and
 //! cycles per second for frequency. 
 
 //// Second

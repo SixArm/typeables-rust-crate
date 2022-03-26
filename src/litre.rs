@@ -9,10 +9,10 @@
 //! 
 //! https://wikipedia.org/wiki/Litre
 //! 
-//! The litre is a metric unit of volume. It is equal to 1 cubic decimeter
-//! (dm3), 1000 cubic centimeters (cm3) or 0.001 cubic meter (m3). A cubic
-//! decimeter (or litre) occupies a volume of 10 cm × 10 cm × 10 cm (see figure)
-//! and is thus equal to one-thousandth of a cubic meter. 
+//! The litre is a metric unit of volume. It is equal to 1 cubic decimetre
+//! (dm3), 1000 cubic centimetre (cm3) or 0.001 cubic metre (m3). A cubic
+//! decimetre (or litre) occupies a volume of 10 cm × 10 cm × 10 cm (see figure)
+//! and is thus equal to one-thousandth of a cubic metre. 
 //! 
 //! The symbols are L, l, ℓ.
 //! 
