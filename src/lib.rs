@@ -563,6 +563,7 @@ pub mod radian;
 pub mod second;
 pub mod steradian;
 pub mod tesla;
+pub mod volt;
 pub mod watt;
 
 // Misc
