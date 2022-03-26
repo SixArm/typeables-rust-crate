@@ -65,10 +65,10 @@
 //! Content:
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
-//! [Locale](LocaleAsStructF64), 
-//! [MediaType](MediaTypeAsStructF64),
-//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructF64), 
-//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructF64), 
+//! [Locale](LocaleAsStructStr), 
+//! [MediaType](MediaTypeAsStructStr),
+//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr), 
+//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr), 
 //! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
 //!
 //! Date Time: 
