@@ -584,6 +584,7 @@ pub mod media_type;
 pub mod phone;
 pub mod quotation_start_delimiter;
 pub mod quotation_stop_delimiter;
+pub mod value_added_tax_identification_number;
 
 // Geolocation
 pub mod latitude;
