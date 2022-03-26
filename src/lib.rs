@@ -566,6 +566,7 @@ pub mod pascal;
 pub mod radian;
 pub mod second;
 pub mod siemens;
+pub mod sievert;
 pub mod steradian;
 pub mod tesla;
 pub mod volt;
