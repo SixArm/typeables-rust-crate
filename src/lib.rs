@@ -546,6 +546,7 @@
 // SI Unit System
 pub mod ampere;
 pub mod candela;
+pub mod farad;
 pub mod gram;
 pub mod hertz;
 pub mod joule;
