@@ -58,6 +58,12 @@ LocaleRegionCode,
 LocaleScriptCode,
 LocaleVariantCode.
 
+Localization:
+DecimalSeparator,
+GroupingSeparator,
+QuotationStartDelimiter, 
+QuotationStopDelimiter.
+
 Media Type:
 MediaTypeText,
 MediaTypeSupertype,
@@ -79,13 +85,9 @@ Noun,
 Verb.
 
 Content:
-DecimalSeparator,
 GlobalLocationNumber, 
-GroupingSeparator,
 LegalEntityIdentifierCode,
 MediaType,
-QuotationStartDelimiter, 
-QuotationStopDelimiter, 
 ValueAddedTaxIdentificationNumber.
 
 Date Time: 

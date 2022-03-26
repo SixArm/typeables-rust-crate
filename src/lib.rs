@@ -54,11 +54,16 @@
 //! [LocaleCode](LocaleCodeAsStructStr),
 //! [LocaleLanguageCode](LocaleLanguageCodeAsStructStr),
 //! [LocaleCountryCode](LocaleCountryCodeAsStructStr),
-//! [LocaleGroupingSeparator](LocaleGroupingSeparatorAsStructStr),
 //! [LocaleRegionCode](LocaleRegionCodeAsStructStr),
 //! [LocaleScriptCode](LocaleScriptCodeAsStructStr),
 //! [LocaleVariantCode](LocaleVariantCodeAsStructStr).
 //!
+//! Localization:
+//! [DecimalSeparator](DecimalSeparatorAsStructStr),
+//! [GroupingSeparator](GroupingSeparatorAsStructStr),
+//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr), 
+//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr), 
+//! 
 //! Media Type: 
 //! [MediaTypeText](MediaTypeTextAsStructStr),
 //! [MediaTypeSupertype](MediaTypeSupertypeAsStructStr),
@@ -80,12 +85,8 @@
 //! [Verb](VerbAsStructStr).
 //!
 //! Content:
-//! [DecimalSeparator](DecimalSeparatorAsStructStr),
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
-//! [GroupingSeparator](GroupingSeparatorAsStructStr),
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
-//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr), 
-//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr), 
 //! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
 //!
 //! Date Time: 
@@ -631,16 +632,11 @@ pub mod weber;
 
 // Misc
 pub mod currency;
-pub mod decimal_separator;
-
-pub mod grouping_separator;
 pub mod global_location_number;
 pub mod legal_entity_identifier_code;
 pub mod locale;
 pub mod media_type;
 pub mod phone;
-pub mod quotation_start_delimiter;
-pub mod quotation_stop_delimiter;
 pub mod value_added_tax_identification_number;
 
 // Email
@@ -653,6 +649,12 @@ pub mod latitude;
 pub mod longitude;
 pub mod altitude;
 pub mod elevation;
+
+// Localization
+pub mod decimal_separator;
+pub mod grouping_separator;
+pub mod quotation_start_delimiter;
+pub mod quotation_stop_delimiter;
 
 // Date & Time
 pub mod datetime;
