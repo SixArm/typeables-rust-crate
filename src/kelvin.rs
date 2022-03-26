@@ -1,22 +1,22 @@
 //! # Kelvin
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::kelvin::*;
 //! let x = KelvinAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Kelvin
-//! 
+//!
 //! The kelvin is the SI base unit of temperature.
-//! 
+//!
 //! The symbol is K.
-//! 
+//!
 //! The kelvin is named after the Belfast-born and University of Glasgow based
 //! engineer and physicist William Thomson, 1st Baron Kelvin (1824–1907). The
 //! Kelvin scale is an absolute thermodynamic temperature scale, meaning it uses
-//! absolute zero as its null point. 
+//! absolute zero as its null point.
 
 //// Kelvin
 

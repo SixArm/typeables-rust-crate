@@ -4,18 +4,18 @@
 //! is the supertype "text" (e.g. not an image) and subtype "plain" (e.g. not HTML).
 //!
 //! Examples of common media types:
-//! 
+//!
 //!   * text/plain is a typical note file
-//! 
+//!
 //!   * image/jpeg is a typical photo file
-//! 
+//!
 //!   * audio/ogg is a typical sound file
-//! 
+//!
 //!   * video/mpeg is a typical movie file
-//! 
+//!
 //!   * application/json is a typical data file
-//! 
-//! 
+//!
+//!
 //! ## Media Type Text
 //!
 //! Examples:
@@ -28,9 +28,9 @@
 //! let x = MediaTypeTextAsStructStr("video/mpeg");
 //! let x = MediaTypeTextAsStructStr("application/json");
 //! ```
-//! 
-//! 
-//! ## Media Type Supertype 
+//!
+//!
+//! ## Media Type Supertype
 //!
 //! Examples:
 //!
@@ -43,7 +43,7 @@
 //! let x = MediaTypeSupertypeAsStructStr("application"); // e.g. "application/json"
 //! ```
 //!
-//! 
+//!
 //! ## Media Type Subtype
 //!
 //! Examples:
@@ -57,7 +57,7 @@
 //! let x = MediaTypeSubtypeAsStructStr("json");  // e.g. "application/json"
 //! ```
 //!
-//! 
+//!
 //! ## Media Type Suffix
 //!
 //! Examples:
@@ -67,8 +67,8 @@
 //! let x = MediaTypeSuffixAsStructStr("+json");
 //! let x = MediaTypeSuffixAsStructStr("+zip");
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Media Type Parameter
 //!
 //! Examples:
@@ -83,7 +83,7 @@
 //! let x = MediaTypeParameterAsStructStr("boundary=charlie");
 //! ```
 //!
-//! 
+//!
 //! Media Type Tree
 //!
 //! Examples:

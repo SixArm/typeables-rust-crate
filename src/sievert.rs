@@ -1,16 +1,16 @@
 //! # Sievert
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::sievert::*;
 //! let x = SievertAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Sievert
-//! 
+//!
 //! The sievert is a unit of equivalent dose (of ionizing radiation).
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is Sv.

@@ -1,16 +1,16 @@
 //! # Lux
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::lux::*;
 //! let x = LuxAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Lux
-//! 
+//!
 //! The lux is a unit of illuminance.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is lx.

@@ -1,28 +1,28 @@
 //! # Second
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::second::*;
 //! let x = SecondAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Second
-//! 
+//!
 //! The second is a unit of time.
-//! 
+//!
 //! It is a base unit in the International System of Units (SI).
-//! 
+//!
 //! The SI unit symbol is s.
 //!
 //! The second is commonly understood as 1⁄60 of a minute. Analog clocks and
 //! watches often have sixty tick marks on their faces, representing seconds
 //! (and minutes), and a "second hand" to mark the passage of time in seconds.
-//! Digital clocks and watches often have a two-digit seconds counter. 
-//! 
+//! Digital clocks and watches often have a two-digit seconds counter.
+//!
 //! The second is also part of several other units of measurement like metres
 //! per second for speed, metres per second per second for acceleration, and
-//! cycles per second for frequency. 
+//! cycles per second for frequency.
 
 //// Second
 

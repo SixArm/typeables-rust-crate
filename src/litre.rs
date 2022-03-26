@@ -1,21 +1,21 @@
 //! # Litre
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::litre::*;
 //! let x = LitreAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Litre
-//! 
+//!
 //! The litre is a metric unit of volume. It is equal to 1 cubic decimetre
 //! (dm3), 1000 cubic centimetre (cm3) or 0.001 cubic metre (m3). A cubic
 //! decimetre (or litre) occupies a volume of 10 cm × 10 cm × 10 cm (see figure)
-//! and is thus equal to one-thousandth of a cubic metre. 
-//! 
+//! and is thus equal to one-thousandth of a cubic metre.
+//!
 //! The symbols are L, l, ℓ.
-//! 
+//!
 //! Litre is the standard spelling in nearly all English-speaking areas.
 
 //// Litre

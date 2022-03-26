@@ -1,16 +1,16 @@
 //! # Steradian
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::steradian::*;
 //! let x = SteradianAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Steradian
-//! 
+//!
 //! The steradian is a unit of solid angle.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is sr.

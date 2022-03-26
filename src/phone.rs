@@ -33,8 +33,8 @@
 //!   * United States fake phone numbers start with local number 555.
 //!   * China fake phone numbers start with 13, 15, 18.
 //!   * India fake phone numbers start with 7, 8, 9.
-//! 
-//! 
+//!
+//!
 //! ## Phone E.164 Text
 //!
 //! Examples:
@@ -44,8 +44,8 @@
 //! let x = PhoneE164TextAsStructStr("+86 13 0000 0000"); // China example
 //! let x = PhoneE164TextAsStructStr("+91 900 0000 000"); // India example
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Phone E.164 Country Code
 //!
 //! Examples:
@@ -55,8 +55,8 @@
 //! let x = PhoneE164CountryCodeAsStructStr("86"); // China
 //! let x = PhoneE164CountryCodeAsStructStr("91"); // India
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Phone E.164 National Destination Code
 //!
 //! Examples:
@@ -66,8 +66,8 @@
 //! let x = PhoneE164NationalDestinationCodeAsStructStr("10"); // China + Beijing
 //! let x = PhoneE164NationalDestinationCodeAsStructStr("11"); // India + Delhi
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Phonee E.164 Subscriber Number
 //!
 //! Examples:
@@ -77,8 +77,8 @@
 //! let x = PhoneE164SubscriberNumberAsStructStr("0000 0000"); // China example
 //! let x = PhoneE164SubscriberNumberAsStructStr("0000 000"); // India example
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Phone E.164 Group Identification Code
 //!
 //! Examples:
@@ -87,7 +87,7 @@
 //! let x = PhoneE164GroupIdentificationCodeAsStructStr("TODO");
 //! ```
 //!
-//! 
+//!
 //! ## Phone E.164 Trial Identification Code
 //!
 //! Examples:

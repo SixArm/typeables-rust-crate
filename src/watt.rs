@@ -1,23 +1,23 @@
 //! # Watt
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::watt::*;
 //! let x = WattAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Watt
-//! 
+//!
 //! The watt is a unit of power or radiant flux.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is W.
 //!
 //! The watt is defined as a derived unit of (in SI base units) 1 kg⋅m2⋅s−3 or 1
-//! joule per second. It is used to quantify the rate of energy transfer. 
-//! 
+//! joule per second. It is used to quantify the rate of energy transfer.
+//!
 //! The watt is named after James Watt (1736–1819).
 
 //// Watt

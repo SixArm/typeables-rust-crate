@@ -1,16 +1,16 @@
 //! # Henry
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::henry::*;
 //! let x = HenryAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Henry
-//! 
+//!
 //! The henry is a unit of electrical inductance.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is H.

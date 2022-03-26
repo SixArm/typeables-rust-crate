@@ -1,16 +1,16 @@
 //! # Volt
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::volt::*;
 //! let x = VoltAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Volt
-//! 
+//!
 //! The volt is a unit of voltage, electrical potential difference, electromotive force.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is V.

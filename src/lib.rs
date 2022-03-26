@@ -6,7 +6,7 @@
 //! for English, "zh" for Chinese), etc.
 //!
 //! Units:
-//! 
+//!
 //! * metre for length
 //! * second for time
 //! * mole for amount of substance
@@ -16,7 +16,7 @@
 //! * kilogram for mass
 //!
 //! Calendaring:
-//! 
+//!
 //! * year
 //! * month
 //! * day
@@ -27,25 +27,25 @@
 //! * time
 //! * time offset
 //! * time zone
-//! 
+//!
 //! Geolocation:
-//! 
+//!
 //! * latitude
 //! * longitue
 //! * altitude
 //! * elevation
-//! 
+//!
 //! Content:
-//! 
+//!
 //! * locale
 //! * media type
-//! 
+//!
 //! Grammar:
-//! 
+//!
 //! * noun
 //! * verb
 //!
-//! 
+//!
 //! ## Introduction
 //!
 //! Typeables is based on the Rust pattern of "New Type". This uses a Rust
@@ -112,13 +112,13 @@
 //! ### What does Typeables do?
 //!
 //! Typeables provides many concept types, each implemented as a struct tuple
-//! and a type alias, and 
+//! and a type alias, and
 //!
 //! Example variable:
 //!
 //! ```rust
 //! use ::typeables::year::*;
-//! 
+//!
 //! let x = YearAsStructI16(2022); // Year as struct tuple
 //! ```
 //!
@@ -126,7 +126,7 @@
 //!
 //! ```rust
 //! use ::typeables::year::*;
-//! 
+//!
 //! fn f(x: YearAsStructI16) { // Year as struct tuple
 //!     println!("Year {}", x.0) // Use the zero field
 //! }
@@ -143,7 +143,7 @@
 //! fn f(x: i16) {
 //!     println!("{}", x)
 //! }
-//! 
+//!
 //! fn main() {
 //!     let x = 2022;
 //!     f(x)
@@ -151,14 +151,14 @@
 //! ```
 //!
 //! Step 1. Refactor to a Typeables type alias. This is annotation.
-//! 
+//!
 //! ```rust
 //! use ::typeables::year::*;
-//! 
+//!
 //! fn f(x: YearAsTypeI16) {
 //!     println!("{}", x)
 //! }
-//! 
+//!
 //! fn main() {
 //!     let x = 1 as YearAsTypeI16;
 //!     f(x)
@@ -166,10 +166,10 @@
 //! ```
 //!
 //! Step 2. Refactor to a Typealias struct tuple. This is encapsulation.
-//! 
+//!
 //! ```rust
 //! use ::typeables::year::*;
-//! 
+//!
 //! fn f(x: YearAsStructI16) {
 //!     println!("{}", x.0)
 //! }
@@ -437,7 +437,7 @@
 //! pub type FooAsTypeString = String;
 //! ```
 //!
-//! 
+//!
 //! ## Comparisons
 //!
 //! We recommend looking at the Rust crate `uom` (unit of measure) and the Rust

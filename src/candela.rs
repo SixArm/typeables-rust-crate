@@ -1,18 +1,18 @@
 //! # Candela
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::candela::*;
 //! let x = CandelaAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Candela
-//! 
+//!
 //! The candela is a unit of luminous intensity.
-//! 
+//!
 //! It is a base unit in the International System of Units (SI).
-//! 
+//!
 //! The SI unit symbol is cd.
 //!
 //! A candela is the luminous power per unit solid angle emitted by a point
@@ -20,8 +20,8 @@
 //! radiant intensity, but instead of simply adding up the contributions of
 //! every wavelength of light in the source's spectrum, the contribution of each
 //! wavelength is weighted by the standard luminosity function (a model of the
-//! sensitivity of the human eye to different wavelengths). 
-//! 
+//! sensitivity of the human eye to different wavelengths).
+//!
 //! A common wax candle emits light with a luminous intensity of roughly one
 //! candela. If emission in some directions is blocked by an opaque barrier, the
 //! emission would still be approximately one candela in the directions that are

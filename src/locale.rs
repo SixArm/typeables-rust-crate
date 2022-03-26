@@ -9,7 +9,7 @@
 //!   * "ar-EG" means Arabic - Egypt
 //!   * "ms-ID" means Malay - Indonesia
 //!
-//! 
+//!
 //! ## Locale Code a.k.a. language code and country code
 //!
 //! Examples:
@@ -23,8 +23,8 @@
 //! let x = LocaleCodeAsStructStr("ar-EG"); // Arabic - Egypt
 //! let x = LocaleCodeAsStructStr("ms-ID"); // Malay - Indonesia
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Locale Language Code
 //!
 //! Examples:
@@ -38,8 +38,8 @@
 //! let x = LocaleLanguageCodeAsStructStr("ar"); // Arabic
 //! let x = LocaleLanguageCodeAsStructStr("ms"); // Malay
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Locale Country Code
 //!
 //! Examples:
@@ -65,8 +65,8 @@
 //! let x = LocaleDecimalSeparatorAsStructStr(","); // French
 //! let x = LocaleDecimalSeparatorAsStructStr("~"); // Some made up language
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Locale Grouping Separator a.k.a. thousands separator for numbers
 //!
 //! Examples:
@@ -78,7 +78,7 @@
 //! let x = LocaleGroupingSeparatorAsStructStr(" "); // French
 //! ```
 //!
-//! 
+//!
 //! ## Locale Region Code
 //!
 //! Examples:
@@ -89,8 +89,8 @@
 //! let x = LocaleRegionCodeAsStructStr("EU"); // European Union
 //! let x = LocaleRegionCodeAsStructStr("ZZ"); // Unknown or Invalid Territory
 //! ```
-//! 
-//! 
+//!
+//!
 //! ## Locale Script Code
 //!
 //! Examples:
@@ -105,7 +105,7 @@
 //! let x = LocaleScriptCodeAsStructStr("Mlym"); // Malayalam
 //! ```
 //!
-//! 
+//!
 //! ## Locale Variant Code
 //!
 //! Examples:

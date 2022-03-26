@@ -1,16 +1,16 @@
 //! # Becquerel
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::becquerel::*;
 //! let x = BecquerelAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Becquerel
-//! 
+//!
 //! The becquerel is a unit of radioactivity (decays per unit time).
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is Bq.

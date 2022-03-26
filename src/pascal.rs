@@ -1,16 +1,16 @@
 //! # Pascal
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::pascal::*;
 //! let x = PascalAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Pascal
-//! 
+//!
 //! The pascal is a unit of pressure, stress.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is Pa.

@@ -1,16 +1,16 @@
 //! # Siemens
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::siemens::*;
 //! let x = SiemensAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Siemens
-//! 
+//!
 //! The siemens is a unit of electrical conductance.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is S.

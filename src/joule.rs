@@ -1,18 +1,18 @@
 //! # Joule
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::joule::*;
 //! let x = JouleAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Joule
-//! 
+//!
 //! The joule is a unit of energy.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
-//! 
+//!
 //! The SI unit symbol is J.
 //!
 //! It is equal to the amount of work done when a force of 1 Newton displaces a

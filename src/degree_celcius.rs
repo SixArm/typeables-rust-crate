@@ -1,16 +1,16 @@
 //! # DegreeCelcius
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::degree_celcius::*;
 //! let x = DegreeCelciusAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/DegreeCelcius
-//! 
+//!
 //! The degree celcius is a unit of temperature.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is °C.

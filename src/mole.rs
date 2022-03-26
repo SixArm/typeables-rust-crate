@@ -1,16 +1,16 @@
 //! # Mole
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::mole::*;
 //! let x = MoleAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://en.wikipedia.org/wiki/Mole_(unit)
-//! 
+//!
 //! The mole is a unit of amount of substance.
-//! 
+//!
 //! It is a base unit in the International System of Units (SI).
 //
 //! The SI unit symbol is mol.

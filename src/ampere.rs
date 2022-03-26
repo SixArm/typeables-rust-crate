@@ -1,18 +1,18 @@
 //! # Ampere
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::ampere::*;
 //! let x = AmpereAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Ampere
-//! 
+//!
 //! The ampere, often shortened to amp, is the SI base unit of electric current.
 //! The ampere is named after French mathematician and physicist André-Marie
 //! Ampère (1775–1836), considered the father of electromagnetism along with the
-//! Danish physicist Hans Christian Ørsted. 
+//! Danish physicist Hans Christian Ørsted.
 
 //// Ampere
 

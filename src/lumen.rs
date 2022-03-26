@@ -1,16 +1,16 @@
 //! # Lumen
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::lumen::*;
 //! let x = LumenAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Lumen
-//! 
+//!
 //! The lumen is a unit of luminous flux.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is lm.

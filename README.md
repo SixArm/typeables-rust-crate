@@ -113,7 +113,7 @@ let x: Year = 2022;
 ### What does Typeables do?
 
 Typeables provides many concept types, each implemented as a struct tuple
-and a type alias, and 
+and a type alias, and
 
 Example variable:
 

@@ -1,18 +1,18 @@
 //! # Metre
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::metre::*;
 //! let x = MetreAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Metre
-//! 
+//!
 //! The metre is the SI base unit of length.
-//! 
-//! The symbol is m. 
-//! 
+//!
+//! The symbol is m.
+//!
 //! Metre is the standard spelling of the metric unit for length in nearly all
 //! English-speaking nations.
 

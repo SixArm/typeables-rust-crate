@@ -1,16 +1,16 @@
 //! # Hertz
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::hertz::*;
 //! let x = HertzAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Hertz
-//! 
+//!
 //! The hertz is a unit of frequency.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is Hz.

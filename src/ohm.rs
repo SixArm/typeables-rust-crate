@@ -1,28 +1,28 @@
 //! # Ohm
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::ohm::*;
 //! let x = OhmAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Ohm
-//! 
+//!
 //! The ohm is a unit of  of electrical resistance.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //!
 //! The SI unit symbol is Ω.
 //!
-//! The ohm named after German physicist Georg Ohm. 
-//! 
+//! The ohm named after German physicist Georg Ohm.
+//!
 //! Various empirically derived standard units for electrical resistance were
 //! developed in connection with early telegraphy practice, and the British
 //! Association for the Advancement of Science proposed a unit derived from
 //! existing units of mass, length and time, and of a convenient scale for
 //! practical work as early as 1861. As of 2020, the definition of the ohm is
-//! expressed in terms of the quantum Hall effect. 
+//! expressed in terms of the quantum Hall effect.
 
 //// Ohm
 

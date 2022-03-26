@@ -1,16 +1,16 @@
 //! # Gray
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::gray::*;
 //! let x = GrayAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Gray
-//! 
+//!
 //! The gray is a unit of absorbed dose (of ionizing radiation).
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is Gy.

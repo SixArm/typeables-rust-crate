@@ -1,16 +1,16 @@
 //! # Rdian
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::radian::*;
 //! let x = RdianAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Rdian
-//! 
+//!
 //! The radian is a unit of angle.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is rad.

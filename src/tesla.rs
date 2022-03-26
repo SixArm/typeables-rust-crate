@@ -1,16 +1,16 @@
 //! # Tesla
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::tesla::*;
 //! let x = TeslaAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Tesla
-//! 
+//!
 //! The tesla is a unit of magnetic induction, magnetic flux density.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is T.

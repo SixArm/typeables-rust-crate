@@ -1,16 +1,16 @@
 //! # Kilogram
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::kilogram::*;
 //! let x = KilogramAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Kilogram
-//! 
+//!
 //! The kilogram is a unit of mass.
-//! 
+//!
 //! It is a base unit in the International System of Units (SI).
 //
 //! The SI unit symbol is kg.

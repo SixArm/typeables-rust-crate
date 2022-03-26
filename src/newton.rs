@@ -1,16 +1,16 @@
 //! # Newton
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::newton::*;
 //! let x = NewtonAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Newton
-//! 
+//!
 //! The newton is a unit of mass.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is N.

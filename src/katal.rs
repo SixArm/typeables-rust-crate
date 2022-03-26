@@ -1,16 +1,16 @@
 //! # Katal
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::katal::*;
 //! let x = KatalAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Katal
-//! 
+//!
 //! The katal is a unit of catalytic activity.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is kat.

@@ -1,7 +1,7 @@
 //! # Noun
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::noun::*;
 //! let x = NounAsStructStr("Alice"); // person
@@ -11,7 +11,7 @@
 //! let x = NounAsStructStr("eagle"); // animal
 //! let x = NounAsStructStr("fruit"); // plant
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Noun
 //!
 //! A noun is a word that functions as the name of a specific object or set of

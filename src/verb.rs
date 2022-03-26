@@ -1,7 +1,7 @@
 //! # Verb
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::verb::*;
 //! let x = GrammarVerbAsStructStr("like"); // action transitive verb e.g. "I like you."
@@ -11,7 +11,7 @@
 //! let x = GrammarVerbAsStructStr("will"); // modal verb a.k.a. helping verb e.g. "I will walk."
 //! let x = GrammarVerbAsStructStr("must"); // modal verb a.k.a. helping verb e.g. "I must walk."
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Verb
 //!
 //! A verb, from the Latin verbum meaning word, is a word (part of speech) that

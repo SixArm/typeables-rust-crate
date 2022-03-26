@@ -1,16 +1,16 @@
 //! # Weber
 //!
 //! Examples:
-//! 
+//!
 //! ```rust
 //! # use ::typeables::weber::*;
 //! let x = WeberAsStructF64(1.0);
 //! ```
-//! 
+//!
 //! https://wikipedia.org/wiki/Weber
-//! 
+//!
 //! The weber is a unit of magnetic flux.
-//! 
+//!
 //! It is a derived unit in the International System of Units (SI).
 //
 //! The SI unit symbol is Wb.
