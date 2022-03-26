@@ -50,6 +50,16 @@
 //! [EmailAddressAddr](EmailAddressAddrAsStructStr), 
 //! [EmailAddressName](EmailAddressNameAsStructStr).
 //! 
+//! Locale:
+//! [LocaleCode](LocaleCodeAsStructStr),
+//! [LocaleLanguageCode](LocaleLanguageCodeAsStructStr),
+//! [LocaleCountryCode](LocaleCountryCodeAsStructStr),
+//! [LocaleDecimalSeparator](LocaleDecimalSeparatorAsStructStr),
+//! [LocaleGroupingSeparator](LocaleGroupingSeparatorAsStructStr),
+//! [LocaleRegionCode](LocaleRegionCodeAsStructStr),
+//! [LocaleScriptCode](LocaleScriptCodeAsStructStr),
+//! [LocaleVariantCode](LocaleVariantCodeAsStructStr).
+//!
 //! Phone: 
 //! [PhoneE164Text](PhoneE164TextAsStructStr),
 //! [PhoneE164CountryCode](PhoneE164CountryCodeAsStructStr),
@@ -65,7 +75,6 @@
 //! Content:
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
-//! [Locale](LocaleAsStructStr), 
 //! [MediaType](MediaTypeAsStructStr),
 //! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr), 
 //! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr), 

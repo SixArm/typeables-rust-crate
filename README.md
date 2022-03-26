@@ -50,6 +50,16 @@ EmailAddress,
 EmailAddressAddr, 
 EmailAddressName.
 
+Locale:
+LocaleCode,
+LocaleLanguageCode,
+LocaleCountryCode,
+LocaleDecimalSeparator,
+LocaleGroupingSeparator,
+LocaleRegionCode,
+LocaleScriptCode,
+LocaleVariantCode.
+
 Phone: 
 PhoneE164Text,
 PhoneE164CountryCode,
@@ -63,10 +73,9 @@ Noun,
 Verb.
 
 Content:
-LegalEntityIdentifierCode,
-Locale, 
-MediaType,
 GlobalLocationNumber, 
+LegalEntityIdentifierCode,
+MediaType,
 QuotationStartDelimiter, 
 QuotationStopDelimiter, 
 ValueAddedTaxIdentificationNumber.
