@@ -60,6 +60,14 @@ LocaleRegionCode,
 LocaleScriptCode,
 LocaleVariantCode.
 
+Media Type:
+MediaTypeText,
+MediaTypeSupertype,
+MediaTypeSubtype,
+MediaTypeSuffix,
+MediaTypeParameter,
+MediaTypeTree.
+
 Phone: 
 PhoneE164Text,
 PhoneE164CountryCode,

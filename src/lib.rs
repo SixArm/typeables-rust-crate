@@ -60,6 +60,14 @@
 //! [LocaleScriptCode](LocaleScriptCodeAsStructStr),
 //! [LocaleVariantCode](LocaleVariantCodeAsStructStr).
 //!
+//! Media Type: 
+//! [MediaTypeText](MediaTypeTextAsStructStr),
+//! [MediaTypeSupertype](MediaTypeSupertypeAsStructStr),
+//! [MediaTypeSubtype](MediaTypeSubtypeAsStructStr),
+//! [MediaTypeSuffix](MediaTypeSuffixAsStructStr),
+//! [MediaTypeParameter](MediaTypeParameterAsStructStr),
+//! [MediaTypeTree](MediaTypeTreeAsStructStr),
+//!
 //! Phone: 
 //! [PhoneE164Text](PhoneE164TextAsStructStr),
 //! [PhoneE164CountryCode](PhoneE164CountryCodeAsStructStr),
@@ -75,7 +83,6 @@
 //! Content:
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
-//! [MediaType](MediaTypeAsStructStr),
 //! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr), 
 //! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr), 
 //! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
