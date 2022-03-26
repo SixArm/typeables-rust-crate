@@ -552,6 +552,7 @@ pub mod joule;
 pub mod kelvin;
 pub mod kilogram;
 pub mod litre;
+pub mod lumen;
 pub mod metre;
 pub mod mole;
 pub mod ohm;
