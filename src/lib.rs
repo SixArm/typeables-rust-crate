@@ -579,6 +579,7 @@ pub mod currency;
 pub mod email_address;
 pub mod email_address_addr;
 pub mod email_address_name;
+pub mod global_location_number;
 pub mod locale;
 pub mod media_type;
 pub mod phone;
