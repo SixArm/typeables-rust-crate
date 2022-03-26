@@ -7,7 +7,7 @@
 //!
 //! Units:
 //! 
-//! * meter for length
+//! * metre for length
 //! * second for time
 //! * mole for amount of substance
 //! * ampere for electric current
@@ -57,7 +57,7 @@
 //! ```rust
 //! pub struct MetreAsF64(pub f64); // This is a "New Type" struct tuple.
 //!
-//! let length = MetreAsF64(1.2); // 1.2 meters as floating-point 64-bit.
+//! let length = MetreAsF64(1.2); // 1.2 metres as floating-point 64-bit.
 //! ```
 //!
 //! Typeables helps you write clearer code and stronger code, because you can be
@@ -457,23 +457,23 @@
 //! Quantities v. units v. primitives:
 //!
 //! * uom deliberately favors working with conceptual quantities (length, mass,
-//!   time, …) rather than measurement units (meter, gram, second, …) and
+//!   time, …) rather than measurement units (metre, gram, second, …) and
 //!   implementation primitives (pub i8, u16, f32, …).
 //!
 //! * Typeables favors working with explicit measurement units and explicit
 //!   implementation primitives. When you want the concept of "length" and unit
-//!   "meter" and primitive "f32" then you write "LengthAsMetreAsTypeF32".
+//!   "metre" and primitive "f32" then you write "LengthAsMetreAsTypeF32".
 //!
 //! Normalization v. exactness:
 //!
 //! * uom deliberately normalizes values to their base units, such as
-//!   normalizing 1 nanometer to 0.000000001 meter, and deliberately trades away
+//!   normalizing 1 gram to 0.001 kilogram, and deliberately trades away
 //!   representation capabilities (due to inexact conversions) and precision
 //!   capabilties (due to bit limits).
 //!
 //! * Typeables favors exactness, never normaliziation. When you want the
-//!   concept of "length" and unit "nanometer" and primitive "u128" for 128-bit
-//!   unsigned integer precision, then you write "LengthAsNanometerAsTypeI128".
+//!   concept of "mass" and unit "gram" and primitive "u128" for 128-bit
+//!   unsigned integer precision, then you write "GramAsTypeI128".
 //!
 //!
 //! ### Comparison with Rust "New Type Idiom" a.k.a. "New Type Pattern"
@@ -547,6 +547,7 @@
 pub mod ampere;
 pub mod candela;
 pub mod gram;
+pub mod hertz;
 pub mod joule;
 pub mod kelvin;
 pub mod kilogram;
