@@ -64,10 +64,11 @@
 //!
 //! Content:
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
-//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructF64), 
-//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructF64), 
+//! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
 //! [Locale](LocaleAsStructF64), 
 //! [MediaType](MediaTypeAsStructF64),
+//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructF64), 
+//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructF64), 
 //! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
 //!
 //! Date Time: 
@@ -617,6 +618,7 @@ pub mod email_address;
 pub mod email_address_addr;
 pub mod email_address_name;
 pub mod global_location_number;
+pub mod legal_entity_identifier_code;
 pub mod locale;
 pub mod media_type;
 pub mod phone;

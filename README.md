@@ -63,11 +63,12 @@ Noun,
 Verb.
 
 Content:
+LegalEntityIdentifierCode,
+Locale, 
+MediaType,
 GlobalLocationNumber, 
 QuotationStartDelimiter, 
 QuotationStopDelimiter, 
-Locale, 
-MediaType,
 ValueAddedTaxIdentificationNumber.
 
 Date Time: 
