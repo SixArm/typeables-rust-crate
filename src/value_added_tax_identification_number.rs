@@ -15,7 +15,7 @@
 //! Example:
 //! ```
 //! # use ::typeables::value_added_tax_identification_number::*;
-//! let x = ValueAddedTaxIdentificationNumberAsStructStr("Alice Adams <alice@example.com>");
+//! let x = ValueAddedTaxIdentificationNumberAsStructStr("01234567");
 //! ```
 
 pub struct ValueAddedTaxIdentificationNumberAsStructStr(pub &'static str);
