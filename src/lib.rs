@@ -555,6 +555,7 @@ pub mod litre;
 pub mod metre;
 pub mod mole;
 pub mod ohm;
+pub mod radian;
 pub mod second;
 pub mod watt;
 
