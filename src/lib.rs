@@ -633,9 +633,6 @@ pub mod weber;
 pub mod currency;
 pub mod decimal_separator;
 
-pub mod email_address;
-pub mod email_address_addr;
-pub mod email_address_name;
 pub mod grouping_separator;
 pub mod global_location_number;
 pub mod legal_entity_identifier_code;
@@ -645,6 +642,11 @@ pub mod phone;
 pub mod quotation_start_delimiter;
 pub mod quotation_stop_delimiter;
 pub mod value_added_tax_identification_number;
+
+// Email
+pub mod email_address;
+pub mod email_address_addr;
+pub mod email_address_name;
 
 // Geolocation
 pub mod latitude;
