@@ -545,9 +545,11 @@
 
 // SI Unit System
 pub mod ampere;
+pub mod becquerel;
 pub mod candela;
 pub mod farad;
 pub mod gram;
+pub mod gray;
 pub mod hertz;
 pub mod henry;
 pub mod joule;
