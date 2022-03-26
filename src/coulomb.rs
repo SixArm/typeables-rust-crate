@@ -9,11 +9,11 @@
 //! 
 //! https://wikipedia.org/wiki/Coulomb
 //! 
-//! The coulomb is a unit of mass.
+//! The coulomb is a unit of electric charge or quantity of electricity.
 //! 
 //! It is a derived unit in the International System of Units (SI).
 //
-//! The SI unit symbol is g.
+//! The SI unit symbol is C.
 
 //// Coulomb
 
