@@ -549,6 +549,7 @@ pub mod candela;
 pub mod farad;
 pub mod gram;
 pub mod hertz;
+pub mod henry;
 pub mod joule;
 pub mod katal;
 pub mod kelvin;
