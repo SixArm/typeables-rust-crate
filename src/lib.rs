@@ -576,9 +576,9 @@ pub mod weber;
 
 // Misc
 pub mod currency;
-pub mod email_addr;
 pub mod email_address;
-pub mod email_address_display_name;
+pub mod email_address_addr;
+pub mod email_address_name;
 pub mod locale;
 pub mod media_type;
 pub mod phone;
