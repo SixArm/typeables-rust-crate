@@ -81,6 +81,7 @@ Noun,
 Verb.
 
 Content:
+DecimalSeparator,
 GlobalLocationNumber, 
 LegalEntityIdentifierCode,
 MediaType,

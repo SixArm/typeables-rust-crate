@@ -54,7 +54,6 @@
 //! [LocaleCode](LocaleCodeAsStructStr),
 //! [LocaleLanguageCode](LocaleLanguageCodeAsStructStr),
 //! [LocaleCountryCode](LocaleCountryCodeAsStructStr),
-//! [LocaleDecimalSeparator](LocaleDecimalSeparatorAsStructStr),
 //! [LocaleGroupingSeparator](LocaleGroupingSeparatorAsStructStr),
 //! [LocaleRegionCode](LocaleRegionCodeAsStructStr),
 //! [LocaleScriptCode](LocaleScriptCodeAsStructStr),
@@ -81,6 +80,7 @@
 //! [Verb](VerbAsStructStr).
 //!
 //! Content:
+//! [DecimalSeparator](DecimalSeparatorAsStructStr),
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
 //! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr), 
@@ -630,6 +630,8 @@ pub mod weber;
 
 // Misc
 pub mod currency;
+pub mod decimal_separator;
+
 pub mod email_address;
 pub mod email_address_addr;
 pub mod email_address_name;

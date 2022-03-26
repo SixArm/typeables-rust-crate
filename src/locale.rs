@@ -9,7 +9,13 @@
 //!   * "ar-EG" means Arabic - Egypt
 //!   * "ms-ID" means Malay - Indonesia
 //!
-//!
+//! See also:
+//! 
+//!   * [DecimalSeparator](DecimalSeparatorAsStructStr)
+//!   * [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr)
+//!   * [QuotationStoptDelimiter](QuotationStopDelimiterAsStructStr)
+//! 
+//! 
 //! ## Locale Code a.k.a. language code and country code
 //!
 //! Examples:
@@ -52,18 +58,6 @@
 //! let x = LocaleCountryCodeAsStructStr("ES"); // Spain
 //! let x = LocaleCountryCodeAsStructStr("EG"); // Egypt
 //! let x = LocaleCountryCodeAsStructStr("ID"); // Indonesia
-//! ```
-//!
-//!
-//! ## Locale Decimal Separator a.k.a. radix character for numbers
-//!
-//! Examples:
-//!
-//! ```rust
-//! # use ::typeables::locale::*;
-//! let x = LocaleDecimalSeparatorAsStructStr("."); // English
-//! let x = LocaleDecimalSeparatorAsStructStr(","); // French
-//! let x = LocaleDecimalSeparatorAsStructStr("~"); // Some made up language
 //! ```
 //!
 //!
@@ -143,14 +137,6 @@ pub struct LocaleCountryCodeAsStructString(pub String);
 
 pub type LocaleCountryCodeAsTypeStr = str;
 pub type LocaleCountryCodeAsTypeString = String;
-
-//// Locale Decimal Separator a.k.a. radix character for numbers
-
-pub struct LocaleDecimalSeparatorAsStructStr(pub &'static str);
-pub struct LocaleDecimalSeparatorAsStructString(pub String);
-
-pub type LocaleDecimalSeparatorAsTypeStr = str;
-pub type LocaleDecimalSeparatorAsTypeString = String;
 
 //// Locale Grouping Separator a.k.a. thousands separator for numbers
 
