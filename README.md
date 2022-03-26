@@ -54,8 +54,6 @@ Locale:
 LocaleCode,
 LocaleLanguageCode,
 LocaleCountryCode,
-LocaleDecimalSeparator,
-LocaleGroupingSeparator,
 LocaleRegionCode,
 LocaleScriptCode,
 LocaleVariantCode.
@@ -83,6 +81,7 @@ Verb.
 Content:
 DecimalSeparator,
 GlobalLocationNumber, 
+GroupingSeparator,
 LegalEntityIdentifierCode,
 MediaType,
 QuotationStartDelimiter, 

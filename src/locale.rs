@@ -12,6 +12,7 @@
 //! See also:
 //! 
 //!   * [DecimalSeparator](DecimalSeparatorAsStructStr)
+//!   * [GroupingSeparator](GroupingSeparatorAsStructStr)
 //!   * [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr)
 //!   * [QuotationStoptDelimiter](QuotationStopDelimiterAsStructStr)
 //! 
@@ -58,18 +59,6 @@
 //! let x = LocaleCountryCodeAsStructStr("ES"); // Spain
 //! let x = LocaleCountryCodeAsStructStr("EG"); // Egypt
 //! let x = LocaleCountryCodeAsStructStr("ID"); // Indonesia
-//! ```
-//!
-//!
-//! ## Locale Grouping Separator a.k.a. thousands separator for numbers
-//!
-//! Examples:
-//!
-//! ```rust
-//! # use ::typeables::locale::*;
-//! let x = LocaleGroupingSeparatorAsStructStr(","); // English
-//! let x = LocaleGroupingSeparatorAsStructStr("."); // Spanish
-//! let x = LocaleGroupingSeparatorAsStructStr(" "); // French
 //! ```
 //!
 //!
@@ -137,14 +126,6 @@ pub struct LocaleCountryCodeAsStructString(pub String);
 
 pub type LocaleCountryCodeAsTypeStr = str;
 pub type LocaleCountryCodeAsTypeString = String;
-
-//// Locale Grouping Separator a.k.a. thousands separator for numbers
-
-pub struct LocaleGroupingSeparatorAsStructStr(pub &'static str);
-pub struct LocaleGroupingSeparatorAsStructString(pub String);
-
-pub type LocaleGroupingSeparatorAsTypeStr = str;
-pub type LocaleGroupingSeparatorAsTypeString = String;
 
 //// Locale Region Code
 

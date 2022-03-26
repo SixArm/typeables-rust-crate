@@ -82,6 +82,7 @@
 //! Content:
 //! [DecimalSeparator](DecimalSeparatorAsStructStr),
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
+//! [GroupingSeparator](GroupingSeparatorAsStructStr),
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
 //! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr), 
 //! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr), 
@@ -635,6 +636,7 @@ pub mod decimal_separator;
 pub mod email_address;
 pub mod email_address_addr;
 pub mod email_address_name;
+pub mod grouping_separator;
 pub mod global_location_number;
 pub mod legal_entity_identifier_code;
 pub mod locale;
