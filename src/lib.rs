@@ -558,6 +558,7 @@ pub mod lux;
 pub mod metre;
 pub mod mole;
 pub mod ohm;
+pub mod pascal;
 pub mod radian;
 pub mod second;
 pub mod steradian;
