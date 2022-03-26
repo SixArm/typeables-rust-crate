@@ -2,49 +2,85 @@
 
 Typeables is a Rust crate of semantic types, such as unit types (e.g. metre
 for length, second for time), content types (e.g. email address, phone
-number), media types (e.g. JPEG image, MPEG movie), locale types (e.g. "en"
-for English, "zh" for Chinese), etc.
+number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
 
+Scientific Units: 
+Ampere, 
+Becquerel, 
+Candela, 
+DegreeCelcius,
+Farad, 
+Gram, 
+Gray, 
+Hertz, 
+Henry, 
+Joule, 
+Katal, 
+Kelvin,
+Kilogram, 
+Litre, 
+Lumen, 
+Lux, 
+Metre, 
+Mole, 
+Ohm, 
+Pascal,
+Radian, 
+Second, 
+Siemens, 
+Sievert, 
+Steradian, 
+Tesla, 
+Volt,
+Watt, 
+Weber.
 
-Units:
+Geolocation: 
+Latitude, 
+Longitue, 
+Altitude, 
+Elevation.
 
-* metre for length
-* second for time
-* mole for amount of substance
-* ampere for electric current
-* kelvin for temperature
-* candela for luminous intensity
-* kilogram for mass
+Currency:
+CurrencyName, 
+CurrencySymbol.
 
-Calendaring:
+Email: 
+EmailAddress, 
+EmailAddressAddr, 
+EmailAddressName.
 
-* year
-* month
-* day
-* hour
-* minute
-* second
-* date
-* time
-* time offset
-* time zone
+Phone: 
+PhoneE164Text,
+PhoneE164CountryCode,
+PhoneE164NationalDestinationCode,
+PhoneE164SubscriberNumber,
+PhoneE164GroupIdentificationCode,
+PhoneE164TrialIdentificationCode.
 
-Geolocation:
-
-* latitude
-* longitue
-* altitude
-* elevation
+Grammar: 
+Noun, 
+Verb.
 
 Content:
+GlobalLocationNumber, 
+QuotationStartDelimiter, 
+QuotationStopDelimiter, 
+Locale, 
+MediaType,
+ValueAddedTaxIdentificationNumber.
 
-* locale
-* media type
-
-Grammar:
-
-* noun
-* verb
+Date Time: 
+Year, 
+Month, 
+Day, 
+Hour, 
+Minute, 
+Second, 
+Date,
+Time, 
+TimeOffset, 
+TimeZone.
 
 
 ## Introduction

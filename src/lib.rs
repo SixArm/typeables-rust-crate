@@ -2,48 +2,85 @@
 //!
 //! Typeables is a Rust crate of semantic types, such as unit types (e.g. metre
 //! for length, second for time), content types (e.g. email address, phone
-//! number), media types (e.g. JPEG image, MPEG movie), locale types (e.g. "en"
-//! for English, "zh" for Chinese), etc.
+//! number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
 //!
-//! Units:
+//! Scientific Units: 
+//! [Ampere](AmpereAsStructF64), 
+//! [Becquerel](BecquerelAsStructF64), 
+//! [Candela](CandelaAsStructF64), 
+//! [DegreeCelcius](DegreeCelciusAsStructF64),
+//! [Farad](FaradAsStructF64), 
+//! [Gram](GramAsStructF64), 
+//! [Gray](GrayAsStructF64), 
+//! [Hertz](HertzAsStructF64), 
+//! [Henry](HenryAsStructF64), 
+//! [Joule](JouleAsStructF64), 
+//! [Katal](KatalAsStructF64), 
+//! [Kelvin](KelvinAsStructF64),
+//! [Kilogram](KilogramAsStructF64), 
+//! [Litre](LitreAsStructF64), 
+//! [Lumen](LumenAsStructF64), 
+//! [Lux](LuxAsStructF64), 
+//! [Metre](MetreAsStructF64), 
+//! [Mole](MoleAsStructF64), 
+//! [Ohm](OhmAsStructF64), 
+//! [Pascal](PascalAsStructF64),
+//! [Radian](RadianAsStructF64), 
+//! [Second](SecondAsStructF64), 
+//! [Siemens](SiemensAsStructF64), 
+//! [Sievert](SievertAsStructF64), 
+//! [Steradian](SteradianAsStructF64), 
+//! [Tesla](TeslaAsStructF64), 
+//! [Volt](VoltAsStructF64),
+//! [Watt](WattAsStructF64), 
+//! [Weber](WeberAsStructF64).
 //!
-//! * metre for length
-//! * second for time
-//! * mole for amount of substance
-//! * ampere for electric current
-//! * kelvin for temperature
-//! * candela for luminous intensity
-//! * kilogram for mass
+//! Geolocation: 
+//! [Latitude](LatitudeAsDigitalDegreeAsStructF64), 
+//! [Longitue](LongitueAsDigitalDegreeAsStructF64), 
+//! [Altitude](AltitudeAsDigitalDegreeAsStructF64), 
+//! [Elevation](ElevationAsDigitalDegreeAsStructF64).
 //!
-//! Calendaring:
-//!
-//! * year
-//! * month
-//! * day
-//! * hour
-//! * minute
-//! * second
-//! * date
-//! * time
-//! * time offset
-//! * time zone
-//!
-//! Geolocation:
-//!
-//! * latitude
-//! * longitue
-//! * altitude
-//! * elevation
+//! Currency:
+//! [CurrencyName](CurrencyNameAsStructStr), 
+//! [CurrencySymbol](CurrencySymbolAsStructStr).
+//! 
+//! Email: 
+//! [EmailAddress](EmailAddressAsStructStr), 
+//! [EmailAddressAddr](EmailAddressAddrAsStructStr), 
+//! [EmailAddressName](EmailAddressNameAsStructStr).
+//! 
+//! Phone: 
+//! [PhoneE164Text](PhoneE164TextAsStructStr),
+//! [PhoneE164CountryCode](PhoneE164CountryCodeAsStructStr),
+//! [PhoneE164NationalDestinationCode](PhoneE164NationalDestinationCodeAsStructStr),
+//! [PhoneE164SubscriberNumber](PhoneE164SubscriberNumberAsStructStr),
+//! [PhoneE164GroupIdentificationCode](PhoneE164GroupIdentificationCodeAsStructStr),
+//! [PhoneE164TrialIdentificationCode](PhoneE164TrialIdentificationCodeAsStructStr).
+//! 
+//! Grammar: 
+//! [Noun](NounAsStructStr), 
+//! [Verb](VerbAsStructStr).
 //!
 //! Content:
+//! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
+//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructF64), 
+//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructF64), 
+//! [Locale](LocaleAsStructF64), 
+//! [MediaType](MediaTypeAsStructF64),
+//! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
 //!
-//! * locale
-//! * media type
-//!
-//! Grammar:
-//!
-//! * noun
-//! * verb
+//! Date Time: 
+//! [Year](YearAsStructF64), 
+//! [Month](MonthAsStructF64), 
+//! [Day](DayAsStructF64), 
+//! [Hour](HourAsStructF64), 
+//! [Minute](MinuteAsStructF64), 
+//! [Second](SecondAsStructF64), 
+//! [Date](DateAsStructF64),
+//! [Time](TimeAsStructF64), 
+//! [TimeOffset](TimeOffsetAsStructStr), 
+//! [TimeZone](TimeZoneAsStructStr).
 //!
 //!
 //! ## Introduction
