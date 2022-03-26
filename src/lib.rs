@@ -579,6 +579,8 @@ pub mod currency;
 pub mod locale;
 pub mod media_type;
 pub mod phone;
+pub mod quotation_start_delimiter;
+pub mod quotation_stop_delimiter;
 
 // Geolocation
 pub mod latitude;
