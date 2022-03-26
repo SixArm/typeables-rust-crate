@@ -547,6 +547,7 @@
 pub mod ampere;
 pub mod becquerel;
 pub mod candela;
+pub mod degree_celcius;
 pub mod farad;
 pub mod gram;
 pub mod gray;
