@@ -3,119 +3,107 @@
 Typeables is a Rust crate of semantic types, such as unit types (e.g. metre
 for length, second for time), content types (e.g. email address, phone
 number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
-
-Scientific Units:
-Ampere,
-Becquerel,
-Candela,
-DegreeCelcius,
-Farad,
-Gram,
-Gray,
-Hertz,
-Henry,
-Joule,
-Katal,
-Kelvin,
-Kilogram,
-Litre,
-Lumen,
-Lux,
-Metre,
-Metre^2,
-Metre^3,
-MetrePerSecond,
-Mole,
-Ohm,
-Pascal,
-Radian,
-Second,
-Siemens,
-Sievert,
-Steradian,
-Tesla,
-Volt,
-Watt,
-Weber.
-
-Currency:
-CurrencyName,
-CurrencySymbol.
-
-Email:
-EmailAddress,
-EmailAddressAddr,
-EmailAddressName.
-
-Geolocation:
-Latitude,
-Longitue,
-Altitude,
-Elevation,
-OpenLocationCode,
-WhatFreeWordsCode.
-
-Interval:
-UnitInterval,
-DualInterval.
-
-Locale:
-LocaleCode,
-LocaleLanguageCode,
-LocaleCountryCode,
-LocaleRegionCode,
-LocaleScriptCode,
-LocaleVariantCode.
-
-Localization:
-DecimalSeparator,
-GroupingSeparator,
-QuotationStartDelimiter,
-QuotationStopDelimiter.
-
-Media Type:
-MediaTypeCode,
-MediaTypeSupertype,
-MediaTypeSubtype,
-MediaTypeSuffix,
-MediaTypeParameter,
-MediaTypeTree.
-
-Phone:
-PhoneE164Text,
-PhoneE164CountryCode,
-PhoneE164NationalDestinationCode,
-PhoneE164SubscriberNumber,
-PhoneE164GroupIdentificationCode,
-PhoneE164TrialIdentificationCode.
-
-Grammar:
-Adjective,
-Adverb,
-Noun,
-Pronoun,
-Verb.
-
-Content:
-GlobalLocationNumber,
-InternationalStandardOfIndustricalClassificationRevision4Code,
-InternationalStandardOfIndustricalClassificationRevision4Name,
-LegalEntityIdentifierCode,
-MediaType,
-ValueAddedTaxIdentificationNumber.
-
-Date Time:
-Year,
-Month,
-Day,
-Hour,
-Minute,
-Second,
-Date,
-Time,
-TimeOffset,
-TimeZone.
-
+* Scientific Units:
+   * Ampere
+   * Becquerel
+   * Candela
+   * DegreeCelcius
+   * Farad
+   * Gram
+   * Gray
+   * Hertz
+   * Henry
+   * Joule
+   * Katal
+   * Kelvin
+   * Kilogram
+   * Litre
+   * Lumen
+   * Lux
+   * Metre
+   * Metre^2
+   * Metre^3
+   * MetrePerSecond
+   * Mole
+   * Ohm
+   * Pascal
+   * Radian
+   * Second
+   * Siemens
+   * Sievert
+   * Steradian
+   * Tesla
+   * Volt
+   * Watt
+   * Weber
+* Currency:
+   * CurrencyName
+   * CurrencySymbol
+* Email:
+   * EmailAddress
+   * EmailAddressAddr
+   * EmailAddressName
+* Geolocation:
+   * Latitude
+   * Longitue
+   * Altitude
+   * Elevation
+   * OpenLocationCode
+   * WhatFreeWordsCode
+* Interval:
+   * UnitInterval
+   * DualInterval
+* Locale:
+   * LocaleCode
+   * LocaleLanguageCode
+   * LocaleCountryCode
+   * LocaleRegionCode
+   * LocaleScriptCode
+   * LocaleVariantCode
+* Localization:
+   * DecimalSeparator
+   * GroupingSeparator
+   * QuotationStartDelimiter
+   * QuotationStopDelimiter
+* Media Type:
+   * MediaTypeCode
+   * MediaTypeSupertype
+   * MediaTypeSubtype
+   * MediaTypeSuffix
+   * MediaTypeParameter
+   * MediaTypeTree
+* Phone:
+   * PhoneE164Text
+   * PhoneE164CountryCode
+   * PhoneE164NationalDestinationCode
+   * PhoneE164SubscriberNumber
+   * PhoneE164GroupIdentificationCode
+   * PhoneE164TrialIdentificationCode
+* Grammar:
+   * Adjective
+   * Adverb
+   * Noun
+   * Pronoun
+   * Verb
+* Content:
+   * GlobalLocationNumber
+   * InternationalStandardOfIndustricalClassificationRevision4Code
+   * InternationalStandardOfIndustricalClassificationRevision4Name
+   * LegalEntityIdentifierCode
+   * MediaType
+   * ValueAddedTaxIdentificationNumber
+* Date Time:
+   * Year
+   * Month
+   * Day
+   * Hour
+   * Minute
+   * Second
+   * Date
+   * Time
+   * TimeOffset
+   * TimeZone
+  
 
 ## Introduction
 
