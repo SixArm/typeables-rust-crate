@@ -51,7 +51,8 @@ EmailAddressAddr,
 EmailAddressName.
 
 Interval:
-UnitInterval.
+UnitInterval,
+DualInterval.
 
 Locale:
 LocaleCode,

@@ -50,6 +50,10 @@
 //! [EmailAddressAddr](EmailAddressAddrAsStructStr), 
 //! [EmailAddressName](EmailAddressNameAsStructStr).
 //! 
+//! Interval:
+//! [UnitInterval](UnitIntervalAsStructF64),
+//! [DualInterval](UnitIntervalAsStructF64).
+//! 
 //! Locale:
 //! [LocaleCode](LocaleCodeAsStructStr),
 //! [LocaleLanguageCode](LocaleLanguageCodeAsStructStr),
@@ -88,9 +92,6 @@
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64), 
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
 //! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
-//!
-//! Interval:
-//! [UnitInterval](UnitIntervalAsStructF64).
 //! 
 //! Date Time: 
 //! [Year](YearAsStructF64), 
@@ -655,6 +656,7 @@ pub mod elevation;
 
 // Interval
 pub mod unit_interval;
+pub mod dual_interval;
 
 // Localization
 pub mod decimal_separator;
