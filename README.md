@@ -4,50 +4,50 @@ Typeables is a Rust crate of semantic types, such as unit types (e.g. metre
 for length, second for time), content types (e.g. email address, phone
 number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
 
-Scientific Units: 
-Ampere, 
-Becquerel, 
-Candela, 
+Scientific Units:
+Ampere,
+Becquerel,
+Candela,
 DegreeCelcius,
-Farad, 
-Gram, 
-Gray, 
-Hertz, 
-Henry, 
-Joule, 
-Katal, 
+Farad,
+Gram,
+Gray,
+Hertz,
+Henry,
+Joule,
+Katal,
 Kelvin,
-Kilogram, 
-Litre, 
-Lumen, 
-Lux, 
-Metre, 
-Mole, 
-Ohm, 
+Kilogram,
+Litre,
+Lumen,
+Lux,
+Metre,
+Mole,
+Ohm,
 Pascal,
-Radian, 
-Second, 
-Siemens, 
-Sievert, 
-Steradian, 
-Tesla, 
+Radian,
+Second,
+Siemens,
+Sievert,
+Steradian,
+Tesla,
 Volt,
-Watt, 
+Watt,
 Weber.
 
-Geolocation: 
-Latitude, 
-Longitue, 
-Altitude, 
+Geolocation:
+Latitude,
+Longitue,
+Altitude,
 Elevation.
 
 Currency:
-CurrencyName, 
+CurrencyName,
 CurrencySymbol.
 
-Email: 
-EmailAddress, 
-EmailAddressAddr, 
+Email:
+EmailAddress,
+EmailAddressAddr,
 EmailAddressName.
 
 Interval:
@@ -65,7 +65,7 @@ LocaleVariantCode.
 Localization:
 DecimalSeparator,
 GroupingSeparator,
-QuotationStartDelimiter, 
+QuotationStartDelimiter,
 QuotationStopDelimiter.
 
 Media Type:
@@ -76,7 +76,7 @@ MediaTypeSuffix,
 MediaTypeParameter,
 MediaTypeTree.
 
-Phone: 
+Phone:
 PhoneE164Text,
 PhoneE164CountryCode,
 PhoneE164NationalDestinationCode,
@@ -84,26 +84,27 @@ PhoneE164SubscriberNumber,
 PhoneE164GroupIdentificationCode,
 PhoneE164TrialIdentificationCode.
 
-Grammar: 
-Noun, 
+Grammar:
+Noun,
+Pronoun,
 Verb.
 
 Content:
-GlobalLocationNumber, 
+GlobalLocationNumber,
 LegalEntityIdentifierCode,
 MediaType,
 ValueAddedTaxIdentificationNumber.
 
-Date Time: 
-Year, 
-Month, 
-Day, 
-Hour, 
-Minute, 
-Second, 
+Date Time:
+Year,
+Month,
+Day,
+Hour,
+Minute,
+Second,
 Date,
-Time, 
-TimeOffset, 
+Time,
+TimeOffset,
 TimeZone.
 
 

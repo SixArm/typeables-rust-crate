@@ -86,6 +86,7 @@
 //! 
 //! Grammar: 
 //! [Noun](NounAsStructStr), 
+//! [Pronoun](PronounAsStructStr), 
 //! [Verb](VerbAsStructStr).
 //!
 //! Content:
@@ -672,4 +673,5 @@ pub mod year;
 
 // Grammar
 pub mod noun;
+pub mod pronoun;
 pub mod verb;
