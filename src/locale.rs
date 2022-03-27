@@ -11,10 +11,10 @@
 //!
 //! See also:
 //!
-//!   * [DecimalSeparator](DecimalSeparatorAsStructStr)
-//!   * [GroupingSeparator](GroupingSeparatorAsStructStr)
-//!   * [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr)
-//!   * [QuotationStoptDelimiter](QuotationStopDelimiterAsStructStr)
+//!   * [decimal_separator](decimal_separator)
+//!   * [grouping_separator](grouping_separator)
+//!   * [quotation_start_delimiter](quotation_start_delimiter)
+//!   * [quotation_stop_delimiter](quotation_stop_delimiter)
 //!
 //!
 //! ## Locale Code a.k.a. language code and country code
