@@ -49,7 +49,8 @@
 //! [Longitue](LongitueAsDigitalDegreeAsStructF64),
 //! [Altitude](AltitudeAsDigitalDegreeAsStructF64),
 //! [Elevation](ElevationAsDigitalDegreeAsStructF64),
-//! [OpenLocationCode](OpenLocationCodeAsStructStr).
+//! [OpenLocationCode](OpenLocationCodeAsStructStr),
+//! [WhatFreeWordsCode](WhatFreeWordsAsStructStr).
 //!
 //! Interval:
 //! [UnitInterval](UnitIntervalAsStructF64),
@@ -658,6 +659,7 @@ pub mod longitude;
 pub mod altitude;
 pub mod elevation;
 pub mod open_location_code;
+pub mod what_free_words_code;
 
 // Interval
 pub mod unit_interval;

@@ -49,7 +49,8 @@ Latitude,
 Longitue,
 Altitude,
 Elevation,
-OpenLocationCode.
+OpenLocationCode,
+WhatFreeWordsCode.
 
 Interval:
 UnitInterval,
