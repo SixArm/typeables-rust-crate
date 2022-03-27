@@ -23,6 +23,7 @@
 //! [Lux](LuxAsStructF64),
 //! [Metre](MetreAsStructF64),
 //! [Metre^2](Metre2AsStructF64),
+//! [Metre^3](Metre3AsStructF64),
 //! [Mole](MoleAsStructF64),
 //! [Ohm](OhmAsStructF64),
 //! [Pascal](PascalAsStructF64),
@@ -628,6 +629,7 @@ pub mod lumen;
 pub mod lux;
 pub mod metre;
 pub mod metre2;
+pub mod metre3;
 pub mod mole;
 pub mod ohm;
 pub mod pascal;
