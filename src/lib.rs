@@ -89,6 +89,9 @@
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr), 
 //! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
 //!
+//! Interval:
+//! [UnitInterval](UnitIntervalAsStructF64).
+//! 
 //! Date Time: 
 //! [Year](YearAsStructF64), 
 //! [Month](MonthAsStructF64), 
@@ -649,6 +652,9 @@ pub mod latitude;
 pub mod longitude;
 pub mod altitude;
 pub mod elevation;
+
+// Interval
+pub mod unit_interval;
 
 // Localization
 pub mod decimal_separator;

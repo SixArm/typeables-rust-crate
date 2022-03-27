@@ -50,6 +50,9 @@ EmailAddress,
 EmailAddressAddr, 
 EmailAddressName.
 
+Interval:
+UnitInterval.
+
 Locale:
 LocaleCode,
 LocaleLanguageCode,
