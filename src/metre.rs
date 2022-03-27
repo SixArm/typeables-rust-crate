@@ -23,6 +23,8 @@
 //!   * Metre^2 is for area
 //!  
 //!   * Metre^3 is for volume
+//!
+//!   * Metre Per Second is for speed
 
 pub struct MetreAsStructI8(pub i8);
 pub struct MetreAsStructI16(pub i16);

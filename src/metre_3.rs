@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::metre3::*;
+//! # use ::typeables::metre_3::*;
 //! let x = Metre3AsStructF64(1.0); // 1 metre cube
 //! ```
 //!
@@ -18,6 +18,8 @@
 //!   * Metre^2 is for area
 //!  
 //!   * Metre^3 is for volume
+//!
+//!   * Metre Per Second is for speed
 
 pub struct Metre3AsStructI8(pub i8);
 pub struct Metre3AsStructI16(pub i16);
