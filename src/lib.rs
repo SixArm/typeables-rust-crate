@@ -97,6 +97,7 @@
 //!
 //! Content:
 //! [GlobalLocationNumber](GlobalLocationNumberAsStructF64),
+//! [InternationalStandardOfIndustricalClassificationRevision4Code](InternationalStandardOfIndustricalClassificationRevision4CodeAsStructStr).
 //! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr),
 //! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
 //!
@@ -466,14 +467,14 @@
 //! pub struct FooAsStructI64(pub i64);
 //! pub struct FooAsStructI128(pub i128);
 //! pub struct FooAsStructISize(pub isize);
-
+//!
 //! pub struct FooAsStructU8(pub u8);
 //! pub struct FooAsStructU16(pub u16);
 //! pub struct FooAsStructU32(pub u32);
 //! pub struct FooAsStructU64(pub u64);
 //! pub struct FooAsStructU128(pub u128);
 //! pub struct FooAsStructUSize(pub usize);
-
+//!
 //! pub struct FooAsStructF32(pub f32); pub struct FooAsStructF64(pub f64);
 //!
 //! pub struct FooAsStructStr(&'static String); pub struct FooAsStructString(pub
@@ -646,6 +647,7 @@ pub mod weber;
 // Misc
 pub mod currency;
 pub mod global_location_number;
+pub mod international_standard_of_industrical_classification_revision_4_code;
 pub mod legal_entity_identifier_code;
 pub mod locale;
 pub mod media_type;
