@@ -3,106 +3,106 @@
 Typeables is a Rust crate of semantic types, such as unit types (e.g. metre
 for length, second for time), content types (e.g. email address, phone
 number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
-* Scientific Units:
-   * Ampere
-   * Becquerel
-   * Candela
-   * DegreeCelcius
-   * Farad
-   * Gram
-   * Gray
-   * Hertz
-   * Henry
-   * Joule
-   * Katal
-   * Kelvin
-   * Kilogram
-   * Litre
-   * Lumen
-   * Lux
-   * Metre
-   * Metre^2
-   * Metre^3
-   * MetrePerSecond
-   * Mole
-   * Ohm
-   * Pascal
-   * Radian
-   * Second
-   * Siemens
-   * Sievert
-   * Steradian
-   * Tesla
-   * Volt
-   * Watt
-   * Weber
-* Currency:
-   * CurrencyName
-   * CurrencySymbol
-* Email:
-   * EmailAddress
-   * EmailAddressAddr
-   * EmailAddressName
-* Geolocation:
-   * Latitude
-   * Longitue
-   * Altitude
-   * Elevation
-   * OpenLocationCode
-   * WhatFreeWordsCode
-* Interval:
-   * UnitInterval
-   * DualInterval
-* Locale:
-   * LocaleCode
-   * LocaleLanguageCode
-   * LocaleCountryCode
-   * LocaleRegionCode
-   * LocaleScriptCode
-   * LocaleVariantCode
-* Localization:
-   * DecimalSeparator
-   * GroupingSeparator
-   * QuotationStartDelimiter
-   * QuotationStopDelimiter
-* Media Type:
-   * MediaTypeCode
-   * MediaTypeSupertype
-   * MediaTypeSubtype
-   * MediaTypeSuffix
-   * MediaTypeParameter
-   * MediaTypeTree
-* Phone:
-   * PhoneE164Text
-   * PhoneE164CountryCode
-   * PhoneE164NationalDestinationCode
-   * PhoneE164SubscriberNumber
-   * PhoneE164GroupIdentificationCode
-   * PhoneE164TrialIdentificationCode
-* Grammar:
-   * Adjective
-   * Adverb
-   * Noun
-   * Pronoun
-   * Verb
-* Content:
-   * GlobalLocationNumber
-   * InternationalStandardOfIndustricalClassificationRevision4Code
-   * InternationalStandardOfIndustricalClassificationRevision4Name
-   * LegalEntityIdentifierCode
-   * MediaType
-   * ValueAddedTaxIdentificationNumber
-* Date Time:
-   * Year
-   * Month
-   * Day
-   * Hour
-   * Minute
-   * Second
-   * Date
-   * Time
-   * TimeOffset
-   * TimeZone
+
+* scientific units
+  * ampere
+  * becquerel
+  * candela
+  * degree_celcius
+  * farad
+  * gram
+  * gray
+  * hertz
+  * henry
+  * joule
+  * katal
+  * kelvin
+  * kilogram
+  * litre
+  * lumen
+  * lux
+  * metre
+  * metre^2
+  * metre^3
+  * metre_per_second
+  * mole
+  * ohm
+  * pascal
+  * radian
+  * second
+  * siemens
+  * sievert
+  * steradian
+  * tesla
+  * volt
+  * watt
+  * weber
+* currency
+  * currency_name
+  * currency_symbol
+* email address
+  * email_address
+  * email_address_addr
+  * email_address_name
+* geolocation
+  * latitude
+  * longitue
+  * altitude
+  * elevation
+  * open_location_code
+  * what_freewords_code
+* interval
+  * unit_interval
+  * dual_interval
+* locale
+  * locale_code
+  * locale_language_code
+  * locale_country_code
+  * locale_region_code
+  * locale_script_code
+  * locale_variant_code
+* localization
+  * decimal_separator
+  * grouping_separator
+  * quotation_start_delimiter
+  * quotation_stop_delimiter
+* media type
+  * media_type_code
+  * media_type_supertype
+  * media_type_subtype
+  * media_type_suffix
+  * media_type_parameter
+  * media_type_tree
+* phone e164
+  * phone_e164_text
+  * phone_e164_country_code
+  * phone_e164_national_destination_code
+  * phone_e164_subscriber_number
+  * phone_e164_group_identification_code
+  * phone_e164_trial_identification_code
+* grammar
+  * adjective
+  * adverb
+  * noun
+  * pronoun
+  * verb
+* content
+  * global_location_number
+  * international_standard_of_industrial_classification_revision_4_code
+  * international_standard_of_industrial_classification_revision_4_name
+  * legal_entity_identifier_code
+  * value_added_tax_identification_number
+* date time
+  * year
+  * month
+  * day
+  * hour
+  * minute
+  * second
+  * date
+  * time
+  * time_offset
+  * time_zone
   
 
 ## Introduction
