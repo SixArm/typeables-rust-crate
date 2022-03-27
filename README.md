@@ -98,6 +98,7 @@ Verb.
 Content:
 GlobalLocationNumber,
 InternationalStandardOfIndustricalClassificationRevision4Code,
+InternationalStandardOfIndustricalClassificationRevision4Name,
 LegalEntityIdentifierCode,
 MediaType,
 ValueAddedTaxIdentificationNumber.
