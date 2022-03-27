@@ -85,6 +85,7 @@ PhoneE164GroupIdentificationCode,
 PhoneE164TrialIdentificationCode.
 
 Grammar:
+Adjective,
 Noun,
 Pronoun,
 Verb.
