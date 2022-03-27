@@ -1,7 +1,7 @@
 //! International Standard of Industrial Classification, Revision 4, Code
 //!
 //! International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4, Code.
-//! 
+//!
 //! Examples:
 //!
 //!   * A: Agriculture, forestry and fishing

@@ -1,8 +1,8 @@
 //! # Legal Entity Identifier Code
 //!
-//! See: https://schema.org/leiCode
+//! See: <https://schema.org/leiCode>
 //!
-//! See: https://wikipedia.org/wiki/Legal_Entity_Identifier
+//! See: <https://wikipedia.org/wiki/Legal_Entity_Identifier>
 //!
 //! Example:
 //!

@@ -7,7 +7,7 @@
 //! let x = SteradianAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Steradian
+//! <https://wikipedia.org/wiki/Steradian>
 //!
 //! The steradian is a unit of solid angle.
 //!

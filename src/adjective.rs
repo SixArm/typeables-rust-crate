@@ -9,7 +9,7 @@
 //! let x = AdjectiveAsStructStr("green"); // color
 //! ```
 //!
-//! https://wikipedia.org/wiki/Adjective
+//! <https://wikipedia.org/wiki/Adjective>
 
 pub struct AdjectiveAsStructStr(pub &'static str);
 pub struct AdjectiveAsStructString(pub String);

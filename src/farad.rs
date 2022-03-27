@@ -7,7 +7,7 @@
 //! let x = FaradAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Farad
+//! <https://wikipedia.org/wiki/Farad>
 //!
 //! The farad is a unit of electrical capacitance.
 //!

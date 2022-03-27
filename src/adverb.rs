@@ -9,7 +9,7 @@
 //! let x = AdverbAsStructStr("happily"); // feelings
 //! ```
 //!
-//! https://wikipedia.org/wiki/Adverb
+//! <https://wikipedia.org/wiki/Adverb>
 
 pub struct AdverbAsStructStr(pub &'static str);
 pub struct AdverbAsStructString(pub String);

@@ -7,7 +7,7 @@
 //! let x = JouleAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Joule
+//! <https://wikipedia.org/wiki/Joule>
 //!
 //! The joule is a unit of energy.
 //!

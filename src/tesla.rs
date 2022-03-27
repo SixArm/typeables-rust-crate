@@ -7,7 +7,7 @@
 //! let x = TeslaAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Tesla
+//! <https://wikipedia.org/wiki/Tesla>
 //!
 //! The tesla is a unit of magnetic induction, magnetic flux density.
 //!

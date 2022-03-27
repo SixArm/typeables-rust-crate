@@ -7,7 +7,7 @@
 //! let x = KelvinAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Kelvin
+//! <https://wikipedia.org/wiki/Kelvin>
 //!
 //! The kelvin is the SI base unit of temperature.
 //!

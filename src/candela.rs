@@ -7,7 +7,7 @@
 //! let x = CandelaAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Candela
+//! <https://wikipedia.org/wiki/Candela>
 //!
 //! The candela is a unit of luminous intensity.
 //!

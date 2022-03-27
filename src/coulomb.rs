@@ -7,7 +7,7 @@
 //! let x = CoulombAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Coulomb
+//! <https://wikipedia.org/wiki/Coulomb>
 //!
 //! The coulomb is a unit of electric charge or quantity of electricity.
 //!

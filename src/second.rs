@@ -7,7 +7,7 @@
 //! let x = SecondAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Second
+//! <https://wikipedia.org/wiki/Second>
 //!
 //! The second is a unit of time.
 //!

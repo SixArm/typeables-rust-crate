@@ -7,7 +7,7 @@
 //! let x = HertzAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Hertz
+//! <https://wikipedia.org/wiki/Hertz>
 //!
 //! The hertz is a unit of frequency.
 //!

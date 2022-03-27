@@ -1,6 +1,6 @@
 //! # Phone E.164 format
 //!
-//! https://en.wikipedia.org/wiki/E.164
+//! <https://en.wikipedia.org/wiki/E.164>
 //!
 //! E.164 is an international standard (ITU-T Recommendation), titled The
 //! international public telecommunication numbering plan, that defines a
@@ -26,7 +26,7 @@
 //!   * local phone number e.g. `555 0000` is an example U.S. local phone number.
 //!
 //! List of country calling codes:
-//! https://en.wikipedia.org/wiki/List_of_country_calling_codes
+//! <https://en.wikipedia.org/wiki/List_of_country_calling_codes>
 //!
 //! Fake phone numbers for example purposes:
 //!

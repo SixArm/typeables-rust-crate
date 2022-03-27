@@ -12,7 +12,7 @@
 //! let x = NounAsStructStr("fruit"); // plant
 //! ```
 //!
-//! https://wikipedia.org/wiki/Noun
+//! <https://wikipedia.org/wiki/Noun>
 //!
 //! A noun is a word that functions as the name of a specific object or set of
 //! objects, such as living creatures, places, actions, qualities, states of

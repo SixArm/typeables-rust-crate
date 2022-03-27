@@ -7,7 +7,7 @@
 //! let x = HenryAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Henry
+//! <https://wikipedia.org/wiki/Henry>
 //!
 //! The henry is a unit of electrical inductance.
 //!

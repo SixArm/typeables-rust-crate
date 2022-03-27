@@ -7,7 +7,7 @@
 //! let x = PascalAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Pascal
+//! <https://wikipedia.org/wiki/Pascal>
 //!
 //! The pascal is a unit of pressure, stress.
 //!

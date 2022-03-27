@@ -7,7 +7,7 @@
 //! let x = WattAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Watt
+//! <https://wikipedia.org/wiki/Watt>
 //!
 //! The watt is a unit of power or radiant flux.
 //!

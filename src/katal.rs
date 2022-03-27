@@ -7,7 +7,7 @@
 //! let x = KatalAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Katal
+//! <https://wikipedia.org/wiki/Katal>
 //!
 //! The katal is a unit of catalytic activity.
 //!

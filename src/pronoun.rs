@@ -8,7 +8,7 @@
 //! let x = PronounAsStructStr("those"); // things
 //! ```
 //!
-//! https://wikipedia.org/wiki/Pronoun
+//! <https://wikipedia.org/wiki/Pronoun>
 
 pub struct PronounAsStructStr(pub &'static str);
 pub struct PronounAsStructString(pub String);

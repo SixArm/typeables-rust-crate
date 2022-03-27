@@ -2,7 +2,7 @@
 //!
 //! WhatFreeWords.com code for geolocation.
 //!
-//! See https://whatfreewords.org/
+//! See: <https://whatfreewords.org/>
 //!
 //! Example:
 //!

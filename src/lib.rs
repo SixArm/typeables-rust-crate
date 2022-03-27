@@ -4,116 +4,105 @@
 //! for length, second for time), content types (e.g. email address, phone
 //! number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
 //!
-//! Scientific Units:
-//! [Ampere](AmpereAsStructF64),
-//! [Becquerel](BecquerelAsStructF64),
-//! [Candela](CandelaAsStructF64),
-//! [DegreeCelcius](DegreeCelciusAsStructF64),
-//! [Farad](FaradAsStructF64),
-//! [Gram](GramAsStructF64),
-//! [Gray](GrayAsStructF64),
-//! [Hertz](HertzAsStructF64),
-//! [Henry](HenryAsStructF64),
-//! [Joule](JouleAsStructF64),
-//! [Katal](KatalAsStructF64),
-//! [Kelvin](KelvinAsStructF64),
-//! [Kilogram](KilogramAsStructF64),
-//! [Litre](LitreAsStructF64),
-//! [Lumen](LumenAsStructF64),
-//! [Lux](LuxAsStructF64),
-//! [Metre](MetreAsStructF64),
-//! [Metre^2](Metre2AsStructF64),
-//! [Metre^3](Metre3AsStructF64),
-//! [MetrePerSecond](MetrePerSecondAsStructF64),
-//! [Mole](MoleAsStructF64),
-//! [Ohm](OhmAsStructF64),
-//! [Pascal](PascalAsStructF64),
-//! [Radian](RadianAsStructF64),
-//! [Second](SecondAsStructF64),
-//! [Siemens](SiemensAsStructF64),
-//! [Sievert](SievertAsStructF64),
-//! [Steradian](SteradianAsStructF64),
-//! [Tesla](TeslaAsStructF64),
-//! [Volt](VoltAsStructF64),
-//! [Watt](WattAsStructF64),
-//! [Weber](WeberAsStructF64).
-//!
-//! Currency:
-//! [CurrencyName](CurrencyNameAsStructStr),
-//! [CurrencySymbol](CurrencySymbolAsStructStr).
-//!
-//! Email:
-//! [EmailAddress](EmailAddressAsStructStr),
-//! [EmailAddressAddr](EmailAddressAddrAsStructStr),
-//! [EmailAddressName](EmailAddressNameAsStructStr).
-//!
-//! Geolocation:
-//! [Latitude](LatitudeAsDigitalDegreeAsStructF64),
-//! [Longitue](LongitueAsDigitalDegreeAsStructF64),
-//! [Altitude](AltitudeAsDigitalDegreeAsStructF64),
-//! [Elevation](ElevationAsDigitalDegreeAsStructF64),
-//! [OpenLocationCode](OpenLocationCodeAsStructStr),
-//! [WhatFreeWordsCode](WhatFreeWordsAsStructStr).
-//!
-//! Interval:
-//! [UnitInterval](UnitIntervalAsStructF64),
-//! [DualInterval](UnitIntervalAsStructF64).
-//!
-//! Locale:
-//! [LocaleCode](LocaleCodeAsStructStr),
-//! [LocaleLanguageCode](LocaleLanguageCodeAsStructStr),
-//! [LocaleCountryCode](LocaleCountryCodeAsStructStr),
-//! [LocaleRegionCode](LocaleRegionCodeAsStructStr),
-//! [LocaleScriptCode](LocaleScriptCodeAsStructStr),
-//! [LocaleVariantCode](LocaleVariantCodeAsStructStr).
-//!
-//! Localization:
-//! [DecimalSeparator](DecimalSeparatorAsStructStr),
-//! [GroupingSeparator](GroupingSeparatorAsStructStr),
-//! [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr),
-//! [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr),
-//!
-//! Media Type:
-//! [MediaTypeCode](MediaTypeCodeAsStructStr),
-//! [MediaTypeSupertype](MediaTypeSupertypeAsStructStr),
-//! [MediaTypeSubtype](MediaTypeSubtypeAsStructStr),
-//! [MediaTypeSuffix](MediaTypeSuffixAsStructStr),
-//! [MediaTypeParameter](MediaTypeParameterAsStructStr),
-//! [MediaTypeTree](MediaTypeTreeAsStructStr),
-//!
-//! Phone:
-//! [PhoneE164Text](PhoneE164TextAsStructStr),
-//! [PhoneE164CountryCode](PhoneE164CountryCodeAsStructStr),
-//! [PhoneE164NationalDestinationCode](PhoneE164NationalDestinationCodeAsStructStr),
-//! [PhoneE164SubscriberNumber](PhoneE164SubscriberNumberAsStructStr),
-//! [PhoneE164GroupIdentificationCode](PhoneE164GroupIdentificationCodeAsStructStr),
-//! [PhoneE164TrialIdentificationCode](PhoneE164TrialIdentificationCodeAsStructStr).
-//!
-//! Grammar:
-//! [Adjective](AdjectiveAsStructStr),
-//! [Adverb](AdverbAsStructStr),
-//! [Noun](NounAsStructStr),
-//! [Pronoun](PronounAsStructStr),
-//! [Verb](VerbAsStructStr).
-//!
-//! Content:
-//! [GlobalLocationNumber](GlobalLocationNumberAsStructF64),
-//! [InternationalStandardOfIndustricalClassificationRevision4Code](InternationalStandardOfIndustricalClassificationRevision4CodeAsStructStr).
-//! [InternationalStandardOfIndustricalClassificationRevision4Name](InternationalStandardOfIndustricalClassificationRevision4NameAsStructStr).
-//! [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr),
-//! [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr).
-//!
-//! Date Time:
-//! [Year](YearAsStructF64),
-//! [Month](MonthAsStructF64),
-//! [Day](DayAsStructF64),
-//! [Hour](HourAsStructF64),
-//! [Minute](MinuteAsStructF64),
-//! [Second](SecondAsStructF64),
-//! [Date](DateAsStructF64),
-//! [Time](TimeAsStructF64),
-//! [TimeOffset](TimeOffsetAsStructStr),
-//! [TimeZone](TimeZoneAsStructStr).
+//! * Scientific Units:
+//!   * [Ampere](AmpereAsStructF64)
+//!   * [Becquerel](BecquerelAsStructF64)
+//!   * [Candela](CandelaAsStructF64)
+//!   * [DegreeCelcius](DegreeCelciusAsStructF64)
+//!   * [Farad](FaradAsStructF64)
+//!   * [Gram](GramAsStructF64)
+//!   * [Gray](GrayAsStructF64)
+//!   * [Hertz](HertzAsStructF64)
+//!   * [Henry](HenryAsStructF64)
+//!   * [Joule](JouleAsStructF64)
+//!   * [Katal](KatalAsStructF64)
+//!   * [Kelvin](KelvinAsStructF64)
+//!   * [Kilogram](KilogramAsStructF64)
+//!   * [Litre](LitreAsStructF64)
+//!   * [Lumen](LumenAsStructF64)
+//!   * [Lux](LuxAsStructF64)
+//!   * [Metre](MetreAsStructF64)
+//!   * [Metre^2](Metre2AsStructF64)
+//!   * [Metre^3](Metre3AsStructF64)
+//!   * [MetrePerSecond](MetrePerSecondAsStructF64)
+//!   * [Mole](MoleAsStructF64)
+//!   * [Ohm](OhmAsStructF64)
+//!   * [Pascal](PascalAsStructF64)
+//!   * [Radian](RadianAsStructF64)
+//!   * [Second](SecondAsStructF64)
+//!   * [Siemens](SiemensAsStructF64)
+//!   * [Sievert](SievertAsStructF64)
+//!   * [Steradian](SteradianAsStructF64)
+//!   * [Tesla](TeslaAsStructF64)
+//!   * [Volt](VoltAsStructF64)
+//!   * [Watt](WattAsStructF64)
+//!   * [Weber](WeberAsStructF64)
+//! * Currency:
+//!   * [CurrencyName](CurrencyNameAsStructStr)
+//!   * [CurrencySymbol](CurrencySymbolAsStructStr)
+//! * Email:
+//!   * [EmailAddress](EmailAddressAsStructStr)
+//!   * [EmailAddressAddr](EmailAddressAddrAsStructStr)
+//!   * [EmailAddressName](EmailAddressNameAsStructStr)
+//! * Geolocation:
+//!   * [Latitude](LatitudeAsDigitalDegreeAsStructF64)
+//!   * [Longitue](LongitueAsDigitalDegreeAsStructF64)
+//!   * [Altitude](AltitudeAsDigitalDegreeAsStructF64)
+//!   * [Elevation](ElevationAsDigitalDegreeAsStructF64)
+//!   * [OpenLocationCode](OpenLocationCodeAsStructStr)
+//!   * [WhatFreeWordsCode](WhatFreeWordsAsStructStr)
+//! * Interval:
+//!   * [UnitInterval](UnitIntervalAsStructF64)
+//!   * [DualInterval](UnitIntervalAsStructF64)
+//! * Locale:
+//!   * [LocaleCode](LocaleCodeAsStructStr)
+//!   * [LocaleLanguageCode](LocaleLanguageCodeAsStructStr)
+//!   * [LocaleCountryCode](LocaleCountryCodeAsStructStr)
+//!   * [LocaleRegionCode](LocaleRegionCodeAsStructStr)
+//!   * [LocaleScriptCode](LocaleScriptCodeAsStructStr)
+//!   * [LocaleVariantCode](LocaleVariantCodeAsStructStr)
+//! * Localization:
+//!   * [DecimalSeparator](DecimalSeparatorAsStructStr)
+//!   * [GroupingSeparator](GroupingSeparatorAsStructStr)
+//!   * [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr)
+//!   * [QuotationStopDelimiter](QuotationStopDelimiterAsStructStr)
+//! * Media Type:
+//!   * [MediaTypeCode](MediaTypeCodeAsStructStr)
+//!   * [MediaTypeSupertype](MediaTypeSupertypeAsStructStr)
+//!   * [MediaTypeSubtype](MediaTypeSubtypeAsStructStr)
+//!   * [MediaTypeSuffix](MediaTypeSuffixAsStructStr)
+//!   * [MediaTypeParameter](MediaTypeParameterAsStructStr)
+//!   * [MediaTypeTree](MediaTypeTreeAsStructStr)
+//! * Phone:
+//!   * [PhoneE164Text](PhoneE164TextAsStructStr)
+//!   * [PhoneE164CountryCode](PhoneE164CountryCodeAsStructStr)
+//!   * [PhoneE164NationalDestinationCode](PhoneE164NationalDestinationCodeAsStructStr)
+//!   * [PhoneE164SubscriberNumber](PhoneE164SubscriberNumberAsStructStr)
+//!   * [PhoneE164GroupIdentificationCode](PhoneE164GroupIdentificationCodeAsStructStr)
+//!   * [PhoneE164TrialIdentificationCode](PhoneE164TrialIdentificationCodeAsStructStr)
+//! * Grammar:
+//!   * [Adjective](AdjectiveAsStructStr)
+//!   * [Adverb](AdverbAsStructStr)
+//!   * [Noun](NounAsStructStr)
+//!   * [Pronoun](PronounAsStructStr)
+//!   * [Verb](VerbAsStructStr)
+//! * Content:
+//!   * [GlobalLocationNumber](GlobalLocationNumberAsStructF64)
+//!   * [InternationalStandardOfIndustricalClassificationRevision4Code](InternationalStandardOfIndustricalClassificationRevision4CodeAsStructStr)
+//!   * [InternationalStandardOfIndustricalClassificationRevision4Name](InternationalStandardOfIndustricalClassificationRevision4NameAsStructStr)
+//!   * [LegalEntityIdentifierCode](LegalEntityIdentifierCodeAsStructStr)
+//!   * [ValueAddedTaxIdentificationNumber](ValueAddedTaxIdentificationNumberAsStructStr)
+//! * Date Time:
+//!   * [Year](YearAsStructF64)
+//!   * [Month](MonthAsStructF64)
+//!   * [Day](DayAsStructF64)
+//!   * [Hour](HourAsStructF64)
+//!   * [Minute](MinuteAsStructF64)
+//!   * [Second](SecondAsStructF64)
+//!   * [Date](DateAsStructF64)
+//!   * [Time](TimeAsStructF64)
+//!   * [TimeOffset](TimeOffsetAsStructStr)
+//!   * [TimeZone](TimeZoneAsStructStr)
 //!
 //!
 //! ## Introduction

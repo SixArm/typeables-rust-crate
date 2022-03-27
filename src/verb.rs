@@ -12,7 +12,7 @@
 //! let x = GrammarVerbAsStructStr("must"); // modal verb a.k.a. helping verb e.g. "I must walk."
 //! ```
 //!
-//! https://wikipedia.org/wiki/Verb
+//! <https://wikipedia.org/wiki/Verb>
 //!
 //! A verb, from the Latin verbum meaning word, is a word (part of speech) that
 //! in syntax conveys an action (bring, read, walk, run, learn), an occurrence

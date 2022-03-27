@@ -7,7 +7,7 @@
 //! let x = OhmAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Ohm
+//! <https://wikipedia.org/wiki/Ohm>
 //!
 //! The ohm is a unit of  of electrical resistance.
 //!

@@ -7,7 +7,7 @@
 //! let x = KilogramAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Kilogram
+//! <https://wikipedia.org/wiki/Kilogram>
 //!
 //! The kilogram is a unit of mass.
 //!

@@ -7,7 +7,7 @@
 //! let x = BecquerelAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Becquerel
+//! <https://wikipedia.org/wiki/Becquerel>
 //!
 //! The becquerel is a unit of radioactivity (decays per unit time).
 //!

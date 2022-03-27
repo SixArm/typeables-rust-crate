@@ -7,7 +7,7 @@
 //! let x = MoleAsStructF64(1.0);
 //! ```
 //!
-//! https://en.wikipedia.org/wiki/Mole_(unit)
+//! <https://en.wikipedia.org/wiki/Mole_(unit)>
 //!
 //! The mole is a unit of amount of substance.
 //!

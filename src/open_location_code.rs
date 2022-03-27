@@ -2,7 +2,7 @@
 //!
 //! Open Location Code geolocation text.
 //!
-//! See https://github.com/google/open-location-code
+//! See: <https://github.com/google/open-location-code>
 //!
 //! Example:
 //!

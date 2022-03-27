@@ -7,7 +7,7 @@
 //! let x = LuxAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Lux
+//! <https://wikipedia.org/wiki/Lux>
 //!
 //! The lux is a unit of illuminance.
 //!

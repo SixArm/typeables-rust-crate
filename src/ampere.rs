@@ -7,7 +7,7 @@
 //! let x = AmpereAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Ampere
+//! <https://wikipedia.org/wiki/Ampere>
 //!
 //! The ampere, often shortened to amp, is the SI base unit of electric current.
 //! The ampere is named after French mathematician and physicist André-Marie

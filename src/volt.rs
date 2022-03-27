@@ -7,7 +7,7 @@
 //! let x = VoltAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Volt
+//! <https://wikipedia.org/wiki/Volt>
 //!
 //! The volt is a unit of voltage, electrical potential difference, electromotive force.
 //!

@@ -7,7 +7,7 @@
 //! let x = LitreAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Litre
+//! <https://wikipedia.org/wiki/Litre>
 //!
 //! The litre is a metric unit of volume. It is equal to 1 cubic decimetre
 //! (dm3), 1000 cubic centimetre (cm3) or 0.001 cubic metre (m3). A cubic

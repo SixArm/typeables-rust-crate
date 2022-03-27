@@ -2,9 +2,9 @@
 //!
 //! Value Added Tax Identification Number is a.k.a. VATIN, VAT id.
 //!
-//! See: https://schema.org/vatID
+//! See: <https://schema.org/vatID>
 //!
-//! See: https://wikipedia.org/wiki/VAT_identification_number
+//! See: <https://wikipedia.org/wiki/VAT_identification_number>
 //!
 //! Example:
 //!

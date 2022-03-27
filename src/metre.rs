@@ -7,7 +7,7 @@
 //! let x = MetreAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Metre
+//! <https://wikipedia.org/wiki/Metre>
 //!
 //! The metre is the SI base unit of length.
 //!
@@ -21,7 +21,7 @@
 //!   * Metre is for length
 //!
 //!   * Metre^2 is for area
-//!  
+//! 
 //!   * Metre^3 is for volume
 //!
 //!   * Metre Per Second is for speed

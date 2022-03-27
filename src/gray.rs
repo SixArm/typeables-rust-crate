@@ -7,7 +7,7 @@
 //! let x = GrayAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Gray
+//! <https://wikipedia.org/wiki/Gray>
 //!
 //! The gray is a unit of absorbed dose (of ionizing radiation).
 //!

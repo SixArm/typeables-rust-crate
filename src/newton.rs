@@ -7,7 +7,7 @@
 //! let x = NewtonAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Newton
+//! <https://wikipedia.org/wiki/Newton>
 //!
 //! The newton is a unit of mass.
 //!

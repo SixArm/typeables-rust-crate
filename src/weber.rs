@@ -7,7 +7,7 @@
 //! let x = WeberAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Weber
+//! <https://wikipedia.org/wiki/Weber>
 //!
 //! The weber is a unit of magnetic flux.
 //!

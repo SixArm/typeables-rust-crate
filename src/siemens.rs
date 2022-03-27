@@ -7,7 +7,7 @@
 //! let x = SiemensAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Siemens
+//! <https://wikipedia.org/wiki/Siemens>
 //!
 //! The siemens is a unit of electrical conductance.
 //!

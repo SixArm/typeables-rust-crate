@@ -7,7 +7,7 @@
 //! let x = GramAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Gram
+//! <https://wikipedia.org/wiki/Gram>
 //!
 //! The gram is a unit of mass.
 //!

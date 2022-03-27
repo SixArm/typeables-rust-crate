@@ -7,7 +7,7 @@
 //! let x = SievertAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Sievert
+//! <https://wikipedia.org/wiki/Sievert>
 //!
 //! The sievert is a unit of equivalent dose (of ionizing radiation).
 //!

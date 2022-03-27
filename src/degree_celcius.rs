@@ -7,7 +7,7 @@
 //! let x = DegreeCelciusAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/DegreeCelcius
+//! <https://wikipedia.org/wiki/DegreeCelcius>
 //!
 //! The degree celcius is a unit of temperature.
 //!
