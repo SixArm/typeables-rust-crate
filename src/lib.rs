@@ -35,12 +35,6 @@
 //! [Watt](WattAsStructF64),
 //! [Weber](WeberAsStructF64).
 //!
-//! Geolocation:
-//! [Latitude](LatitudeAsDigitalDegreeAsStructF64),
-//! [Longitue](LongitueAsDigitalDegreeAsStructF64),
-//! [Altitude](AltitudeAsDigitalDegreeAsStructF64),
-//! [Elevation](ElevationAsDigitalDegreeAsStructF64).
-//!
 //! Currency:
 //! [CurrencyName](CurrencyNameAsStructStr),
 //! [CurrencySymbol](CurrencySymbolAsStructStr).
@@ -49,6 +43,13 @@
 //! [EmailAddress](EmailAddressAsStructStr),
 //! [EmailAddressAddr](EmailAddressAddrAsStructStr),
 //! [EmailAddressName](EmailAddressNameAsStructStr).
+//!
+//! Geolocation:
+//! [Latitude](LatitudeAsDigitalDegreeAsStructF64),
+//! [Longitue](LongitueAsDigitalDegreeAsStructF64),
+//! [Altitude](AltitudeAsDigitalDegreeAsStructF64),
+//! [Elevation](ElevationAsDigitalDegreeAsStructF64),
+//! [OpenLocationCode](OpenLocationCodeAsStructStr).
 //!
 //! Interval:
 //! [UnitInterval](UnitIntervalAsStructF64),
@@ -656,6 +657,7 @@ pub mod latitude;
 pub mod longitude;
 pub mod altitude;
 pub mod elevation;
+pub mod open_location_code;
 
 // Interval
 pub mod unit_interval;

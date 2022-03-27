@@ -35,12 +35,6 @@ Volt,
 Watt,
 Weber.
 
-Geolocation:
-Latitude,
-Longitue,
-Altitude,
-Elevation.
-
 Currency:
 CurrencyName,
 CurrencySymbol.
@@ -49,6 +43,13 @@ Email:
 EmailAddress,
 EmailAddressAddr,
 EmailAddressName.
+
+Geolocation:
+Latitude,
+Longitue,
+Altitude,
+Elevation,
+OpenLocationCode.
 
 Interval:
 UnitInterval,
