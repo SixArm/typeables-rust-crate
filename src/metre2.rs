@@ -10,6 +10,14 @@
 //! The metre^2 is a unit of area.
 //!
 //! The symbol is m^2.
+//!
+//! Compare:
+//!
+//!   * Metre is for length
+//!
+//!   * Metre^2 is for area
+//!  
+//!   * Metre^3 is for volume
 
 pub struct Metre2AsStructI8(pub i8);
 pub struct Metre2AsStructI16(pub i16);

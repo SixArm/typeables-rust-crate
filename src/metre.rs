@@ -15,8 +15,14 @@
 //!
 //! Metre is the standard spelling of the metric unit for length in nearly all
 //! English-speaking nations.
-
-//// Metre
+//!
+//! Compare:
+//!
+//!   * Metre is for length
+//!
+//!   * Metre^2 is for area
+//!  
+//!   * Metre^3 is for volume
 
 pub struct MetreAsStructI8(pub i8);
 pub struct MetreAsStructI16(pub i16);

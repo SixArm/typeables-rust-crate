@@ -10,6 +10,14 @@
 //! The metre^3 is a unit of volume.
 //!
 //! The symbol is m^3.
+//!
+//! Compare:
+//!
+//!   * Metre is for length
+//!
+//!   * Metre^2 is for area
+//!  
+//!   * Metre^3 is for volume
 
 pub struct Metre3AsStructI8(pub i8);
 pub struct Metre3AsStructI16(pub i16);
