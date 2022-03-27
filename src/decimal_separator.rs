@@ -1,7 +1,7 @@
 //! # Decimal Separator
 //!
 //! Decimal Separator a.k.a. radix character for numbers.
-//! 
+//!
 //! Examples:
 //!
 //! ```rust

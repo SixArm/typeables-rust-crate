@@ -10,13 +10,13 @@
 //!   * "ms-ID" means Malay - Indonesia
 //!
 //! See also:
-//! 
+//!
 //!   * [DecimalSeparator](DecimalSeparatorAsStructStr)
 //!   * [GroupingSeparator](GroupingSeparatorAsStructStr)
 //!   * [QuotationStartDelimiter](QuotationStartDelimiterAsStructStr)
 //!   * [QuotationStoptDelimiter](QuotationStopDelimiterAsStructStr)
-//! 
-//! 
+//!
+//!
 //! ## Locale Code a.k.a. language code and country code
 //!
 //! Examples:

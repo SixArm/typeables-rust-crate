@@ -5,9 +5,9 @@
 //! See https://github.com/google/open-location-code
 //!
 //! Example:
-//! 
+//!
 //!   * "6GCRPR6C+24" is the Parliament Buildings in Nairobi, Kenya.
-//! 
+//!
 //! Examples:
 //!
 //! ```rust

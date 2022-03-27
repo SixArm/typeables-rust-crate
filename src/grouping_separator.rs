@@ -1,7 +1,7 @@
 //! # Grouping Separator a.k.a. thousands separator for numbers
 //!
 //! Grouping Separator e.g. numeric thousands separator
-//! 
+//!
 //! Examples:
 //!
 //! ```rust
