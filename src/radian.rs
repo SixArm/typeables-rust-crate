@@ -1,13 +1,13 @@
-//! # Rdian
+//! # Radian
 //!
 //! Examples:
 //!
 //! ```rust
 //! # use ::typeables::radian::*;
-//! let x = RdianAsStructF64(1.0);
+//! let x = RadianAsStructF64(1.0);
 //! ```
 //!
-//! https://wikipedia.org/wiki/Rdian
+//! <https://wikipedia.org/wiki/Radian>
 //!
 //! The radian is a unit of angle.
 //!
@@ -15,34 +15,34 @@
 //
 //! The SI unit symbol is rad.
 
-//// Rdian
+//// Radian
 
-pub struct RdianAsStructI8(pub i8);
-pub struct RdianAsStructI16(pub i16);
-pub struct RdianAsStructI32(pub i32);
-pub struct RdianAsStructI64(pub i64);
-pub struct RdianAsStructI128(pub i128);
-pub struct RdianAsStructISize(pub isize);
-pub struct RdianAsStructU8(pub u8);
-pub struct RdianAsStructU16(pub u16);
-pub struct RdianAsStructU32(pub u32);
-pub struct RdianAsStructU64(pub u64);
-pub struct RdianAsStructU128(pub u128);
-pub struct RdianAsStructUSize(pub usize);
-pub struct RdianAsStructF32(pub f32);
-pub struct RdianAsStructF64(pub f64);
+pub struct RadianAsStructI8(pub i8);
+pub struct RadianAsStructI16(pub i16);
+pub struct RadianAsStructI32(pub i32);
+pub struct RadianAsStructI64(pub i64);
+pub struct RadianAsStructI128(pub i128);
+pub struct RadianAsStructISize(pub isize);
+pub struct RadianAsStructU8(pub u8);
+pub struct RadianAsStructU16(pub u16);
+pub struct RadianAsStructU32(pub u32);
+pub struct RadianAsStructU64(pub u64);
+pub struct RadianAsStructU128(pub u128);
+pub struct RadianAsStructUSize(pub usize);
+pub struct RadianAsStructF32(pub f32);
+pub struct RadianAsStructF64(pub f64);
 
-pub type RdianAsTypeI8 = i8;
-pub type RdianAsTypeI16 = i16;
-pub type RdianAsTypeI32 = i32;
-pub type RdianAsTypeI64 = i64;
-pub type RdianAsTypeI128 = i128;
-pub type RdianAsTypeISize = isize;
-pub type RdianAsTypeU8 = u8;
-pub type RdianAsTypeU16 = u16;
-pub type RdianAsTypeU32 = u32;
-pub type RdianAsTypeU64 = u64;
-pub type RdianAsTypeU128 = u128;
-pub type RdianAsTypeUSize = usize;
-pub type RdianAsTypeF32 = f32;
-pub type RdianAsTypeF64 = f64;
+pub type RadianAsTypeI8 = i8;
+pub type RadianAsTypeI16 = i16;
+pub type RadianAsTypeI32 = i32;
+pub type RadianAsTypeI64 = i64;
+pub type RadianAsTypeI128 = i128;
+pub type RadianAsTypeISize = isize;
+pub type RadianAsTypeU8 = u8;
+pub type RadianAsTypeU16 = u16;
+pub type RadianAsTypeU32 = u32;
+pub type RadianAsTypeU64 = u64;
+pub type RadianAsTypeU128 = u128;
+pub type RadianAsTypeUSize = usize;
+pub type RadianAsTypeF32 = f32;
+pub type RadianAsTypeF64 = f64;
