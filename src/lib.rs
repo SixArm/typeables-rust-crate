@@ -86,6 +86,7 @@
 //!
 //! Grammar:
 //! [Adjective](AdjectiveAsStructStr),
+//! [Adverb](AdverbAsStructStr),
 //! [Noun](NounAsStructStr),
 //! [Pronoun](PronounAsStructStr),
 //! [Verb](VerbAsStructStr).
@@ -674,6 +675,7 @@ pub mod year;
 
 // Grammar
 pub mod adjective;
+pub mod adverb;
 pub mod noun;
 pub mod pronoun;
 pub mod verb;
