@@ -1,31 +1,13 @@
 //! # Month
 //!
-//! This module provides:
-//!
-//!   * Month
-//!
-//!   * Month Name
-//!
-//!
-//! ## Month
+//! The month unit is a unit of time.
 //!
 //! Example:
 //!
 //! ```rust
-//! # use ::typeables::month::*;
-//! let x = MonthAsStructI8(1); // 1 means January
+//! use typeables::month::*;
+//! let x = MonthAsStructF64(1.0); // One month of time
 //! ```
-//!
-//! ## Month Name
-//!
-//! Example:
-//!
-//! ```rust
-//! # use ::typeables::month::*;
-//! let x = MonthNameAsStructStr("January");
-//! ```
-
-//// Month
 
 pub struct MonthAsStructI8(pub i8);
 pub struct MonthAsStructI16(pub i16);
@@ -56,11 +38,3 @@ pub type MonthAsTypeU128 = u128;
 pub type MonthAsTypeUSize = usize;
 pub type MonthAsTypeF32 = f32;
 pub type MonthAsTypeF64 = f64;
-
-//// Month Name
-
-pub struct MonthNameAsStructStr(pub &'static str);
-pub struct MonthNameAsStructString(pub String);
-
-pub type MonthNameAsTypeStr = str;
-pub type MonthNameAsTypeString = String;
