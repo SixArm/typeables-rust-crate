@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use typeables::degree_celcius_unit::*;
+//! # use typeables::degree_celcius::*;
 //! let x = DegreeCelciusAsStructF64(1.0);
 //! ```
 //!
