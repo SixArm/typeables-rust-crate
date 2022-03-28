@@ -87,6 +87,7 @@
 //!   * [pronoun](pronoun)
 //!   * [verb](verb)
 //! * text formats
+//!   * [json_text](json_text)
 //!   * [markdown_text](markdown_text)
 //! * content
 //!   * [global_location_number](global_location_number)
@@ -687,6 +688,7 @@ pub mod phone_e164_group_identification_code;
 pub mod phone_e164_trial_identification_code;
 
 // Text formats
+pub mod json_text;
 pub mod markdown_text;
 
 // Date & Time
