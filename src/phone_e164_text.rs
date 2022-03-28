@@ -7,16 +7,16 @@
 //! let x = PhoneE164TextAsStructStr("+86 13 0000 0000"); // China example
 //! let x = PhoneE164TextAsStructStr("+91 900 0000 000"); // India example
 //! ```
-//! 
+//!
 //! Compare:
-//! 
+//!
 //!   * [phone_e164_text](../phone_e164_text)
 //!   * [phone_e164_country_code](../phone_e164_country_code)
 //!   * [phone_e164_national_destimation_code](../phone_e164_national_destimation_code)
 //!   * [phone_e164_subscriber_number](../phone_e164_subscriber_number)
 //!   * [phone_e164_group_identification_code](../phone_e164_group_identification_code)
 //!   * [phone_e164_trial_identification_code](../phone_e164_trial_identification_code)
-//! 
+//!
 //! <https://en.wikipedia.org/wiki/E.164>
 //!
 //! E.164 is an international standard (ITU-T Recommendation), titled The

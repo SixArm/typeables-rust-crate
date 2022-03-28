@@ -11,7 +11,7 @@
 //! let x = LocaleScriptCodeAsStructStr("Arab"); // Arabic
 //! let x = LocaleScriptCodeAsStructStr("Mlym"); // Malayalam
 //! ```
-//! 
+//!
 //! A locale typically uses a language code and country code:
 //!
 //!   * "en-US" means English - United States.

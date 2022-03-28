@@ -11,7 +11,7 @@
 //! let x = LocaleCountryCodeAsStructStr("EG"); // Egypt
 //! let x = LocaleCountryCodeAsStructStr("ID"); // Indonesia
 //! ```
-//! 
+//!
 //! A locale typically uses a language code and country code:
 //!
 //!   * "en-US" means English - United States.

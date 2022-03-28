@@ -8,7 +8,7 @@
 //! let x = LocaleRegionCodeAsStructStr("EU"); // European Union
 //! let x = LocaleRegionCodeAsStructStr("ZZ"); // Unknown or Invalid Territory
 //! ```
-//! 
+//!
 //! A locale typically uses a language code and country code:
 //!
 //!   * "en-US" means English - United States.

@@ -7,16 +7,16 @@
 //! let x = PhoneE164CountryCodeAsStructStr("86"); // China
 //! let x = PhoneE164CountryCodeAsStructStr("91"); // India
 //! ```
-//! 
+//!
 //! Compare:
-//! 
+//!
 //!   * [phone_e164_text](../phone_e164_text)
 //!   * [phone_e164_country_code](../phone_e164_country_code)
 //!   * [phone_e164_national_destimation_code](../phone_e164_national_destimation_code)
 //!   * [phone_e164_subscriber_number](../phone_e164_subscriber_number)
 //!   * [phone_e164_group_identification_code](../phone_e164_group_identification_code)
 //!   * [phone_e164_trial_identification_code](../phone_e164_trial_identification_code)
-//! 
+//!
 //! <https://en.wikipedia.org/wiki/E.164>
 //!
 //! E.164 is an international standard (ITU-T Recommendation), titled The

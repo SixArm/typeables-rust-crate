@@ -11,7 +11,7 @@
 //! let x = LocaleVariantCodeAsStructStr("ekavsk");   // Serbian with Ekavian pronunciation
 //! let x = LocaleVariantCodeAsStructStr("fonipa");   // International Phonetic Alphabet
 //! ```
-//! 
+//!
 //! A locale typically uses a language code and country code:
 //!
 //!   * "en-US" means English - United States.

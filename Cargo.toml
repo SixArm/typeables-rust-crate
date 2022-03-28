@@ -1,6 +1,6 @@
 [package]
 name = "typeables"
-version = "2.1.0"
+version = "2.2.0"
 authors = ["Joel Parker Henderson <joel@joelparkerhenderson.com>"]
 edition = "2021"
 description = "Typeables: Rust crate of type aliases. By SixArm.com."
