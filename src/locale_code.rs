@@ -23,6 +23,7 @@
 //!
 //! See also:
 //!
+//!   * [locale_language_code](../locale_language_code)
 //!   * [decimal_separator](../decimal_separator)
 //!   * [grouping_separator](../grouping_separator)
 //!   * [quotation_start_delimiter](../quotation_start_delimiter)

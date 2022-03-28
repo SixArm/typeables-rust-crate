@@ -644,6 +644,7 @@ pub mod international_standard_of_industrial_classification_revision_4_name;
 pub mod legal_entity_identifier_code;
 pub mod locale;
 pub mod locale_code;
+pub mod locale_language_code;
 
 pub mod media_type;
 pub mod phone;
