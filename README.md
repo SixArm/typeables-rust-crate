@@ -87,6 +87,8 @@ number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
   * pronoun
   * verb
 * text formats
+  * html_text
+  * json_text
   * markdown_text
 * content
   * global_location_number
