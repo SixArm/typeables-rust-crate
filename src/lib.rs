@@ -86,6 +86,8 @@
 //!   * [noun](noun)
 //!   * [pronoun](pronoun)
 //!   * [verb](verb)
+//! * text formats
+//!   * [markdown_text](markdown_text)
 //! * content
 //!   * [global_location_number](global_location_number)
 //!   * [international_standard_of_industrial_classification_revision_4_code](international_standard_of_industrial_classification_revision_4_code)
@@ -683,6 +685,9 @@ pub mod phone_e164_national_destination_code;
 pub mod phone_e164_subscriber_number;
 pub mod phone_e164_group_identification_code;
 pub mod phone_e164_trial_identification_code;
+
+// Text formats
+pub mod markdown_text;
 
 // Date & Time
 pub mod datetime;
