@@ -3,13 +3,13 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::second::*;
-//! let x = SecondAsStructF64(1.0);
+//! # use typeables::second::*;
+//! let x = SecondAsStructF64(1.0); // One second of time
 //! ```
 //!
 //! <https://wikipedia.org/wiki/Second>
 //!
-//! The second is a unit of time.
+//! The second unit is a unit of time.
 //!
 //! It is a base unit in the International System of Units (SI).
 //!
@@ -23,8 +23,6 @@
 //! The second is also part of several other units of measurement like metres
 //! per second for speed, metres per second per second for acceleration, and
 //! cycles per second for frequency.
-
-//// Second
 
 pub struct SecondAsStructI8(pub i8);
 pub struct SecondAsStructI16(pub i16);
