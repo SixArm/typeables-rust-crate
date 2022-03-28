@@ -9,7 +9,7 @@
 //!
 //! E.164 defines a general format for international telephone numbers.
 //! Plan-conforming numbers are limited to a maximum of 15 digits, excluding the
-//! international call prefix.[1] The presentation of a number at the B-party
+//! international call prefix. The presentation of a number at the B-party
 //! device is usually prefixed with the plus sign (+), indicating that the
 //! number includes the country calling code. This is done by the B-party
 //! subscribers network by usually looking at the NOA (Nature Of Address) field
