@@ -91,6 +91,7 @@
 //!   * [json_text](json_text)
 //!   * [markdown_text](markdown_text)
 //!   * [yaml_text](yaml_text)
+//!   * [xml_text](xml_text)
 //! * content
 //!   * [global_location_number](global_location_number)
 //!   * [international_standard_of_industrial_classification_revision_4_code](international_standard_of_industrial_classification_revision_4_code)
@@ -694,6 +695,7 @@ pub mod html_text;
 pub mod json_text;
 pub mod markdown_text;
 pub mod yaml_text;
+pub mod xml_text;
 
 // Date & Time
 pub mod datetime;
