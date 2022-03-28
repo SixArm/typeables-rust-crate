@@ -4,7 +4,7 @@
 //!
 //! ```rust
 //! # use ::typeables::html_text::*;
-//! let x = HTMLTextAsStructStr("{\"alpha\":\"bravo\"}");
+//! let x = HTMLTextAsStructStr("This is <b>bold</b> text");
 //! ```
 
 pub struct HTMLTextAsStructStr(pub &'static str);
