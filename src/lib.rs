@@ -90,6 +90,7 @@
 //!   * [html_text](html_text)
 //!   * [json_text](json_text)
 //!   * [markdown_text](markdown_text)
+//!   * [yaml_text](yaml_text)
 //! * content
 //!   * [global_location_number](global_location_number)
 //!   * [international_standard_of_industrial_classification_revision_4_code](international_standard_of_industrial_classification_revision_4_code)
@@ -692,6 +693,7 @@ pub mod phone_e164_trial_identification_code;
 pub mod html_text;
 pub mod json_text;
 pub mod markdown_text;
+pub mod yaml_text;
 
 // Date & Time
 pub mod datetime;

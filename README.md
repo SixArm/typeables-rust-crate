@@ -90,6 +90,7 @@ number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
   * html_text
   * json_text
   * markdown_text
+  * yaml_text
 * content
   * global_location_number
   * international_standard_of_industrial_classification_revision_4_code
