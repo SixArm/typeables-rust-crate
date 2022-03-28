@@ -75,11 +75,11 @@
 //!   * [media_type_tree](media_type)
 //! * phone e164
 //!   * [phone_e164_text](phone)
-//!   * [phone_e164_country_code](phone)
-//!   * [phone_e164_national_destination_code](phone)
-//!   * [phone_e164_subscriber_number](phone)
-//!   * [phone_e164_group_identification_code](phone)
-//!   * [phone_e164_trial_identification_code](phone)
+//!   * [phone_e164_country_code](phone_e164_country_code)
+//!   * [phone_e164_national_destination_code](phone_e164_national_destination_code)
+//!   * [phone_e164_subscriber_number](phone_e164_subscriber_number)
+//!   * [phone_e164_group_identification_code](phone_e164_group_identification_code)
+//!   * [phone_e164_trial_identification_code](phone_e164_trial_identification_code)
 //! * grammar
 //!   * [adjective](adjective)
 //!   * [adverb](adverb)
@@ -642,6 +642,8 @@ pub mod global_location_number;
 pub mod international_standard_of_industrial_classification_revision_4_code;
 pub mod international_standard_of_industrial_classification_revision_4_name;
 pub mod legal_entity_identifier_code;
+pub mod media_type;
+pub mod value_added_tax_identification_number;
 
 // Locale
 pub mod locale_code;
@@ -650,10 +652,6 @@ pub mod locale_country_code;
 pub mod locale_region_code;
 pub mod locale_script_code;
 pub mod locale_variant_code;
-
-pub mod media_type;
-pub mod phone;
-pub mod value_added_tax_identification_number;
 
 // Email
 pub mod email_address;
@@ -677,6 +675,14 @@ pub mod decimal_separator;
 pub mod grouping_separator;
 pub mod quotation_start_delimiter;
 pub mod quotation_stop_delimiter;
+
+// Phone
+pub mod phone_e164_text;
+pub mod phone_e164_country_code;
+pub mod phone_e164_national_destination_code;
+pub mod phone_e164_subscriber_number;
+pub mod phone_e164_group_identification_code;
+pub mod phone_e164_trial_identification_code;
 
 // Date & Time
 pub mod datetime;
