@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::json_text::*;
+//! # use typeables::json_text::*;
 //! let x = JSONTextAsStructStr("{\"alpha\":\"bravo\"}");
 //! ```
 

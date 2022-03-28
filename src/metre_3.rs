@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::metre_3::*;
+//! # use typeables::metre_3::*;
 //! let x = Metre3AsStructF64(1.0); // 1 metre cube
 //! ```
 //!

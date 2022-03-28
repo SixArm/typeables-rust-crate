@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::html_text::*;
+//! # use typeables::html_text::*;
 //! let x = HTMLTextAsStructStr("This is <b>bold</b> text");
 //! ```
 

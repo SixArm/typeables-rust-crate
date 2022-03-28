@@ -28,7 +28,7 @@
 //! Example:
 //!
 //! ```rust
-//! # use ::typeables::altitude::*;
+//! # use typeables::altitude::*;
 //! let takeoff = AltitudeAsAboveGroundLevelAsMetreAsStructI32(300);
 //! ```
 //!
@@ -38,7 +38,7 @@
 //! Example:
 //!
 //! ```rust
-//! # use ::typeables::altitude::*;
+//! # use typeables::altitude::*;
 //! let cruising = AltitudeAsMeanSeaLevelAsMetreAsStructI32(13000);
 //! ```
 //!

@@ -2,8 +2,8 @@
 //!
 //! Examples with New York City Grand Central Terminal:
 //! ```
-//! # use ::typeables::latitude::*;
-//! # use ::typeables::longitude::*;
+//! # use typeables::latitude::*;
+//! # use typeables::longitude::*;
 //! let latitude: LongitudeAsDecimalDegreeAsTypeF64 = 40.652687;
 //! let longitude: LongitudeAsDecimalDegreeAsTypeF64 = -73.877188;
 //! ```
@@ -27,14 +27,14 @@
 //! Example as Decimal Degree (DD) representation:
 //!
 //! ```rust
-//! # use ::typeables::longitude::*;
+//! # use typeables::longitude::*;
 //! let longitude_dd: LongitudeAsDecimalDegreeAsTypeF64 = 40.652687;
 //! ```
 //!
 //! Example as Degree Minute Second (DMS) representation:
 //!
 //! ```rust
-//! # use ::typeables::longitude::*;
+//! # use typeables::longitude::*;
 //! let longitude_dm_degree: LongitudeAsDegreeMinuteWithDegreeAsTypeI16 = 40;
 //! let longitude_dm_minute: LongitudeAsDegreeMinuteWithMinuteAsTypeF32 = 39.16122;
 //! ```
@@ -42,7 +42,7 @@
 //! Example as Degree Minute Second (DMS) representation:
 //!
 //! ```rust
-//! # use ::typeables::longitude::*;
+//! # use typeables::longitude::*;
 //! let longitude_dms_degree: LongitudeAsDegreeMinuteSecondWithDegreeAsTypeI16 = 40;
 //! let longitude_dms_minute: LongitudeAsDegreeMinuteSecondWithMinuteAsTypeI8 = 39;
 //! let longitude_dms_second: LongitudeAsDegreeMinuteSecondWithSecondAsTypeF32 = 9.6732;

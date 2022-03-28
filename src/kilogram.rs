@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::kilogram::*;
+//! # use typeables::kilogram::*;
 //! let x = KilogramAsStructF64(1.0);
 //! ```
 //!

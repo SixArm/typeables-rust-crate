@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::markdown_text::*;
+//! # use typeables::markdown_text::*;
 //! let x = MarkdownTextAsStructStr("This is *bold* text");
 //! ```
 

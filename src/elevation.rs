@@ -28,7 +28,7 @@
 //! Example:
 //!
 //! ```rust
-//! # use ::typeables::elevation::*;
+//! # use typeables::elevation::*;
 //! let tower = ElevationAsAboveGroundLevelAsMetreAsStructI32(300);
 //! ```
 //!
@@ -38,7 +38,7 @@
 //! Example:
 //!
 //! ```rust
-//! # use ::typeables::elevation::*;
+//! # use typeables::elevation::*;
 //! let runway = ElevationAsMeanSeaLevelAsMetreAsStructI32(8848);
 //! ```
 //!

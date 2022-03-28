@@ -12,7 +12,7 @@
 //! Examples:
 //!
 //! ```
-//! # use ::typeables::quotation_stop_delimiter::*;
+//! # use typeables::quotation_stop_delimiter::*;
 //! let x = QuotationStopDelimiterAsStructStr("“"); // English (U+201C right double quotation mark)
 //! let x = QuotationStopDelimiterAsStructStr("」"); // Chinese (U+300D right corner bracket)
 //! let x = QuotationStopDelimiterAsStructStr("»"); // French guillemet (U+00BB right angle quotes)

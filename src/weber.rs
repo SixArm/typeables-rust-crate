@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::weber::*;
+//! # use typeables::weber::*;
 //! let x = WeberAsStructF64(1.0);
 //! ```
 //!

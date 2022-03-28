@@ -5,7 +5,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::dual_interval::*;
+//! # use typeables::dual_interval::*;
 //! let x = DualIntervalAsStructF64(0.5);
 //! ```
 //!

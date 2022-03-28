@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::henry::*;
+//! # use typeables::henry::*;
 //! let x = HenryAsStructF64(1.0);
 //! ```
 //!

@@ -2,7 +2,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::phone_e164_national_destination_code::*;
+//! # use typeables::phone_e164_national_destination_code::*;
 //! let x = PhoneE164NationalDestinationCodeAsStructStr("212"); // United States + New York City
 //! let x = PhoneE164NationalDestinationCodeAsStructStr("10"); // China + Beijing
 //! let x = PhoneE164NationalDestinationCodeAsStructStr("11"); // India + Delhi

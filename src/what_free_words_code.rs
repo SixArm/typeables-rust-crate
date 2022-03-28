@@ -9,7 +9,7 @@
 //!   * "joyful.nail.harmonica" is geolocation 37.234328,-115.806657.
 //!
 //! ```
-//! # use ::typeables::what_free_words_code::*;
+//! # use typeables::what_free_words_code::*;
 //! let x = WhatFreeWordsCodeAsStructStr("joyful.nail.harmonica");
 //! ```
 

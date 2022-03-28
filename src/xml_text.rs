@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::xml_text::*;
+//! # use typeables::xml_text::*;
 //! let x = XMLTextAsStructStr("<alpha>bravo</alpha>");
 //! ```
 

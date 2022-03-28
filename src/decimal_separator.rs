@@ -5,7 +5,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::decimal_separator::*;
+//! # use typeables::decimal_separator::*;
 //! let x = DecimalSeparatorAsStructStr("."); // English
 //! let x = DecimalSeparatorAsStructStr(","); // French
 //! let x = DecimalSeparatorAsStructStr("~"); // Some made up language

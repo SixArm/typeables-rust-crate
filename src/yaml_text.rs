@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::yaml_text::*;
+//! # use typeables::yaml_text::*;
 //! let x = YAMLTextAsStructStr("\"alpha\":\"bravo\"");
 //! ```
 

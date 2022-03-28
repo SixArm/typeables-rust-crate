@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::mole::*;
+//! # use typeables::mole::*;
 //! let x = MoleAsStructF64(1.0);
 //! ```
 //!

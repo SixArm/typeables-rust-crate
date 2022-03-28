@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::joule::*;
+//! # use typeables::joule::*;
 //! let x = JouleAsStructF64(1.0);
 //! ```
 //!

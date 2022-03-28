@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::pascal::*;
+//! # use typeables::pascal::*;
 //! let x = PascalAsStructF64(1.0);
 //! ```
 //!

@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::gram::*;
+//! # use typeables::gram::*;
 //! let x = GramAsStructF64(1.0);
 //! ```
 //!

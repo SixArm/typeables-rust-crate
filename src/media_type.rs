@@ -23,7 +23,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::media_type::*;
+//! # use typeables::media_type::*;
 //! let x = MediaTypeCodeAsStructStr("text/plain");
 //! let x = MediaTypeCodeAsStructStr("image/jpeg");
 //! let x = MediaTypeCodeAsStructStr("audio/ogg");
@@ -37,7 +37,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::media_type::*;
+//! # use typeables::media_type::*;
 //! let x = MediaTypeSupertypeAsStructStr("text");        // e.g. "text/plain"
 //! let x = MediaTypeSupertypeAsStructStr("image");       // e.g. "image/jpeg"
 //! let x = MediaTypeSupertypeAsStructStr("audio");       // e.g. "audio/ogg"
@@ -51,7 +51,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::media_type::*;
+//! # use typeables::media_type::*;
 //! let x = MediaTypeSubtypeAsStructStr("plain"); // e.g. "text/plain"
 //! let x = MediaTypeSubtypeAsStructStr("jpeg");  // e.g. "image/jpeg"
 //! let x = MediaTypeSubtypeAsStructStr("ogg");   // e.g. "audio/ogg"
@@ -65,7 +65,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::media_type::*;
+//! # use typeables::media_type::*;
 //! let x = MediaTypeSuffixAsStructStr("+json");
 //! let x = MediaTypeSuffixAsStructStr("+zip");
 //! ```
@@ -76,7 +76,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::media_type::*;
+//! # use typeables::media_type::*;
 //! let x = MediaTypeParameterAsStructStr("charset=UTF-8");
 //! let x = MediaTypeParameterAsStructStr("charset=UTF-16");
 //! let x = MediaTypeParameterAsStructStr("charset=ASCII");
@@ -91,7 +91,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::media_type::*;
+//! # use typeables::media_type::*;
 //! let x = MediaTypeTreeAsStructStr("x."); // x means unregistered
 //! let x = MediaTypeTreeAsStructStr("vnd."); // vnd means vendor
 //! ```

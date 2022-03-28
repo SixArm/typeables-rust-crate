@@ -10,7 +10,7 @@
 //!
 //! Example:
 //! ```
-//! # use ::typeables::global_location_number::*;
+//! # use typeables::global_location_number::*;
 //! let x = GlobalLocationNumberAsStructStr("1234567890123");
 //! ```
 

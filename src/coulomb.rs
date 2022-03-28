@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::coulomb::*;
+//! # use typeables::coulomb::*;
 //! let x = CoulombAsStructF64(1.0);
 //! ```
 //!

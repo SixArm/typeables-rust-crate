@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::tesla::*;
+//! # use typeables::tesla::*;
 //! let x = TeslaAsStructF64(1.0);
 //! ```
 //!

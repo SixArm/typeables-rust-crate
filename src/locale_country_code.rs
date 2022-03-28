@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::locale_country_code::*;
+//! # use typeables::locale_country_code::*;
 //! let x = LocaleCountryCodeAsStructStr("US"); // United States
 //! let x = LocaleCountryCodeAsStructStr("CN"); // China
 //! let x = LocaleCountryCodeAsStructStr("IN"); // India

@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::litre::*;
+//! # use typeables::litre::*;
 //! let x = LitreAsStructF64(1.0);
 //! ```
 //!

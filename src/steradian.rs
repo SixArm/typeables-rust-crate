@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::steradian::*;
+//! # use typeables::steradian::*;
 //! let x = SteradianAsStructF64(1.0);
 //! ```
 //!

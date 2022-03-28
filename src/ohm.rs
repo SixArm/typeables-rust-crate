@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::ohm::*;
+//! # use typeables::ohm::*;
 //! let x = OhmAsStructF64(1.0);
 //! ```
 //!

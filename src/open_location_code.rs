@@ -11,7 +11,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::open_location_code::*;
+//! # use typeables::open_location_code::*;
 //! let x = OpenLocationCodeAsStructStr("6GCRPR6C+24");
 //! ```
 

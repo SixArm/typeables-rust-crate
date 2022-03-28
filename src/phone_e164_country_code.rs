@@ -2,7 +2,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::phone_e164_country_code::*;
+//! # use typeables::phone_e164_country_code::*;
 //! let x = PhoneE164CountryCodeAsStructStr("1"); // United States
 //! let x = PhoneE164CountryCodeAsStructStr("86"); // China
 //! let x = PhoneE164CountryCodeAsStructStr("91"); // India

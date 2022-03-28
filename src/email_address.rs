@@ -5,7 +5,7 @@
 //!
 //! Example:
 //! ```
-//! # use ::typeables::email_address::*;
+//! # use typeables::email_address::*;
 //! let x = EmailAddressAsStructStr("Alice Adams <alice@example.com>");
 //! ```
 //!

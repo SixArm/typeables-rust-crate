@@ -2,7 +2,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::phone_e164_trial_identification_code::*;
+//! # use typeables::phone_e164_trial_identification_code::*;
 //! let x = PhoneE164TrialIdentificationCodeAsStructStr("TODO");
 //! ```
 //!

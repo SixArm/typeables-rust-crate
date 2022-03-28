@@ -10,7 +10,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::international_standard_of_industrial_classification_revision_4_code::*;
+//! # use typeables::international_standard_of_industrial_classification_revision_4_code::*;
 //! let x = InternationalStandardOfIndustricalClassificationRevision4CodeAsStructStr("A"); // Agriculture, forestry and fishing
 //! let x = InternationalStandardOfIndustricalClassificationRevision4CodeAsStructStr("B05"); // Mining of coal and lignite
 //! let x = InternationalStandardOfIndustricalClassificationRevision4CodeAsStructStr("C101"); // Processing and preserving of meat

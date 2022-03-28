@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::locale_script_code::*;
+//! # use typeables::locale_script_code::*;
 //! let x = LocaleScriptCodeAsStructStr("Latn"); // Latin
 //! let x = LocaleScriptCodeAsStructStr("Hans"); // Han (simplified script)
 //! let x = LocaleScriptCodeAsStructStr("Deva"); // Devanagari (Nagari)

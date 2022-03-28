@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::katal::*;
+//! # use typeables::katal::*;
 //! let x = KatalAsStructF64(1.0);
 //! ```
 //!

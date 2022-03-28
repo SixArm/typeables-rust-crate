@@ -5,7 +5,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::grouping_separator::*;
+//! # use typeables::grouping_separator::*;
 //! let x = GroupingSeparatorAsStructStr(","); // English
 //! let x = GroupingSeparatorAsStructStr("."); // Spanish
 //! let x = GroupingSeparatorAsStructStr(" "); // French

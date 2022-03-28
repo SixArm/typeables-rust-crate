@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::siemens::*;
+//! # use typeables::siemens::*;
 //! let x = SiemensAsStructF64(1.0);
 //! ```
 //!

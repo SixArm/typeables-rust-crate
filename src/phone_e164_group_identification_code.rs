@@ -2,7 +2,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::phone_e164_group_identification_code::*;
+//! # use typeables::phone_e164_group_identification_code::*;
 //! let x = PhoneE164GroupIdentificationCodeAsStructStr("TODO");
 //! ```
 //!

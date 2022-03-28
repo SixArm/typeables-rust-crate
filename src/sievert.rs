@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::sievert::*;
+//! # use typeables::sievert::*;
 //! let x = SievertAsStructF64(1.0);
 //! ```
 //!

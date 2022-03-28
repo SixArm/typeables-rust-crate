@@ -2,7 +2,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::phone_e164_text::*;
+//! # use typeables::phone_e164_text::*;
 //! let x = PhoneE164TextAsStructStr("+1 212 555 0000"); // United States example
 //! let x = PhoneE164TextAsStructStr("+86 13 0000 0000"); // China example
 //! let x = PhoneE164TextAsStructStr("+91 900 0000 000"); // India example

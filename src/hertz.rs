@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::hertz::*;
+//! # use typeables::hertz::*;
 //! let x = HertzAsStructF64(1.0);
 //! ```
 //!

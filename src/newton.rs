@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::newton::*;
+//! # use typeables::newton::*;
 //! let x = NewtonAsStructF64(1.0);
 //! ```
 //!

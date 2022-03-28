@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::lux::*;
+//! # use typeables::lux::*;
 //! let x = LuxAsStructF64(1.0);
 //! ```
 //!

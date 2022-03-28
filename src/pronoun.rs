@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::pronoun::*;
+//! # use typeables::pronoun::*;
 //! let x = PronounAsStructStr("they"); // people
 //! let x = PronounAsStructStr("those"); // things
 //! ```

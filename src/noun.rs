@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::noun::*;
+//! # use typeables::noun::*;
 //! let x = NounAsStructStr("Alice"); // person
 //! let x = NounAsStructStr("beach"); // place
 //! let x = NounAsStructStr("clock"); // thing

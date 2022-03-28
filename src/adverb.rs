@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::adverb::*;
+//! # use typeables::adverb::*;
 //! let x = AdverbAsStructStr("quickly"); // timings
 //! let x = AdverbAsStructStr("quietly"); // sensings
 //! let x = AdverbAsStructStr("happily"); // feelings

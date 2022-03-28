@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::watt::*;
+//! # use typeables::watt::*;
 //! let x = WattAsStructF64(1.0);
 //! ```
 //!

@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::adjective::*;
+//! # use typeables::adjective::*;
 //! let x = AdjectiveAsStructStr("large"); // size
 //! let x = AdjectiveAsStructStr("round"); // shape
 //! let x = AdjectiveAsStructStr("green"); // color

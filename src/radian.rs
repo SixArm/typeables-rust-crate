@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::radian::*;
+//! # use typeables::radian::*;
 //! let x = RadianAsStructF64(1.0);
 //! ```
 //!

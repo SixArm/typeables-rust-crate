@@ -10,7 +10,7 @@
 //!
 //! Example:
 //! ```
-//! # use ::typeables::legal_entity_identifier_code::*;
+//! # use typeables::legal_entity_identifier_code::*;
 //! let x = LegalEntityIdentifierCodeAsStructStr("01234567890123456789");
 //! ```
 

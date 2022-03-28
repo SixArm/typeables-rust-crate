@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::volt::*;
+//! # use typeables::volt::*;
 //! let x = VoltAsStructF64(1.0);
 //! ```
 //!

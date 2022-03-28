@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::metre_per_second::*;
+//! # use typeables::metre_per_second::*;
 //! let x = MetrePerSecondAsStructF64(1.0);
 //! ```
 //!

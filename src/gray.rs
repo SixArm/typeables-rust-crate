@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::gray::*;
+//! # use typeables::gray::*;
 //! let x = GrayAsStructF64(1.0);
 //! ```
 //!

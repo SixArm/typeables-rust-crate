@@ -8,7 +8,7 @@
 //! Examples:
 //!
 //! ```
-//! # use ::typeables::currency::*;
+//! # use typeables::currency::*;
 //! let x = CurrencyNameAsStructStr("United States Dollar");
 //! let x = CurrencyNameAsStructStr("Chinese Yuan");
 //! let x = CurrencyNameAsStructStr("Indian Rupee");
@@ -21,7 +21,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::currency::*;
+//! # use typeables::currency::*;
 //! let x = CurrencySymbolAsStructStr("$"); // United States Dollar
 //! let x = CurrencySymbolAsStructStr("¥"); // Chinese Yuan
 //! let x = CurrencySymbolAsStructStr("₹"); // Indian Rupee

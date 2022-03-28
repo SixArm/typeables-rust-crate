@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::locale_code::*;
+//! # use typeables::locale_code::*;
 //! let x = LocaleCodeAsStructStr("en-US"); // English - United States
 //! let x = LocaleCodeAsStructStr("zh-CN"); // Chinese - China (Simplified variant)
 //! let x = LocaleCodeAsStructStr("hi-IN"); // Hindi - India

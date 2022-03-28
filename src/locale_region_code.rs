@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::locale_region_code::*;
+//! # use typeables::locale_region_code::*;
 //! let x = LocaleRegionCodeAsStructStr("QO"); // Outlying Oceania
 //! let x = LocaleRegionCodeAsStructStr("EU"); // European Union
 //! let x = LocaleRegionCodeAsStructStr("ZZ"); // Unknown or Invalid Territory

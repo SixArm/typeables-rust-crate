@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::verb::*;
+//! # use typeables::verb::*;
 //! let x = GrammarVerbAsStructStr("like"); // action transitive verb e.g. "I like you."
 //! let x = GrammarVerbAsStructStr("walk"); // action intransitive verb e.g. "I walk."
 //! let x = GrammarVerbAsStructStr("feel"); // auxiliary verb a.k.a. linking verb e.g. "I feel happy"

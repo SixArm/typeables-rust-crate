@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::kelvin::*;
+//! # use typeables::kelvin::*;
 //! let x = KelvinAsStructF64(1.0);
 //! ```
 //!

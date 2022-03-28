@@ -2,7 +2,7 @@
 //!
 //! Examples:
 //! ```
-//! # use ::typeables::phone_e164_subscriber_number::*;
+//! # use typeables::phone_e164_subscriber_number::*;
 //! let x = PhoneE164SubscriberNumberAsStructStr("555 0000"); // United States example
 //! let x = PhoneE164SubscriberNumberAsStructStr("0000 0000"); // China example
 //! let x = PhoneE164SubscriberNumberAsStructStr("0000 000"); // India example

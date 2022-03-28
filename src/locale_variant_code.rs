@@ -3,7 +3,7 @@
 //! Examples:
 //!
 //! ```rust
-//! # use ::typeables::locale_variant_code::*;
+//! # use typeables::locale_variant_code::*;
 //! let x = LocaleVariantCodeAsStructStr("arevela");  // Eastern dialect of Armenian
 //! let x = LocaleVariantCodeAsStructStr("biscayan"); // Biscayan dialect of Basque
 //! let x = LocaleVariantCodeAsStructStr("cisaup");   // Cisalpine dialect of Italian

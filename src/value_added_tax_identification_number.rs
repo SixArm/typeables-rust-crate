@@ -14,7 +14,7 @@
 //!
 //! Example:
 //! ```
-//! # use ::typeables::value_added_tax_identification_number::*;
+//! # use typeables::value_added_tax_identification_number::*;
 //! let x = ValueAddedTaxIdentificationNumberAsStructStr("01234567");
 //! ```
 
