@@ -56,11 +56,11 @@
 //!   * [dual_interval](unit_interval)
 //! * locale
 //!   * [locale_code](locale_code)
-//!   * [locale_language_code](locale)
-//!   * [locale_country_code](locale)
-//!   * [locale_region_code](locale)
-//!   * [locale_script_code](locale)
-//!   * [locale_variant_code](locale)
+//!   * [locale_language_code](locale_language_code)
+//!   * [locale_country_code](locale_country_code)
+//!   * [locale_region_code](locale_region_code)
+//!   * [locale_script_code](locale_script_code)
+//!   * [locale_variant_code](locale_variant_code)
 //! * localization
 //!   * [decimal_separator](decimal_separator)
 //!   * [grouping_separator](grouping_separator)
@@ -645,6 +645,10 @@ pub mod legal_entity_identifier_code;
 pub mod locale;
 pub mod locale_code;
 pub mod locale_language_code;
+pub mod locale_country_code;
+pub mod locale_region_code;
+pub mod locale_script_code;
+pub mod locale_variant_code;
 
 pub mod media_type;
 pub mod phone;
