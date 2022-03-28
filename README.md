@@ -46,7 +46,7 @@ number), locale types (e.g. "en" for English, "zh" for Chinese), etc.
   * email_address_name
 * geolocation
   * latitude
-  * longitue
+  * longitude
   * altitude
   * elevation
   * open_location_code
