@@ -1,13 +1,14 @@
 //! # Year
 //!
+//! The year is a unit of time.
+//!
 //! Example:
 //!
 //! ```rust
-//! # use ::typeables::year::*;
-//! let x = YearAsStructI16(2022);
+//! # use typeables::year::*;
+//! let x = YearAsStructF64(1.0); // One year of time
 //! ```
 
-//// Year
 pub struct YearAsStructI8(pub i8);
 pub struct YearAsStructI16(pub i16);
 pub struct YearAsStructI32(pub i32);
@@ -37,4 +38,3 @@ pub type YearAsTypeU128 = u128;
 pub type YearAsTypeUSize = usize;
 pub type YearAsTypeF32 = f32;
 pub type YearAsTypeF64 = f64;
-
